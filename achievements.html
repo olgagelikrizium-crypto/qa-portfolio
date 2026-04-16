@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tester and developer beginner Volha Shunko portfolio">
+    <meta property="og:title" content="QA Portfolio | Volha Shunko">
+    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
+    <meta property="og:image" content="images/hero/img_me_foto.png"> 
+    <title>QA Portfolio | Volha Shunko</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- 🔝 HEADER -->
+<header class="header header-small">
+    <div class="header-content">
+    <h2>Volha Shunko</h2>
+    <p>QA Tester | Web Testing | Bug Reporting</p>
+    </div>
+</header>
+
+<!-- 🧭 NAVIGATION -->
+<nav class="nav">
+
+    <!-- 🔘 БУРГЕР -->
+    <button 
+    type="button" 
+    class="burger" 
+    onclick="toggleMenu()" 
+    aria-label="Open menu" 
+    aria-expanded="false" 
+    aria-controls="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+
+    <!-- 📋 МЕНЮ -->
+    <ul id="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="portfolio.html"  >Portfolio</a></li>
+        <li><a href="achievements.html" class="active">Achievements</a></li>
+        <li><a href="notes.html">QA Notes</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+    </ul>
+</nav>
+<!-- 📦 MAIN -->
+<main class="container">
+
+    <!-- Заголовок страницы -->
+    <section class="section">
+        <h1>My Achievements</h1>
+        <p>This section showcases my continuous learning journey in software testing, including certifications, completed courses, and practical skill development.</p>
+    </section>
+
+    <!-- Сетка карточек -->
+    <section class="section">
+        <div class="cards" id="certificate-container">
+            
+            <!-- Карточка 1 -->
+            <div class="card certificate-card">
+                <div class="card-image">
+                    <img src="images/certificates/img_HTML_сertificate.png" alt="HTML Essentials Certificate" class="cert-preview">
+                </div>
+                <h3>HTML Essentials</h3>
+                <p class="cert-meta"><strong>Issued by:</strong> Cisco Networking Academy</p>
+                <p class="cert-meta"><strong>Date:</strong> October 2025</p>
+                <a href="achievements/html_essentials_cours.html" class="btn">More Details</a>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="card certificate-card">
+                <div class="card-image">
+                    <img src="images/certificates/img_css_сertificate.png" alt="CSS Essentials Certificate" class="cert-preview">
+                </div>
+                <h3>CSS Essentials</h3>
+                <p class="cert-meta"><strong>Issued by:</strong> Cisco Networking Academy</p>
+                <p class="cert-meta"><strong>Date:</strong> December 2025</p>
+                <a href="achievements/CSS_essentials_cours.html" class="btn">More Details</a>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="card certificate-card">
+                <div class="card-image">
+                    <img src="images/certificates/img_english_for_it_сertificate.png" alt="English for IT Certificate" class="cert-preview">
+                </div>
+                <h3>English for IT</h3>
+                <p class="cert-meta"><strong>Issued by:</strong> Cisco Networking Academy</p>
+                <p class="cert-meta"><strong>Date:</strong> September 2025</p>
+                <a href="achievements/English_for_IT_cours.html" class="btn">More Details</a>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="card certificate-card">
+                <div class="card-image">
+                    <img src="images/certificates/Testing_EPAM_sertificate.png" alt="Software testing introduction certificate" class="cert-preview">
+                </div>
+                <h3>Software Testing introduction</h3>
+                <p class="cert-meta"><strong>Issued by:</strong> EPAM campus</p>
+                <p class="cert-meta"><strong>Date:</strong> November 2025</p>
+                <a href="achievements/QA_basic.html" class="btn">More Details</a>
+            </div>
+
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- 📞 FOOTER -->
+<footer class="footer">
+    <p>© 2026 Volha Shunko</p>
+    <p>Contact: <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener" aria-label="LinkedIn (opens in a new window)">LinkedIn</a></p>
+</footer>
+
+</body>
+</html>
