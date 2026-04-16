@@ -120,7 +120,7 @@ loadBug();
 //*CARDS*//
 async function loadBugs() {
     try {
-        const response = await fetch('../bugs.json');
+        const response = await fetch('bugs.json');
         const bugs = await response.json();
 
         const container = document.getElementById('cards-container');
