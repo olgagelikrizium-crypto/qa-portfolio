@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tester and developer beginner Volha Shunko portfolio">
+    <meta property="og:title" content="QA Portfolio | Volha Shunko">
+    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
+    <meta property="og:image" content="images/hero/img_me_foto.png"> 
+    <title>QA Portfolio | Volha Shunko</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- 🔝 HEADER -->
+<header class="header">
+    <div class="header-content">
+    <h1>Volha Shunko</h1>
+    <p>QA Tester | Web Testing | Bug Reporting</p>
+    <a href="portfolio.html" class="btn-primary">View My Work</a>
+    </div>
+    
+</header>
+
+<!-- 🧭 NAVIGATION -->
+<nav class="nav">
+
+    <!-- 🔘 БУРГЕР -->
+    <button 
+    type="button" 
+    class="burger" 
+    onclick="toggleMenu()" 
+    aria-label="Open menu" 
+    aria-expanded="false" 
+    aria-controls="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+
+    <!-- 📋 МЕНЮ -->
+    <ul id="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="notes.html">QA Notes</a></li>
+        <li><a href="contact.html" class="contact-btn active">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- 📦 MAIN -->
+<main class="container">
+    <!-- Секция с формой -->
+    <section class="section contact-centered">
+        <h1>Contact Me</h1>
+        <p class="contact-description">Please feel free to reach out to me if you believe my skills could be of use to your projects. I am always open to discussing new opportunities.</p>
+
+        <!-- Карточка формы теперь имеет ограниченную ширину и центрирована -->
+        <div class="card contact-form-card">
+            <form action="https://formspree.io/f/xojyeawn" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name <span aria-hidden="true" style="color: red;">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span aria-hidden="true" style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span aria-hidden="true" style="color: red;">*</span></label>
+                    <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+                </div>
+
+                <!-- Контейнер для кнопки, чтобы она была по центру -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Секция с соцсетями -->
+    <section class="section contact-centered">
+        <h2>Other ways to connect</h2>
+        <p>You can also find me on professional platforms:</p>
+        <div class="about-links center-links">
+            <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </section>
+</main>
+<!-- 📞 FOOTER -->
+<footer class="footer">
+    <p>© 2026 Volha Shunko</p>
+    <p>Contact: <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener" aria-label="LinkedIn (opens in a new window)">LinkedIn</a></p>
+</footer>
+</body>
+</html>
