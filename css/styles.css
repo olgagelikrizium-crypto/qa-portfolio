@@ -55,7 +55,7 @@ body {
 /*HEADER*/
 
 .header {
-    background-image: url("images/banners/img_banner.png");
+    background-image: url("../images/banners/img_banner.png");
     background-size: cover;
     background-position: center;
     min-height: 250px;
@@ -246,6 +246,18 @@ body {
 
 .section {
     margin-bottom: 1.25rem;
+}
+.section h2 {
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+}
+
+.section ul {
+    display: inline-block;
+    text-align: left;
 }
 
 .about {
