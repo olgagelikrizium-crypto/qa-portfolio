@@ -397,7 +397,37 @@
     "comments": "Such behavior is observed three times one by one",
     "evidence": null,
     "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   }
+   },
+   {
+    "id": "Web 175",
+    "title": "Incorrect redirection to SCB license via the [5,500]+ global CFD markets] link on the \"AUD/CAD trading guide\" page ",
+    "context": "Online trading platform (CFD and Forex) with educational content and market guides",
+    "date": "14.05.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop (Intel Core i5-10300H, 12GB RAM)"
+    ],
+    "steps": [
+     "Navigate to capital.com",
+     "Select FCA license",
+     "Select EN language",
+     "Scroll down to the Footer",
+     "Click on the [Forex course] link",
+     "Scroll down to the \"Forex trading for intermediate traders\" block",
+     "Click on the [How to trade AUD/CAD] link",
+     "Scroll down to the \"How to trade AUD to Canadian dollar\"block",
+     "Observe the [5,500]+ global CFD markets] link"
+    ],
+    "actual": "The link redirects to the SCB license page (en-int) instead of FCA (en-gb). Additionally, an unexpected ']' character is displayed in the link text, and the page opens in a new tab.",
+    "expected": "The link redirects to the corresponding page under the FCA license (en-gb) in the same tab, with no extra characters in the text.",
+    "comments": "The visual defect (extra ']' character) is reproducible across all licenses when the EN language is selected. Furthermore, at step 7, the [How to trade AUD/CAD] link opens in a new tab, which violates the internal linking standards of the project.",
+    "evidence": "../videos/Web_175",
+    "note": "No video available due to NDA"
+}
 
 
 
