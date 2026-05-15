@@ -425,9 +425,37 @@
     "actual": "The link redirects to the SCB license page (en-int) instead of FCA (en-gb). Additionally, an unexpected ']' character is displayed in the link text, and the page opens in a new tab.",
     "expected": "The link redirects to the corresponding page under the FCA license (en-gb) in the same tab, with no extra characters in the text.",
     "comments": "The visual defect (extra ']' character) is reproducible across all licenses when the EN language is selected. Furthermore, at step 7, the [How to trade AUD/CAD] link opens in a new tab, which violates the internal linking standards of the project.",
-    "evidence": "../videos/Web_175",
+    "evidence": "../videos/Web_175.mp4",
     "note": "No video available due to NDA"
-}
+},
+{
+    "id": "Web 101",
+    "title": "The block title is not translated into Arabic on the 'Shares' instrument page",
+    "context": "Online trading platform with localized content for SCA license",
+    "date": "24.04.2026",
+    "type": "Functional",
+    "severity": "Minor",
+    "priority": "Low",
+    "environment": [
+      "OS: Windows 11, Android 14",
+      "Browser: Chrome 147",
+      "Device: Desktop, POCO X5 Pro 5G"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCA license",
+      "Select AR language",
+      "Hover over the menu item [األسواق] (Markets)",
+      "Click on the menu item [األسھم] (Shares)",
+      "Select any instrument (e.g., TSLA)",
+      "Scroll down to the 'Latest Shares articles' block"
+    ],
+    "actual": "The block title is not translated into AR and remains in English",
+    "expected": "The block title is correctly translated into the selected Arabic language [3]",
+    "comments": "Reproducible for all trading instruments under the SCA license in AR localization",
+    "evidence": "../videos/Bug_101.mp4",
+    "note": "No video available due to NDA"
+  }
 
 
 
