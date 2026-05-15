@@ -455,7 +455,67 @@
     "comments": "Reproducible for all trading instruments under the SCA license in AR localization",
     "evidence": "../videos/Bug_101.mp4",
     "note": "No video available due to NDA"
-  }
+  },
+  {
+    "id": "Web 174",
+    "title": "The [US Wall Street 30] link on the 'US 500' page is redirected to the ASIC license page instead of the FCA license",
+    "context": "Online trading platform with multi-license educational content and market guides",
+    "date": "14.05.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Scroll down to the Footer",
+      "Click on the [Sitemap] link",
+      "Scroll down to the 'Markets' section",
+      "Click on the [US 500] link",
+      "Scroll down to the 'The US 500 index' block",
+      "Click on the [US Wall Street 30] link"
+    ],
+    "actual": "The page is opened under the ASIC license (URL contains 'en-au') instead of the expected FCA license ('en-gb')",
+    "expected": "The corresponding page is opened under the FCA license (URL contains 'en-gb')",
+    "comments": "The bug is also reproduced for other links in the same block, such as [get support], [in-depth educational support], or [go to analysis]",
+    "evidence": "../videos/Web_174.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 95 (Loc)",
+    "title": "An extra dollar sign '$' is displayed on the instrument page when the SCA license and AR language are selected",
+    "context": "Online trading platform (instrument tooltips and modals)",
+    "date": "24.04.2026",
+    "type": "Non-functional",
+    "severity": "Trivial",
+    "priority": "Low",
+    "environment": [
+      "OS: Windows 11, Android 14",
+      "Browser: Chrome 147",
+      "Device: Desktop, POCO X5 Pro 5G"
+    ],
+    "steps": [
+     "Navigate to capital.com",
+     "Select SCA license",
+     "Select AR language",
+     "Hover over the [األسواق] (Markets) menu section",
+     "Click the [األسھم] (Shares) menu item",
+     "Scroll down to the instrument table",
+     "Click any instrument (e.g., TSLA)",
+     "Hover over the tooltip 'رسوم التبییت على مركز البیع' (Short position overnight fee) or 'رسوم التبییت على مركز الشراء' (Long position overnight fee)",
+     "Observe the modal window"
+    ],
+    "actual": "The extra dollar sign '$' is displayed in the modal window",
+    "expected": "The extra dollar sign '$' is not displayed in the modal window",
+    "comments": "This issue is also reproducible when [الفوركس] (Forex), [المؤشرات] (Indices), [السلع] (Commodities), or [العمالت المشفرة] (Cryptocurrencies) menu items are selected [1, 2].",
+    "evidence": "../videos/Bug_extra_dollar_sign_AR.mp4",
+    "note": "No video available due to NDA"
+}
 
 
 
