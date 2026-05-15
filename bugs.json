@@ -453,7 +453,7 @@
     "actual": "The block title is not translated into AR and remains in English",
     "expected": "The block title is correctly translated into the selected Arabic language [3]",
     "comments": "Reproducible for all trading instruments under the SCA license in AR localization",
-    "evidence": "../videos/Bug_101.mp4",
+    "evidence": "../videos/Web_101.mp4",
     "note": "No video available due to NDA"
   },
   {
@@ -513,7 +513,144 @@
     "actual": "The extra dollar sign '$' is displayed in the modal window",
     "expected": "The extra dollar sign '$' is not displayed in the modal window",
     "comments": "This issue is also reproducible when [الفوركس] (Forex), [المؤشرات] (Indices), [السلع] (Commodities), or [العمالت المشفرة] (Cryptocurrencies) menu items are selected [1, 2].",
-    "evidence": "../videos/Bug_extra_dollar_sign_AR.mp4",
+    "evidence": "../videos/Web_95.mp4",
+    "note": "No video available due to NDA"
+},
+{
+    "id": "Web 106",
+    "title": "The [About] menu is not scrolled to the bottom and lower items are not displayed in the Header when FCA license and EN language are selected",
+    "context": "Header navigation menu and submenus",
+    "date": "24.04.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "Monitor: 15.6 inch",
+      "Resolution: 1920x1080",
+      "Browser Zoom: 100%",
+      "Browser: Chrome 147"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Hover over the [About] menu section in the Header",
+      "Try to scroll the list of menu items to the bottom"
+    ],
+    "actual": "The menu is not scrolled to the bottom, and the lower menu items (e.g., 'Contact us') are not displayed and cannot be clicked.",
+    "expected": "The menu is fully scrollable to the bottom, and all items are visible and accessible.",
+    "comments": "The issue is reproduced on specific screen sizes (15.6 inch) at 100% zoom. Decreasing the zoom makes items visible, but it violates usability standards.",
+    "evidence": "../videos/Web_106.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 107 (Loc)",
+    "title": "Words starting with the letter 'R' are displayed in the 'S' section on the Glossary page when CYSEC license and HU language are selected",
+    "context": "Educational content - Financial Glossary",
+    "date": "27.04.2026",
+    "type": "Non-functional",
+    "severity": "Trivial",
+    "priority": "Low",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select CYSEC license (Hungary)",
+      "Select HU language",
+      "Hover over the [Tanuljon] (Learn) menu section",
+      "Click the [Penzugyi szojegyzek] (Glossary) menu item",
+      "Scroll down to the 'S' section",
+      "Pay attention to the last two words in this section"
+    ],
+    "actual": "Words starting with the letter 'R' are displayed at the end of the 'S' section",
+    "expected": "Words starting with the letter 'R' are correctly placed in the 'R' section",
+    "comments": "Reproducible specifically for the Hungarian localization under CYSEC license.",
+    "evidence": "../videos/Web_107(loc).mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 108",
+    "title": "A different screen with the [Search markets] button is momentarily displayed after clicking [Sell] or [Buy] on a trade instrument page",
+    "context": "Trading instrument interaction and page transitions",
+    "date": "27.04.2026",
+    "type": "Non-functional",
+    "severity": "Trivial",
+    "priority": "Low",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Hover over the [Markets] menu section",
+      "Click on the [Commodities] menu item",
+      "Select any instrument (e.g., Gold)",
+      "Click the [Sell] or [Buy] button",
+      "Observe the screen rendering"
+    ],
+    "actual": "A screen with the [Search markets] button and 'Add markets to Charts' text is momentarily displayed (flickers) during the transition.",
+    "expected": "The transition to the trading platform occurs smoothly without displaying intermediate irrelevant screens.",
+    "comments": "The issue is visible at 00:20 in the attached evidence. It appears to be a rendering glitch of the trading UI components.",
+    "evidence": "../videos/Web_108.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 109",
+    "title": "Anchor links do not lead to the corresponding blocks on the first click on the 'Cryptos vs stocks' page",
+    "context": "Internal page navigation via 'Contents' block",
+    "date": "28.04.2026",
+    "type": "Functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select any license (except FCA)",
+      "Open the 'Cryptos vs stocks: how do you trade them?' page",
+      "Wait for the page to load completely",
+      "Click on any anchor link in the 'Contents' block (e.g., [How crypto and stocks trading are similar])"
+    ],
+    "actual": "The page is scrolled to an incorrect block (e.g., 'Liquidity') instead of the target section on the first click.",
+    "expected": "The page scrolls correctly to the corresponding block on the first and every subsequent click.",
+    "comments": "The bug is reproduced only on the first click after the page is loaded. On subsequent clicks, links work as expected. Reproduced across all licenses except FCA.",
+    "evidence": "../videos/Web_109.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 105",
+    "title": "The button [Open an account] on the banner 'Award-winning platform for UK traders' on the Main page is redirected to the Main page in a new tab when FCA license and EN language are selected",
+    "context": "Online trading platform Main page marketing banners",
+    "date": "27.04.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+     "Navigate to capital.com",
+     "Select FCA license",
+     "Select EN language",
+     "Click the [Professional] tab",
+     "Scroll down to the bottom of the banner 'Award-winning platform for UK traders'",
+     "Click the [Open an account] button"
+    ],
+    "actual": "The same page is opened in a new tab (loop redirect) instead of opening the Sign Up form.",
+    "expected": "The Sign Up form is opened in the same tab.",
+    "comments": "The issue is reproducible for both Unregistered and Authorized users. During the review, a missing step in the STR was identified and corrected, and the title was adjusted to meet the 'What? Where? When?' standard.",
+    "evidence": "../videos/Web_105.mp4",
     "note": "No video available due to NDA"
 }
 
