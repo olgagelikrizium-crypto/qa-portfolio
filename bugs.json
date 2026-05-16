@@ -1025,7 +1025,344 @@
     "comments": "Quotes by Blagoy Dafkov and Kacper Miszczak contain untranslated professional titles [16].",
     "evidence": "../videos/Web_150.mp4",
     "note": "No video available due to NDA"
-  }
+  },
+  {
+    "id": "Web 153",
+    "title": "The [Research report] anchor link is not scrolled to the 'Research report' block in the 'Contents' block on the 'Investor Relations' page",
+    "context": "Internal page navigation via anchor links",
+    "date": "08.05.2026",
+    "type": "Functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB or FCA license",
+      "Select EN language",
+      "Hover over the [About] menu section",
+      "Click on the [Investor Relations] menu item",
+      "Scroll down to the 'Contents' block",
+      "Click the [Research report] anchor link"
+    ],
+    "actual": "The page is not scrolled to the corresponding block if clicked for the first time after page load.",
+    "expected": "The page scrolls correctly to the 'Research report' block on the first and every subsequent click.",
+    "comments": "Issue is always reproducible if clicked first from the list. Similar to Web 530/548 (2025).",
+    "evidence": "../videos/Web_153.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 154",
+    "title": "Inconsistent naming of the 'Payments and withdrawals' page across navigation, breadcrumbs, and page banner",
+    "context": "UI/UX consistency - page naming",
+    "date": "08.05.2026",
+    "type": "Non-functional",
+    "severity": "Trivial",
+    "priority": "Low",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCA or ASIC license",
+      "Select EN language",
+      "Hover over the [Pricing] menu section",
+      "Click on the [Payments and Withdrawals] menu item",
+      "Observe the page banner title"
+    ],
+    "actual": "The banner title is displayed as 'Deposits and withdrawals', which differs from the navigation name.",
+    "expected": "The page name is consistent across navigation, breadcrumbs, and the page banner.",
+    "comments": "Naming mismatch between navigation menu and the actual page content.",
+    "evidence": "../videos/Web_154.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 157 (Loc)",
+    "title": "The [Learn to trade] link in the Sitemap is not translated into Hungarian",
+    "context": "Sitemap page localization for CySEC license",
+    "date": "09.05.2026",
+    "type": "Non-functional",
+    "severity": "Minor",
+    "priority": "Low",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select CySEC license",
+      "Select HU language",
+      "Scroll down to the Footer",
+      "Click on the [Oldaltérkép] (Sitemap) link",
+      "Observe the [Learn to trade] link in the list"
+    ],
+    "actual": "The link [Learn to trade] remains in English while other elements are translated.",
+    "expected": "All links on the Sitemap page are correctly translated into Hungarian.",
+    "comments": "Localization leak on the sitemap page specifically for the Hungarian locale.",
+    "evidence": "../videos/Web_157.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 159 (Loc)",
+    "title": "The [próbafiók] (demo account) link on the 'Kockázatkezelés' page is redirected to the Sign-up form in English",
+    "context": "Functional localization - redirection to English form",
+    "date": "10.05.2026",
+    "type": "Functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select CySEC, SCB or SCA license",
+      "Select HU language",
+      "Navigate to the 'Kockázatkezelés' (Risk-management) page",
+      "Click on the [próbafiók] (demo account) link"
+    ],
+    "actual": "The link opens the Sign-up form in English instead of Hungarian.",
+    "expected": "The link opens the localized Hungarian Sign-up form.",
+    "comments": "Incorrect localization path for the registration form trigger.",
+    "evidence": "../videos/Web_159.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 162",
+    "title": "The reference indicator '¹' is missing from the Main page text under FCA license",
+    "context": "Legal compliance - missing footnote indicators",
+    "date": "11.05.2026",
+    "type": "Non-functional",
+    "severity": "Trivial",
+    "priority": "Low",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Observe the main text on the Homepage",
+      "Compare with the footnote explanation above the footer"
+    ],
+    "actual": "The superscript '¹' is missing from the main text body.",
+    "expected": "The reference indicator '¹' is displayed as a superscript corresponding to the legal footnote.",
+    "comments": "The footnote exists at the bottom, but the reference in the text is absent.",
+    "evidence": "../videos/Web_162.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 165",
+    "title": "The [Daniela Hathorn] and [Kyle Rodda] links are incorrectly redirected to the 'Technical Analysis' page",
+    "context": "Functional - incorrect redirection on 'Market analysis' page",
+    "date": "12.05.2026",
+    "type": "Functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Hover over [Markets] and click [Market analysis]",
+      "Scroll down to the 'Our market analysts' block",
+      "Click the [Daniela Hathorn] or [Kyle Rodda] links"
+    ],
+    "actual": "The links redirect to the 'Technical Analysis' section instead of the authors' personal article pages.",
+    "expected": "The links lead to the specific analyst's profile or list of articles.",
+    "comments": "Broken author attribution logic in the 'Our market analysts' block.",
+    "evidence": "../videos/Web_165.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 166",
+    "title": "The [https://capital.com/] link in legal documents leads to the SCB license main page instead of the selected license",
+    "context": "Legal documentation - cross-license redirection",
+    "date": "12.05.2026",
+    "type": "Functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 147",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Click the [T&Cs] link in the footer to open 'Client Agreement'",
+      "Scroll to page 3",
+      "Click the [https://capital.com/] link"
+    ],
+    "actual": "The link leads to the SCB license main page (en-int).",
+    "expected": "The link leads to the main page of the selected license (e.g., FCA en-gb).",
+    "comments": "Reproducible for FCA and ASIC licenses. Legal documents contain hardcoded SCB links.",
+    "evidence": "../videos/Web_166.mp4",
+    "note": "No video available due to NDA"
+  },
+ {
+    "id": "Web 173",
+    "title": "The [get support], [in-depth educational support], [go to analysis] links in the 'What to expect with your CFD account' block on the 'CFD trading' page are redirected to the ASIC license page instead of the FCA license when the FCA license and EN language are selected",
+    "context": "Online trading platform educational content and license redirection",
+    "date": "14.05.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Hover over the [Trading] menu section in the Header",
+      "Click on the [CFD trading] menu item in the [Ways to trade] menu title",
+      "Scroll down to the 'What to expect with your CFD account' block",
+      "Click on the [Get support] link on the '24/7 customer care' tile"
+    ],
+    "actual": "The pages are opened under the ASIC license (URL contains 'en-au') instead of the FCA license ('en-gb').",
+    "expected": "The corresponding pages are opened under the current FCA license (URL contains 'en-gb').",
+    "comments": "The bug is also reproduced for the [In-depth educational support] link and the [Go to analysis] link in the same block.",
+    "evidence": "../videos/Web_173.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 176",
+    "title": "The [forex CFD] and the [interest rate] links lead to the SCB license in the 'Factors influencing the GBP/CAD' block on the 'Your guide to trading the GBP/CAD Forex pair' page when FCA or CYSEC license and EN language are selected",
+    "context": "Market guide navigation and regional license redirection",
+    "date": "15.05.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA or CYSEC license",
+      "Select EN language",
+      "Scroll down to the Footer",
+      "Click on the [Forex course] link",
+      "Scroll down to the 'Forex trading for advanced traders' block",
+      "Click on the [How to trade GBP/CAD] link",
+      "Scroll down to the 'How to trade GBP/CAD' block",
+      "Click on the [forex CFD] or [interest rate] link"
+    ],
+    "actual": "Redirection occurs to the SCB license page. Additionally, at step 7, the [How to trade GBP/CAD] link opens the page in a new tab.",
+    "expected": "The page opens under the current license (FCA/CYSEC) in the same tab.",
+    "comments": "The behavior violates project standards: internal links must open in the same tab, and redirects must respect the selected license.",
+    "evidence": "../videos/Web_176.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 177",
+    "title": "The [120+forex CFDs] link lead to the SCB license in the 'Why is the GBP/JPY an important market?' block on the 'Your guide to trading the GBP/JPY pair' page when FCA license and EN language are selected",
+    "context": "Educational market guides and license consistency",
+    "date": "16.05.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Scroll down to the Footer",
+      "Click on the [Forex course] link",
+      "Scroll down to the 'Forex trading for intermediate traders' block",
+      "Click on the [How to trade GBP/JPY] link",
+      "Scroll down to the 'Why is the GBP/JPY an important market?' block",
+      "Click on the [120+forex CFDs] link"
+    ],
+    "actual": "The page opens under the SCB license instead of FCA. Also, at step 7, the [How to trade GBP/JPY] link opens in a new tab.",
+    "expected": "The page opens under the FCA license (en-gb) in the same tab.",
+    "comments": "Incorrect regional redirection and UX violation (new tab for internal link).",
+    "evidence": "../videos/Web_177.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 178",
+    "title": "The [pip] link lead to the SCB license in the 'FAQ' block on the 'Your guide to trading the GBP/JPY pair' page when FCA license and EN language are selected",
+    "context": "FAQ accordion navigation and regional redirection",
+    "date": "16.05.2026",
+    "type": "Functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Scroll down to the Footer",
+      "Click on the [Forex course] link",
+      "Scroll down to the 'Forex trading for intermediate traders' block",
+      "Click on the [How to trade GBP/JPY] link",
+      "Scroll down to the 'FAQ' block",
+      "Click on the 'I keep seeing the word pip, what does that mean?' accordion item",
+      "Click on the [pip] link"
+    ],
+    "actual": "The link leads to the SCB license page. Furthermore, at step 7, the [How to trade GBP/JPY] link opens in a new tab.",
+    "expected": "The [pip] link leads to the corresponding page under the FCA license in the same tab.",
+    "comments": "Systemic license leak in the FAQ section of the market guides.",
+    "evidence": "../videos/Web_178.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 179",
+    "title": "The [forex CFD] link lead to the SCB license in the 'Factors influencing the GBP/AUD' block on the 'Your guide to trading the GBP/AUD Forex pair' page when FCA license and EN language are selected",
+    "context": "Functional redirection error in advanced market guides",
+    "date": "16.05.2026",
+    "type": "Non-functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Scroll down to the Footer",
+      "Click on the [Forex course] link",
+      "Scroll down to the 'Forex trading for advanced traders' block",
+      "Click on the [How to trade GBP/AUD] link",
+      "Scroll down to the 'Factors influencing the GBP/AUD' block",
+      "Click on the [forex CFD] link"
+    ],
+    "actual": "Redirection occurs to the SCB license page instead of FCA. At step 7, the [How to trade GBP/AUD] link also opens in a new tab.",
+    "expected": "The link leads to the corresponding page under the FCA license in the same tab.",
+    "comments": "The redirection issues are consistent across several currency pair guide pages in the Forex course section.",
+    "evidence": "../videos/Web_179.mp4",
+    "note": "No video available due to NDA"
+  } 
 
 
 
