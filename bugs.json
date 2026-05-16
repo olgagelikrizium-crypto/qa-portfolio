@@ -54,7 +54,7 @@
     "actual": "The link [learn about strategies] is redirected to the page \"Market Analysis\"",
     "expected": "The link [learn about strategies] is redirected to the page \"Trading strategies\"",
     "comments": "Repeated issue when ASIC, FCA, SCA, SCB or CYSEC license and EN, AR, DE, ES, FR, RU,ZH(Traditional), ZH(Simplified), PL, HU, IT, or NL language are selected.",
-    "evidence": "../videos/irrelevant_content_FAQ.mp4",
+    "evidence": "../videos/Irrelevant_content_FAQ.mp4",
     "note": "No video available due to NDA"
   },
 
@@ -732,7 +732,7 @@
     "actual": "The block displays 'offices across Europe, Asia and Australia' (3 continents), which is inconsistent with other sections stating 4 continents [3].",
     "expected": "Unified information about four continents is displayed in the 'Where we work' block [4].",
     "comments": "Reproducible across SCA (EN/AR), CYSEC (EN/PL/EL), and ASIC (EN) licenses.",
-    "evidence": "../Web_146.mp4",
+    "evidence": "../videos/Web_146.mp4",
     "note": "No video available due to NDA"
   },
   {
