@@ -76,7 +76,7 @@ body {
 }
 
 
-.header p {
+.header p :not(.hero-title){
     font-size: 18px;
 }
 
