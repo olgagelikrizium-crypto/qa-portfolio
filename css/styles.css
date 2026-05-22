@@ -244,6 +244,27 @@ body {
     width: 100%;
 }
 
+.filter-panel {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#projectFilter,
+#severityFilter {
+    padding: 8px 12px;
+    font-size: 16px;
+    min-width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 20;
+    background: white;
+}
+
 .container {
     padding: 15px;
 }

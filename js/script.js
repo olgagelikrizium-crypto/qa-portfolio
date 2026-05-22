@@ -121,9 +121,24 @@ loadBug();
 async function loadBugs() {
     try {
         const response = await fetch('bugs.json');
-        const bugs = await response.json();
+        let bugs = await response.json();
 
         const container = document.getElementById('cards-container');
+        container.innerHTML = '';
+
+        // Получаем выбранный проект
+const selectedProject = document.getElementById('projectFilter')?.value;
+const selectedSeverity = document.getElementById('severityFilter')?.value;
+
+// Фильтрация по project
+if (selectedProject) {
+    bugs = bugs.filter(bug => bug.project === selectedProject);
+}
+
+// Фильтрация по severity
+if (selectedSeverity) {
+    bugs = bugs.filter(bug => bug.severity === selectedSeverity);
+}
 
         bugs.forEach(bug => {
             let severityClass = '';
@@ -131,28 +146,26 @@ async function loadBugs() {
             if (bug.severity.toLowerCase() === 'critical') severityClass = 'critical';
             if (bug.severity.toLowerCase() === 'major') severityClass = 'major';
             if (bug.severity.toLowerCase() === 'minor') severityClass = 'minor';
-            if (bug.severity.toLowerCase() === 'trivial') severityClass = 'trivial'
+            if (bug.severity.toLowerCase() === 'trivial') severityClass = 'trivial';
 
             let priorityClass = '';
 
             if (bug.priority.toLowerCase() === 'high') priorityClass = 'high';
             if (bug.priority.toLowerCase() === 'medium') priorityClass = 'medium';
             if (bug.priority.toLowerCase() === 'low') priorityClass = 'low';
-            
-
 
             const card = document.createElement('div');
             card.classList.add('card');
 
-            
             card.innerHTML = `
                 <h3>${bug.title}</h3>
+                <p><strong>Project:</strong> ${bug.project || 'Not specified'}</p>
                 <p><strong>Type:</strong><span class="badge type">${bug.type}</span></p>
                 <p><strong>Severity:</strong> <span class="badge badge-${severityClass}">${bug.severity}</span></p>
                 <p><strong>Priority:</strong> <span class="badge badge-${priorityClass}">${bug.priority}</span></p>
                 <p>${bug.context}</p>
                 <a href="bugs/bug.html?id=${bug.id}" class="btn">View Details</a>
-                `;
+            `;
 
             container.appendChild(card);
         });
@@ -160,7 +173,7 @@ async function loadBugs() {
     } catch (error) {
         console.error('Error loading bugs:', error);
     }
-}
+}    
 
 document.addEventListener('DOMContentLoaded', loadBugs);
 
