@@ -1362,7 +1362,465 @@
     "comments": "The redirection issues are consistent across several currency pair guide pages in the Forex course section.",
     "evidence": "../videos/Web_179.mp4",
     "note": "No video available due to NDA"
-  } 
+  },
+    {
+    "id": "Web 185",
+    "title": "The [initial public offering (IPO)] link on the 'Trade Netflix Inc - NFLX CFD' block is redirected to the ASIC license page and in a new tab instead of the FCA license when the FCA license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "18.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Hover over the [Markets] menu section",
+      "Click on the [Shares] menu item in the [Our markets] menu title",
+      "Scroll down to the 'Shares and ETF markets' block",
+      "Type the 'NFLX' text into the input field",
+      "Select 'NFLX' search result",
+      "Scroll down to the 'Trade Netflix Inc - NFLX CFD' block",
+      "Click on the [initial public offering (IPO)] link"
+    ],
+    "actual": "The page is opened under the ASIC license and in a new tab.",
+    "expected": "The page is opened under the FCA license in the same tab.",
+    "comments": "Internal link logic violation: should remain within the current jurisdiction and open in the current tab.",
+    "evidence": "../videos/Web_185.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 192",
+    "title": "The [balance sheet] link on the 'What are capital goods?' page is redirected to the SCB license instead of the FCA license when the FCA license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "18.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Click on the search icon in the header",
+      "Type 'capital goods definition' text into input field",
+      "Select the [What are capital goods?] item from 'Glossary' block in search results",
+      "Scroll down to the 'What do you need to know about capital goods?' block",
+      "Click the [balance sheet] link"
+    ],
+    "actual": "The page is opened under the SCB license (URL contains en-int) in the new tab.",
+    "expected": "The 'What is a balance sheet?' page for the FCA license is opened (URL contains en-gb) in the same tab.",
+    "comments": "Redirection error leads user away from regional license compliance.",
+    "evidence": "../videos/Web_192.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 195",
+    "title": "The [brokerages] link on the 'What is capital?' page is redirected to the SCB license instead of the FCA license when the FCA license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "18.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Click on the search icon in the header",
+      "Type 'capital' text into input field",
+      "Select the [What is capital?] item from 'Glossary' block in search results",
+      "Scroll down to the 'Trading capital' sub-block in 'Conclusion' block",
+      "Click the [brokerages] link"
+    ],
+    "actual": "The page is opened under the SCB license (URL contains en-int).",
+    "expected": "The corresponding page is opened under the FCA license (URL contains en-gb).",
+    "comments": "License leakage in educational glossary articles.",
+    "evidence": "../videos/Web_195.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 196",
+    "title": "The [long-legged doji] link on the 'Doji candlestick pattern: What it is & how it works' page is redirected to the CYSEC license instead of the FCA license when the FCA license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "18.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Click on the search icon in the header",
+      "Type 'doji candlestick' text into input field",
+      "Select the [Doji candlestick pattern: What it is & how it works] item from 'About us' block in search results",
+      "Scroll down to the 'Key takeaways' block",
+      "Click the [long-legged doji] link"
+    ],
+    "actual": "The page is opened under the CYSEC license (URL contains en-eu).",
+    "expected": "The corresponding page is opened under the FCA license (URL contains en-gb).",
+    "comments": "Incorrect cross-linking between jurisdictional subdomains.",
+    "evidence": "../videos/Web_196.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 200",
+    "title": "The [Aevex Corp.] link on the 'All markets & Instrument' page is redirected to a 404 error page when any license is selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "19.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the 'Markets' section",
+      "Click the [All markets & Instrument] link",
+      "Click the [Aevex Corp.] link"
+    ],
+    "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
+    "expected": "The corresponding trading instrument page (e.g., 'Trade Aevex Corp CFD') is opened.",
+    "comments": "The issue appears to be caused by an additional '-1' suffix in the URL.",
+    "evidence": "../videos/Web_200.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 203",
+    "title": "The [A2A SPA] link on the 'All Markets & Instruments' page is redirected to a page with the '404 error' text when CMA or SCB license and EN or AR language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "19.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB or CMA license",
+      "Select EN or AR language",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the 'Markets' section",
+      "Click the [All markets & Instrument] link",
+      "Click the [A2A SPA] link"
+    ],
+    "actual": "The 404 error page is opened instead of the instrument page.",
+    "expected": "The corresponding trading instrument page (e.g., 'Trade A2A SPA - A2A CFD') is opened.",
+    "comments": "Broken link on the consolidated markets list.",
+    "evidence": "../videos/Web_203.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 204",
+    "title": "The [Aeva Technologies, Inc] link on the 'All Markets & Instruments' page is redirected to a 404 error page when CMA, ASIC or SCB license and EN or AR language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "19.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB, ASIC or CMA license",
+      "Select EN or AR language",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the 'Markets' section",
+      "Click the [All markets & Instrument] link",
+      "Click the [Aeva Technologies, Inc] link"
+    ],
+    "actual": "A 404 error page is opened; the link redirects to a broken path.",
+    "expected": "The corresponding trading instrument page (e.g., 'Trade Aeva Technologies, Inc. - AEVA CFD') is opened.",
+    "comments": "Systemic broken link issue affecting multiple instruments on the All Markets page.",
+    "evidence": "../videos/Web_204.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 205",
+    "title": "The [AB Dynamics pic] link on the 'All Markets & Instruments' page leads to a 404 error page when CMA, ASIC or SCB license and EN or AR language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "19.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB, ASIC or CMA license",
+      "Select EN or AR language",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the 'Markets' section",
+      "Click the [All markets & Instrument] link",
+      "Click the [AB Dynamics pic] link"
+    ],
+    "actual": "The 404 error page is opened.",
+    "expected": "The corresponding trading instrument page (e.g., 'Trade AB Dynamics plc - ABDP CFD') is opened.",
+    "comments": "Verified link failure on the instrument directory page.",
+    "evidence": "../videos/Web_205.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 206",
+    "title": "The 'All Markets & Instruments' page is displayed empty after clicking the [All Markets & Instruments] link on the Sitemap page when SCB license and DE, ES, FR, RO, ZN languages are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "19.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB license",
+      "Select any (except EN and AR) language (e.g. DE)",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the 'Markte' (Markets) section",
+      "Click the [Alle Märkte und Instrumente verfügbar] (All markets & Instrument) link"
+    ],
+    "actual": "The page is opened, but it is completely empty; no instrument links or categories are present.",
+    "expected": "The 'All Markets & Instruments' page is opened and displays the full list of available trading instruments.",
+    "comments": "High visibility localization bug blocking access to all markets for specific regions.",
+    "evidence": "../videos/Web_206.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 183",
+    "title": "The [ Trading’s New Horizon: How Access, Innovation and Ambition Are Fuelling MENA’s E-Trading Boom] link on the 'MENA Emerges as a Global E-Trading Capital led by UAE’s Half-Trillion-Plus Trading Volumes' page is redirected to the CMA license page instead of the FCA license when the FCA license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "18.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Click on the search icon in the header",
+      "Type 'Global etrading' text into input field",
+      "Select the 'MENA Emerges as a Global E-Trading Capital led by UAE’s Half-Trillion-Plus Trading Volumes' search result",
+      "Scroll down to the [Trading’s New Horizon: How Access, Innovation and Ambition Are Fuelling MENA’s E-Trading Boom] link",
+      "Click the [Trading’s New Horizon: How Access, Innovation and Ambition Are Fuelling MENA’s E-Trading Boom] link"
+    ],
+    "actual": "The page is opened on the CMA license page instead of FCA.",
+    "expected": "The page is opened on the corresponding article under the FCA license.",
+    "comments": "Cross-license redirection error in news/analysis section.",
+    "evidence": "../videos/Web_183.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 188",
+    "title": "The 'Trade Netflix Inc - NFLX CFD' block contains no text (only the title is displayed) on the 'Trade Netflix Inc - NFLX CFD' page when the CMA license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "18.05.2026",
+    "type": "non-functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select CMA license",
+      "Select EN language",
+      "Hover over the [Markets] menu section",
+      "Click on the [Shares] menu item in the [Our markets] menu title",
+      "Scroll down to the 'Shares and ETF markets' block",
+      "Type the 'NFLX' text into the input field",
+      "Select 'NFLX' search result",
+      "Scroll down to the 'Trade Netflix Inc - NFLX CFD' block"
+    ],
+    "actual": "The 'Trade Netflix Inc - NFLX CFD' block contains no text; only the title is displayed.",
+    "expected": "Information about the trading instrument and descriptive text are displayed in the block.",
+    "comments": "Major content display issue for a key trading instrument.",
+    "evidence": "../videos/Web_188.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 199",
+    "title": "Broken images are displayed in the 'What do you need to know about return on equity?' block and in the 'DuPont Model' block on the 'What is return on equity (ROE)?' page when any license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "18.05.2026",
+    "type": "non-functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select any license (e.g. FCA)",
+      "Select EN language",
+      "Click the search icon in the header",
+      "Enter the 'ROE' text into the search input field",
+      "Click the [What is return on equity (ROE)?] item in the 'Glossary' block of search results",
+      "Pay attention to the 'What do you need to know about return on equity?' block",
+      "Pay attention to the 'DuPont Model' block"
+    ],
+    "actual": "Broken image icons are displayed in both the 'What do you need to know about return on equity?' and 'DuPont Model' blocks.",
+    "expected": "The corresponding images are displayed correctly in both blocks.",
+    "comments": "Visual defect affecting educational content across all licenses.",
+    "evidence": "../videos/Web_199.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 207",
+    "title": "The [نقدم لك المزيد من الأدوات لتداول ناجح] (We offer you more tools for successful trading) link is redirected to the SCB license instead of the CMA license on the 'تداول السندات' (Bond trading) page when the SCA license and AR language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "19.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11 Pro",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select CMA (SCA) license",
+      "Select AR language",
+      "Hover over the 'الأسواق' (Markets) menu section",
+      "Click on the [السندات] (Bonds) menu item",
+      "Scroll down to the 'نقدم لك المزيد من الأدوات لتداول ناجح' (We offer you more tools for successful trading) block",
+      "Click on the [نقدم لك المزيد من الأدوات لتداول ناجح] link"
+    ],
+    "actual": "The link redirects the user to the SCB license version of the site.",
+    "expected": "The link leads to the corresponding page under the current CMA (SCA) license.",
+    "comments": "Another instance of 'license leakage' on the Arabic localization of the SCA jurisdiction.",
+    "evidence": "../videos/Web_207.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Mob 19",
+    "title": "The [Sell] button is redirected to 'Instrument info' page when taped first time when ASIC license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "21.04.2026",
+    "type": "functional",
+    "severity": "Trivial",
+    "priority": "Low",
+    "environment": [
+      "Device: Xiaomi POCO X5 Pro 5G",
+      "OS: Android 14",
+      "Browser: Chrome 147"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select ASIC license",
+      "Select EN language",
+      "Tap on the [Markets] menu section",
+      "Scroll down to the 'All markets' block",
+      "Tap on any instrument (e.g. Silver)",
+      "Scroll down to the [Sell/Buy] buttons",
+      "Tap on the [Sell] button"
+    ],
+    "actual": "The Sign Up form with the options [Continue with Apple/Google/Email] is not opened; the user is redirected to the instrument info page.",
+    "expected": "The Sign Up form is opened with the registration options.",
+    "comments": "The bug is reproduced only on the first click on the [Sell] button after user authorization. On subsequent clicks, the button works as expected.",
+    "evidence": "../videos/Mob_19.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Mob 32",
+    "title": "The sign Up form is not opened after clicking on any [Log In] button (e.g. [Sign Up] button) when any license and language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "10.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "Device: Xiaomi POCO X5 Pro 5G",
+      "OS: Android 14",
+      "Browser: Chrome 147"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select any license and language",
+      "Tap on any [Log In] or [Sign Up] button in the interface"
+    ],
+    "actual": "The main page is simply refreshed or remains open; the form is not displayed.",
+    "expected": "The corresponding Sign Up or Log In form is opened.",
+    "comments": "Critical functional block preventing user entry and registration.",
+    "evidence": "../videos/Mob_32.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Mob 33",
+    "title": "The 'Regional settings' modal window is not opened after tapping the [Regional settings] button in the [Burger menu] when the CySEC license and any language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "date": "10.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "Device: Xiaomi POCO X5 Pro 5G",
+      "OS: Android 14",
+      "Browser: Chrome 147"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select any license (e.g. CySEC)",
+      "Select any language (e.g. EN)",
+      "Tap the [Burger menu]",
+      "Tap an arrow on the right side of any menu item (e.g. [Trading])",
+      "Scroll down to the [Regional setting] button",
+      "Tap the [Regional setting] button"
+    ],
+    "actual": "The main page is opened instead of the modal window.",
+    "expected": "The 'Regional settings' modal window is opened for country and language selection.",
+    "comments": "Navigation failure blocking access to regional and localization adjustments.",
+    "evidence": "../videos/Mob_33.mp4",
+    "note": "No video available due to NDA"
+  }
+
 
 
 
