@@ -699,6 +699,138 @@ body {
         flex-direction: column;
     }
 }
+/* =========================
+   STICKY AUDIO PLAYER
+========================= */
 
+.audio-player-wrapper {
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+/* =========================
+   PROFESSIONAL LESSON LAYOUT
+========================= */
 
+.lesson-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDEBAR */
+.lesson-sidebar {
+    width: 320px;
+    position: sticky;
+    top: 20px;
+    flex-shrink: 0;
+}
+
+/* RIGHT CONTENT */
+.lesson-main {
+    flex: 1;
+    min-width: 0;
+}
+
+/* transcript block */
+.transcript-block {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.timestamp {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.transcript-columns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.transcript-en,
+.transcript-ru {
+    flex: 1;
+    min-width: 300px;
+}
+
+.transcript-en h3,
+.transcript-ru h3 {
+    margin-bottom: 10px;
+}
+
+.transcript-en p,
+.transcript-ru p {
+    line-height: 1.7;
+}
+
+/* vocabulary badge spacing */
+#lesson-keywords .badge {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+}
+
+/* timestamps */
+#lesson-timestamps p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+    .lesson-layout {
+        flex-direction: column;
+    }
+
+    .lesson-sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .transcript-columns {
+        flex-direction: column;
+    }
+
+    .transcript-en,
+    .transcript-ru {
+        min-width: 100%;
+    }
+}
+.lesson-duration {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+/* =========================
+   VOCABULARY CARDS
+========================= */
+
+.vocab-card {
+    background: #f8f9fb;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.vocab-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.vocab-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+}
 

@@ -353,7 +353,7 @@ async function loadLesson() {
 
         // TITLE
         document.getElementById('lesson-title').innerText = lesson.title;
-        document.getElementById('lesson-duration').innerText = `Duration: ${lesson.duration}`;
+        document.getElementById('sidebar-duration').innerText = `Duration: ${lesson.duration}`;
 
         // AUDIO
         const audioSource = document.getElementById('audio-source');
@@ -362,59 +362,101 @@ async function loadLesson() {
         audioSource.src = lesson.audio;
         audioPlayer.load();
 
-        // KEYWORDS
+        // DEFAULT KEYWORDS
         const keywordsContainer = document.getElementById('lesson-keywords');
 
-        keywordsContainer.innerHTML = lesson.keywords
-            .map(keyword => `<span class="badge type">${keyword}</span>`)
-            .join(' ');
-
-        // TRANSCRIPT
-        const transcriptContainer = document.getElementById('lesson-transcript');
-
-        if (lesson.transcript && lesson.transcript.length > 0) {
-            transcriptContainer.innerHTML = lesson.transcript.map(item => `
-                <div class="card" style="max-width: 100%; margin-bottom: 20px;">
-                    <p><strong>${item.time}</strong></p>
-
-                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-
-                        <div style="flex: 1; min-width: 300px;">
-                            <h3>English</h3>
-                            <p>${item.en}</p>
-                        </div>
-
-                        <div style="flex: 1; min-width: 300px;">
-                            <h3>Russian</h3>
-                            <p>${item.ru}</p>
-                        </div>
-
-                    </div>
-                </div>
-            `).join('');
-        } else {
-            transcriptContainer.innerHTML = `
-                <div class="card">
-                    <p>Transcript coming soon...</p>
-                </div>
-            `;
+        if (lesson.keywords) {
+            keywordsContainer.innerHTML = lesson.keywords
+                .map(keyword => `<span class="badge type">${keyword}</span>`)
+                .join(' ');
         }
 
-        // PRACTICE QUESTIONS
+        // ELEMENTS
+        const transcriptContainer = document.getElementById('lesson-transcript');
         const practiceContainer = document.getElementById('practice-questions');
 
-        if (lesson.practice_questions && lesson.practice_questions.length > 0) {
-            practiceContainer.innerHTML = `
-                <ul>
-                    ${lesson.practice_questions.map(q => `<li>${q}</li>`).join('')}
-                </ul>
-            `;
-        } else {
-            practiceContainer.innerHTML = `
-                <div class="card">
-                    <p>Practice questions coming soon...</p>
-                </div>
-            `;
+        // LOAD TRANSCRIPT FILE
+        if (lesson.transcript_file) {
+            try {
+                const transcriptResponse = await fetch(lesson.transcript_file);
+                const transcriptData = await transcriptResponse.json();
+
+                // VOCABULARY
+if (transcriptData.vocabulary && transcriptData.vocabulary.length > 0) {
+    keywordsContainer.innerHTML = transcriptData.vocabulary
+        .map(word => `
+            <div class="vocab-card">
+                <h3>${word.term}</h3>
+                <p>${word.definition}</p>
+            </div>
+        `)
+        .join('');
+
+                }
+// TIMESTAMPS
+const timestampsContainer = document.getElementById('lesson-timestamps');
+
+if (transcriptData.timestamps && transcriptData.timestamps.length > 0) {
+    timestampsContainer.innerHTML = transcriptData.timestamps
+        .map(item => `<p><strong>${item.time}</strong> — ${item.label}</p>`)
+        .join('');
+} else {
+    timestampsContainer.innerHTML = '<p>No timestamps available.</p>';
+}
+                // TRANSCRIPT
+                if (transcriptData.transcript && transcriptData.transcript.length > 0) {
+                    transcriptContainer.innerHTML = transcriptData.transcript.map(item => `
+                        <div class="transcript-block">
+
+                            <p class="timestamp"><strong>${item.time}</strong></p>
+
+                            <div class="transcript-columns">
+
+                                <div class="transcript-en">
+                                    <h3>English</h3>
+                                    <p>${item.en}</p>
+                                </div>
+
+                                <div class="transcript-ru">
+                                    <h3>Russian</h3>
+                                    <p>${item.ru}</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    transcriptContainer.innerHTML = `
+                        <div class="card">
+                            <p>Transcript coming soon...</p>
+                        </div>
+                    `;
+                }
+
+                // PRACTICE QUESTIONS
+                if (transcriptData.practice_questions && transcriptData.practice_questions.length > 0) {
+                    practiceContainer.innerHTML = `
+                        <ul>
+                            ${transcriptData.practice_questions.map(q => `<li>${q}</li>`).join('')}
+                        </ul>
+                    `;
+                } else {
+                    practiceContainer.innerHTML = `
+                        <div class="card">
+                            <p>Practice questions coming soon...</p>
+                        </div>
+                    `;
+                }
+
+            } catch (error) {
+                console.error('Error loading transcript file:', error);
+
+                transcriptContainer.innerHTML = `
+                    <div class="card">
+                        <p>Transcript loading failed.</p>
+                    </div>
+                `;
+            }
         }
 
         document.getElementById('loading').style.display = 'none';
@@ -423,9 +465,6 @@ async function loadLesson() {
         console.error('Error loading lesson:', error);
     }
 }
-
-
-
 // =========================
 // PAGE AUTO DETECTION
 // =========================
