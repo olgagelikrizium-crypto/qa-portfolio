@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QA Audio Lesson with transcript, translation and interview practice.">
+    <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/audio-lesson.html">
+    <meta property="og:title" content="QA Audio Lesson | Volha Shunko">
+    <meta property="og:description" content="QA learning lesson with audio, transcript and translation.">
+    <meta property="og:image" content="images/hero/img_me_foto.png">
+    <title>QA Audio Lesson | Volha Shunko</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- 🔝 HEADER -->
+<header class="header header-small">
+    <div class="header-content">
+        <p class="hero-title">Volha Shunko</p>
+        <p>QA Audio Lesson | Interview Practice</p>
+    </div>
+</header>
+
+<!-- 🧭 NAVIGATION -->
+<nav class="nav">
+
+    <!-- 🔘 BURGER -->
+    <button 
+        type="button"
+        class="burger"
+        onclick="toggleMenu()"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- 📋 MENU -->
+    <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="audio-catalog.html" class="active">QA Audio Catalog</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="notes.html">QA Notes</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- 📦 MAIN -->
+<main class="container">
+
+    <!-- LESSON TITLE -->
+    <section class="section">
+        <h1 id="lesson-title">Loading lesson...</h1>
+        <p id="lesson-duration"></p>
+    </section>
+
+    <!-- AUDIO PLAYER -->
+    <section class="section">
+        <h2>Audio Lesson</h2>
+
+        <audio id="lesson-audio" controls style="width: 100%;">
+            <source id="audio-source" src="" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+    </section>
+
+    <!-- KEYWORDS -->
+    <section class="section">
+        <h2>Key Vocabulary</h2>
+        <div id="lesson-keywords"></div>
+    </section>
+
+    <!-- TRANSCRIPT + TRANSLATION -->
+    <section class="section">
+        <h2>Transcript & Translation</h2>
+
+        <div id="lesson-transcript">
+            <p>Transcript coming soon...</p>
+        </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section class="section">
+        <h2>Practice Questions</h2>
+
+        <div id="practice-questions">
+            <p>Practice questions coming soon...</p>
+        </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section class="section">
+        <a href="javascript:history.back()" class="btn-secondary">← Back</a>
+    </section>
+
+    <p id="loading">Loading lesson...</p>
+
+</main>
+
+<!-- 📞 FOOTER -->
+<footer class="footer">
+    <p>© 2026 Volha Shunko</p>
+    <p>
+        Contact:
+        <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
+        <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>

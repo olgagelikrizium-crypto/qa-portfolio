@@ -207,4 +207,229 @@ async function loadCertificates() {
 if (document.getElementById('certificate-container')) {
     document.addEventListener('DOMContentLoaded', loadCertificates);
 }
+// =========================
+// QA AUDIO CATALOG
+// =========================
 
+async function loadCatalog() {
+    try {
+        const response = await fetch('data/catalog-index.json');
+        const data = await response.json();
+
+        const container = document.getElementById('category-container');
+
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        data.categories.forEach(category => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+
+            card.innerHTML = `
+                <h3>${category.title}</h3>
+                <p>${category.questions} lessons</p>
+                <p>${category.description}</p>
+                <a href="audio-category.html?category=${category.id}" class="btn">Open Category →</a>
+            `;
+
+            container.appendChild(card);
+        });
+
+        document.getElementById('loading').style.display = 'none';
+
+    } catch (error) {
+        console.error('Error loading catalog:', error);
+    }
+}
+
+
+
+// =========================
+// SEARCH IN AUDIO CATALOG
+// =========================
+
+function searchCatalog() {
+    const input = document.getElementById('searchInput');
+
+    if (!input) return;
+
+    const filter = input.value.toLowerCase();
+    const cards = document.querySelectorAll('#category-container .card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(filter)) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+
+
+// =========================
+// LOAD CATEGORY QUESTIONS
+// =========================
+
+async function loadCategory() {
+    const params = new URLSearchParams(window.location.search);
+    const categoryId = params.get('category');
+
+    if (!categoryId) return;
+
+    try {
+        const response = await fetch(`data/${categoryId}.json`);
+        const data = await response.json();
+
+        const container = document.getElementById('questions-container');
+
+        if (!container) return;
+
+        document.getElementById('category-title').innerText = data.category;
+        document.getElementById('category-description').innerText = data.description;
+
+        container.innerHTML = '';
+
+        data.questions.forEach(question => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+
+            card.innerHTML = `
+                <h3>${question.title}</h3>
+                <p><strong>Duration:</strong> ${question.duration}</p>
+                <p><strong>Status:</strong> ${question.status}</p>
+                <p><strong>Keywords:</strong> ${question.keywords.join(', ')}</p>
+                <a href="audio-lesson.html?category=${categoryId}&id=${question.id}" class="btn">Open Lesson →</a>
+            `;
+
+            container.appendChild(card);
+        });
+
+        document.getElementById('loading').style.display = 'none';
+
+    } catch (error) {
+        console.error('Error loading category:', error);
+    }
+}
+
+
+
+// =========================
+// PAGE AUTO DETECTION
+// =========================
+
+if (document.getElementById('category-container')) {
+    document.addEventListener('DOMContentLoaded', loadCatalog);
+}
+
+if (document.getElementById('questions-container')) {
+            document.addEventListener('DOMContentLoaded', loadCategory);
+}
+// =========================
+// LOAD AUDIO LESSON
+// =========================
+
+async function loadLesson() {
+    const params = new URLSearchParams(window.location.search);
+
+    const categoryId = params.get('category');
+    const lessonId = parseInt(params.get('id'));
+
+    if (!categoryId || !lessonId) return;
+
+    try {
+        const response = await fetch(`data/${categoryId}.json`);
+        const data = await response.json();
+
+        const lesson = data.questions.find(q => q.id === lessonId);
+
+        if (!lesson) {
+            document.getElementById('lesson-title').innerText = 'Lesson not found';
+            return;
+        }
+
+        // TITLE
+        document.getElementById('lesson-title').innerText = lesson.title;
+        document.getElementById('lesson-duration').innerText = `Duration: ${lesson.duration}`;
+
+        // AUDIO
+        const audioSource = document.getElementById('audio-source');
+        const audioPlayer = document.getElementById('lesson-audio');
+
+        audioSource.src = lesson.audio;
+        audioPlayer.load();
+
+        // KEYWORDS
+        const keywordsContainer = document.getElementById('lesson-keywords');
+
+        keywordsContainer.innerHTML = lesson.keywords
+            .map(keyword => `<span class="badge type">${keyword}</span>`)
+            .join(' ');
+
+        // TRANSCRIPT
+        const transcriptContainer = document.getElementById('lesson-transcript');
+
+        if (lesson.transcript && lesson.transcript.length > 0) {
+            transcriptContainer.innerHTML = lesson.transcript.map(item => `
+                <div class="card" style="max-width: 100%; margin-bottom: 20px;">
+                    <p><strong>${item.time}</strong></p>
+
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+
+                        <div style="flex: 1; min-width: 300px;">
+                            <h3>English</h3>
+                            <p>${item.en}</p>
+                        </div>
+
+                        <div style="flex: 1; min-width: 300px;">
+                            <h3>Russian</h3>
+                            <p>${item.ru}</p>
+                        </div>
+
+                    </div>
+                </div>
+            `).join('');
+        } else {
+            transcriptContainer.innerHTML = `
+                <div class="card">
+                    <p>Transcript coming soon...</p>
+                </div>
+            `;
+        }
+
+        // PRACTICE QUESTIONS
+        const practiceContainer = document.getElementById('practice-questions');
+
+        if (lesson.practice_questions && lesson.practice_questions.length > 0) {
+            practiceContainer.innerHTML = `
+                <ul>
+                    ${lesson.practice_questions.map(q => `<li>${q}</li>`).join('')}
+                </ul>
+            `;
+        } else {
+            practiceContainer.innerHTML = `
+                <div class="card">
+                    <p>Practice questions coming soon...</p>
+                </div>
+            `;
+        }
+
+        document.getElementById('loading').style.display = 'none';
+
+    } catch (error) {
+        console.error('Error loading lesson:', error);
+    }
+}
+
+
+
+// =========================
+// PAGE AUTO DETECTION
+// =========================
+
+if (document.getElementById('lesson-title')) {
+    document.addEventListener('DOMContentLoaded', loadLesson);
+}

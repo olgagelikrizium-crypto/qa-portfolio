@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QA Audio Catalog with interview-style lessons, transcripts, vocabulary and Russian translations.">
+    <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/audio-catalog.html">
+    <meta property="og:title" content="QA Audio Catalog | Volha Shunko">
+    <meta property="og:description" content="Structured QA learning audio library with English transcripts and Russian translations.">
+    <meta property="og:image" content="images/hero/img_me_foto.png">
+    <title>QA Audio Catalog | Volha Shunko</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- 🔝 HEADER -->
+<header class="header header-small">
+    <div class="header-content">
+        <p class="hero-title">Volha Shunko</p>
+        <p>QA Audio Catalog | Interview Practice | English Learning</p>
+    </div>
+</header>
+
+<!-- 🧭 NAVIGATION -->
+<nav class="nav">
+
+    <!-- 🔘 BURGER -->
+    <button 
+        type="button"
+        class="burger"
+        onclick="toggleMenu()"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- 📋 MENU -->
+    <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="audio-catalog.html" class="active">QA Audio Catalog</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="notes.html">QA Notes</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- 📦 MAIN -->
+<main class="container">
+
+    <!-- 🎧 INTRO -->
+    <section class="section">
+        <h1>QA Audio Catalog</h1>
+
+        <p>
+            A structured QA learning library with interview-style audio lessons,
+            English transcripts, Russian translations, and key vocabulary.
+        </p>
+
+        <p>
+            100 QA questions • 8 categories • Long-form audio lessons • EN / RU support
+        </p>
+    </section>
+
+    <!-- 🔍 SEARCH -->
+    <section class="section">
+        <h2>Search a Question</h2>
+
+        <div class="filter-panel">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a QA topic..."
+                onkeyup="searchCatalog()"
+                style="padding: 10px; font-size: 16px; min-width: 300px; border-radius: 8px; border: 1px solid #ccc;"
+            >
+        </div>
+    </section>
+
+    <!-- 📂 CATEGORY CARDS -->
+    <section class="section">
+        <h2>Categories</h2>
+
+        
+
+        <div class="cards" id="category-container">
+
+    <!-- Category 1 -->
+    <div class="card">
+        <h3>Testing Fundamentals</h3>
+        <p>15 lessons</p>
+        <p>Testing principles, QA vs QC, test process, test oracle, defect clustering</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="card">
+        <h3>Testing in the Software Lifecycle (SDLC & Agile)</h3>
+        <p>Lessons coming soon</p>
+        <p>SDLC, STLC, Agile methodology, Scrum roles, QA in the lifecycle</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="card">
+        <h3>Test Levels and Types</h3>
+        <p>Lessons coming soon</p>
+        <p>Unit, integration, system, acceptance, smoke, sanity, regression</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+    <!-- Category 4 -->
+    <div class="card">
+        <h3>Static Testing</h3>
+        <p>Lessons coming soon</p>
+        <p>Reviews, walkthroughs, inspections, static analysis techniques</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+    <!-- Category 5 -->
+    <div class="card">
+        <h3>Test Design Techniques</h3>
+        <p>Lessons coming soon</p>
+        <p>Equivalence partitioning, BVA, decision tables, state transitions</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+    <!-- Category 6 -->
+    <div class="card">
+        <h3>Test Management and Defects</h3>
+        <p>Lessons coming soon</p>
+        <p>Defect lifecycle, severity, priority, estimation, risk-based testing</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+    <!-- Category 7 -->
+    <div class="card">
+        <h3>Tool Support</h3>
+        <p>Lessons coming soon</p>
+        <p>Test management tools, Postman, Jira, Selenium basics, automation support</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+    <!-- Category 8 -->
+    <div class="card">
+        <h3>Modern Trends and AI (2026 Skills)</h3>
+        <p>Lessons coming soon</p>
+        <p>AI in testing, prompt engineering, LLM testing, modern QA skills</p>
+        <a href="#" class="btn">Open Category →</a>
+    </div>
+
+</div>   
+    </section>
+
+    <!-- 🚀 QUICK START -->
+    <section class="section">
+        <h2>Start Here</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>What is Software Testing?</h3>
+                <p>Formal definition and main objectives of testing</p>
+                <a href="#" class="btn">Open Lesson →</a>
+            </div>
+
+            <div class="card">
+                <h3>QA vs QC</h3>
+                <p>Understand the key difference between prevention and control</p>
+                <a href="#" class="btn">Open Lesson →</a>
+            </div>
+
+            <div class="card">
+                <h3>7 Testing Principles</h3>
+                <p>ISTQB core theory every QA should know</p>
+                <a href="#" class="btn">Open Lesson →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 📥 JSON LOADING PLACEHOLDER -->
+    <section class="section">
+        <p id="loading">Loading catalog...</p>
+    </section>
+
+</main>
+
+<!-- 📞 FOOTER -->
+<footer class="footer">
+    <p>© 2026 Volha Shunko</p>
+    <p>
+        Contact:
+        <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
+        <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>

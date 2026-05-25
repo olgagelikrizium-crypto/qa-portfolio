@@ -1,0 +1,238 @@
+{
+  "category": "Testing Fundamentals",
+  "description": "Core QA principles, testing theory and ISTQB fundamentals",
+
+  "questions": [
+
+    {
+      "id": 1,
+      "title": "What is the formal definition of software testing?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/lesson-01.mp3",
+      "transcript_file": "transcripts/testing-fundamentals/lesson-01.json",
+      "status": "coming soon",
+      "keywords": [
+        "Software Testing",
+        "Verification",
+        "Validation"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 2,
+      "title": "Why is testing necessary for a business?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/lesson-02.mp3",
+      "transcript_file": "transcripts/testing-fundamentals/lesson-02.json",
+      "status": "coming soon",
+      "keywords": [
+        "Business Risk",
+        "Quality",
+        "Customer Satisfaction"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 3,
+      "title": "What is the fundamental difference between testing and debugging?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/lesson-03.mp3",
+      "transcript_file": "transcripts/testing-fundamentals/lesson-03.json",
+      "status": "coming soon",
+      "keywords": [
+        "Testing",
+        "Debugging",
+        "Defect Fixing"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 4,
+      "title": "List the 7 fundamental principles of testing.",
+      "duration": "20:00",
+      "audio": "audio/testing-fundamentals/lesson-04.mp3",
+      "transcript_file": "transcripts/testing-fundamentals/lesson-04.json",
+      "status": "coming soon",
+      "keywords": [
+        "Testing Principles",
+        "ISTQB",
+        "QA Fundamentals"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 5,
+      "title": "Explain the principle: Testing shows the presence of defects, not their absence.",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/lesson-05.mp3",
+      "transcript_file": "transcripts/testing-fundamentals/lesson-05.json",
+      "status": "coming soon",
+      "keywords": [
+        "Defects",
+        "Testing Principle",
+        "Quality Risk"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 6,
+      "title": "Why is exhaustive testing impossible?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q6.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Exhaustive Testing",
+        "Combinations",
+        "Testing Limits"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 7,
+      "title": "What is the Pesticide Paradox and how do you overcome it?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q7.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Pesticide Paradox",
+        "Test Cases",
+        "Defect Detection"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 8,
+      "title": "What does the principle Testing is context-dependent mean?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q8.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Context-Dependent",
+        "Testing Strategy",
+        "QA Approach"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 9,
+      "title": "Explain the absence-of-errors fallacy.",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q9.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Absence-of-Errors Fallacy",
+        "Business Needs",
+        "User Expectations"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 10,
+      "title": "Why is it critical to start testing early in the cycle (Shift-Left)?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q10.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Shift Left",
+        "Early Testing",
+        "Cost of Defects"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 11,
+      "title": "What is defect clustering (Pareto Principle in testing)?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q11.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Defect Clustering",
+        "Pareto Principle",
+        "Risk Areas"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 12,
+      "title": "What are the main objectives of testing according to ISTQB?",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q12.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "ISTQB",
+        "Testing Objectives",
+        "Quality Goals"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 13,
+      "title": "Describe the standard test process and its main activities.",
+      "duration": "20:00",
+      "audio": "audio/testing-fundamentals/q13.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Test Process",
+        "Planning",
+        "Execution"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 14,
+      "title": "What is a Test Oracle? Provide examples.",
+      "duration": "18:00",
+      "audio": "audio/testing-fundamentals/q14.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "Test Oracle",
+        "Expected Result",
+        "Reference Source"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    },
+
+    {
+      "id": 15,
+      "title": "What is the difference between Quality Assurance (QA) and Quality Control (QC)?",
+      "duration": "20:00",
+      "audio": "audio/testing-fundamentals/q15.mp3",
+      "status": "coming soon",
+      "keywords": [
+        "QA",
+        "QC",
+        "Process vs Product"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    }
+
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": "testing-fundamentals",
+      "title": "Testing Fundamentals",
+      "questions": 15,
+      "description": "Testing principles, QA vs QC, test process, test oracle, defect clustering",
+      "file": "data/testing-fundamentals.json"
+    },
+    {
+      "id": "software-lifecycle",
+      "title": "Testing in the Software Lifecycle (SDLC & Agile)",
+      "questions": 0,
+      "description": "SDLC, STLC, Agile methodology, Scrum roles, QA in the lifecycle",
+      "file": "data/software-lifecycle.json"
+    },
+    {
+      "id": "test-levels-types",
+      "title": "Test Levels and Types",
+      "questions": 0,
+      "description": "Unit, integration, system, acceptance, smoke, sanity, regression",
+      "file": "data/test-levels-types.json"
+    },
+    {
+      "id": "static-testing",
+      "title": "Static Testing",
+      "questions": 0,
+      "description": "Reviews, walkthroughs, inspections, static analysis techniques",
+      "file": "data/static-testing.json"
+    },
+    {
+      "id": "test-design-techniques",
+      "title": "Test Design Techniques",
+      "questions": 0,
+      "description": "Equivalence partitioning, BVA, decision tables, state transitions",
+      "file": "data/test-design-techniques.json"
+    },
+    {
+      "id": "test-management-defects",
+      "title": "Test Management and Defects",
+      "questions": 0,
+      "description": "Defect lifecycle, severity, priority, estimation, risk-based testing",
+      "file": "data/test-management-defects.json"
+    },
+    {
+      "id": "tool-support",
+      "title": "Tool Support",
+      "questions": 0,
+      "description": "Test management tools, Postman, Jira, Selenium basics, automation support",
+      "file": "data/tool-support.json"
+    },
+    {
+      "id": "modern-trends-ai",
+      "title": "Modern Trends and AI (2026 Skills)",
+      "questions": 0,
+      "description": "AI in testing, prompt engineering, LLM testing, modern QA skills",
+      "file": "data/modern-trends-ai.json"
+    }
+  ]
+}
