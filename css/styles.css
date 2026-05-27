@@ -717,10 +717,16 @@ body {
     top: 10px;
     z-index: 100;
     background: white;
-    padding: 15px;
+    padding: 5px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+}
+/* Растягиваем аудио-плеер на всю ширину контейнера */
+#lesson-audio {
+    width: 100%;
+    display: block; /* Убирает возможные зазоры под плеером */
+    margin-top: 10px; /* Небольшой отступ сверху от заголовка "Audio Lesson" */
 }
 /* =========================
    PROFESSIONAL LESSON LAYOUT
@@ -734,10 +740,24 @@ body {
 
 /* LEFT SIDEBAR */
 .lesson-sidebar {
-    width: 320px;
+    width: 33%; 
+    min-width: 300px; 
     position: sticky;
     top: 20px;
+    height: calc(100vh - 40px); 
+    /* Включаем внутренний скролл, если контент не помещается */
+    overflow-y: auto; 
     flex-shrink: 0;
+    padding-right: 10px; /* Небольшой отступ, чтобы скроллбар не прилипал к тексту */
+}
+
+/* Стилизация скроллбара (опционально, для красоты) */
+.lesson-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.lesson-sidebar::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
 }
 
 /* RIGHT CONTENT */
