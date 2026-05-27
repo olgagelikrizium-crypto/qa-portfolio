@@ -176,7 +176,19 @@ if (selectedSeverity) {
 }    
 
 document.addEventListener('DOMContentLoaded', loadBugs);
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Обработка бургер-меню (есть на всех страницах)
+    const burgerBtn = document.querySelector('.burger');
+    if (burgerBtn) {
+        burgerBtn.addEventListener('click', toggleMenu);
+    }
 
+    // 2. Обработка поиска (только на странице каталога)
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('keyup', searchCatalog);
+    }
+});
 
 async function loadCertificates() {
     try {

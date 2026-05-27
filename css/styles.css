@@ -252,6 +252,15 @@ body {
     gap: 15px;
     flex-wrap: wrap;
 }
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    min-width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    box-sizing: border-box; 
+}
 
 #projectFilter,
 #severityFilter {
