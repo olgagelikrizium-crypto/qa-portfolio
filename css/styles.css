@@ -759,7 +759,24 @@ body {
     background: #ccc;
     border-radius: 10px;
 }
+/*Timestamps*/
+.timestamp-link {
+    color: #4CAF50; 
+    text-decoration: none;
+    border-bottom: 1px dashed #4CAF50;
+    cursor: pointer;
+}
 
+.timestamp-link:hover {
+    color: #388e3c;
+    border-bottom-style: solid;
+}
+
+/* Подсветка блока, к которому перешли */
+.transcript-block:target {
+    border: 2px solid #4CAF50;
+    background-color: #f1f8e9;
+}
 /* RIGHT CONTENT */
 .lesson-main {
     flex: 1;

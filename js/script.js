@@ -281,7 +281,6 @@ function searchCatalog() {
 }
 
 
-
 // =========================
 // LOAD CATEGORY QUESTIONS
 // =========================
@@ -405,20 +404,31 @@ if (transcriptData.vocabulary && transcriptData.vocabulary.length > 0) {
         .join('');
 
                 }
+// =========================
 // TIMESTAMPS
+// =========================
+
+
+     // TIMESTAMPS
+
 const timestampsContainer = document.getElementById('lesson-timestamps');
 
 if (transcriptData.timestamps && transcriptData.timestamps.length > 0) {
     timestampsContainer.innerHTML = transcriptData.timestamps
-        .map(item => `<p><strong>${item.time}</strong> — ${item.label}</p>`)
-        .join('');
+    .map(item => `
+        <p>
+            <a href="#time-${item.time}" class="timestamp-link" onclick="jumpToTime('${item.time}')">
+                <strong>${item.time}</strong>
+            </a> — ${item.label}
+        </p>`)
+    .join('');
 } else {
     timestampsContainer.innerHTML = '<p>No timestamps available.</p>';
 }
                 // TRANSCRIPT
                 if (transcriptData.transcript && transcriptData.transcript.length > 0) {
                     transcriptContainer.innerHTML = transcriptData.transcript.map(item => `
-                        <div class="transcript-block">
+                        <div class="transcript-block" id="time-${item.time}">
 
                             <p class="timestamp"><strong>${item.time}</strong></p>
 
@@ -483,4 +493,27 @@ if (transcriptData.timestamps && transcriptData.timestamps.length > 0) {
 
 if (document.getElementById('lesson-title')) {
     document.addEventListener('DOMContentLoaded', loadLesson);
+}
+
+function jumpToTime(timeStr) {
+    const audio = document.getElementById('lesson-audio');
+    if (!audio) return;
+
+    // Разделяем строку "MM:SS" на части
+    const parts = timeStr.split(':');
+
+    // ПРАВИЛЬНЫЙ РАСЧЕТ:
+    // parts — это минуты (умножаем на 60)
+    // parts[1] — это секунды (просто прибавляем)
+    const seconds = parseInt(parts) * 60 + parseInt(parts[1]);
+
+    // Устанавливаем время и запускаем воспроизведение
+    audio.currentTime = seconds;
+    audio.play();
+
+    // Скролл к блоку транскрипта
+    const targetBlock = document.getElementById(`time-${timeStr}`);
+    if (targetBlock) {
+        targetBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
