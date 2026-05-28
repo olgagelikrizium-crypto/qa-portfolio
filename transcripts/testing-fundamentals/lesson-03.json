@@ -4,27 +4,39 @@
 
   "timestamps": [
     {
-      "time": "02:00",
+      "time": "00:55",
       "label": "Testing vs Debugging"
     },
     {
-      "time": "04:20",
+      "time": "01:59",
       "label": "Tester vs Developer"
     },
     {
-      "time": "07:10",
+      "time": "03:05",
       "label": "Practical Example"
     },
     {
-      "time": "10:30",
-      "label": "Confirmation Testing"
+      "time": "03:58",
+      "label": "Failure in search function"
     },
     {
-      "time": "13:20",
-      "label": "Bug Reports"
+      "time": "04:35",
+      "label": "Debugging phase"
     },
     {
-      "time": "15:30",
+      "time": "05:13",
+      "label": "Closing the loop"
+    },  
+    {
+      "time": "05:44",
+      "label": "Retesting"
+    },
+    {
+      "time": "06:13",
+      "label": "Reducing Mean Time To Repair"
+    },
+    {
+      "time": "06:52",
       "label": "Interview Summary"
     }
   ],
@@ -72,56 +84,55 @@
     },
 
     {
-      "time": "",
+      "time": "00:55",
       "en": "Well, thank you. That is a great question. To really understand the difference, I think it helps to define what each activity actually is first. Okay, go on. Right. So testing is essentially the process of evaluating a component or a system by actually executing it. The main goal here is to evaluate the quality and ultimately to find failures. Interesting. And how does that compare to debugging? Well, debugging is purely a development activity. It's the process where you identify, analyze, and then remove the actual cause of that failure.\n\nOkay, let's unpack this for a second. You used two very specific words there. You said testing finds failures, but debugging removes the cause. What's the practical difference there? Yeah, that is the fundamental difference right there. I like to frame it as two different questions. Testing answers the question, is there a problem? It shows that a failure has occurred, right? But debugging on the other hand answers the question, why did this problem happen? And how can it be fixed? It's all about finding that root cause and correcting it.",
       "ru": "Что ж, спасибо. Это отличный вопрос. Чтобы по-настоящему понять разницу, я думаю, сначала полезно определить, что представляет собой каждый вид деятельности на самом деле. Хорошо, продолжайте. Верно. Итак, тестирование — это, по сути, процесс оценки компонента или системы путем их фактического запуска. Основная цель здесь — оценить качество и, в конечном счете, найти сбои. Интересно. А как это соотносится с отладкой? Ну, отладка — это чисто девелоперская деятельность. Это процесс, в ходе которого вы выявляете, анализируете, а затем устраняете фактическую причину этого сбоя.\n\nХорошо, давайте разберем это на секунду. Вы использовали два очень специфических слова. Вы сказали, что тестирование находит сбои, а отладка устраняет причину. В чем здесь практическая разница? Да, в этом и заключается фундаментальное различие. Мне нравится формулировать это как два разных вопроса. Тестирование отвечает на вопрос: «Есть ли проблема?». Оно показывает, что произошел сбой, верно? Но отладка, с другой стороны, отвечает на вопрос: «Почему возникла эта проблема?» и «как её можно исправить?». Всё дело в поиске этой первопричины и её устранении."
     },
 
     {
-      "time": "",
+      "time": "01:59",
       "en": "That makes a lot of sense. So looking at the day-to-day reality on a software team, who actually performs these tasks and what does that process look like? Sure. So these activities belong to completely different phases of the software life cycle. Testing is performed by the tester naturally, right? And the tester does this by evaluating the system against what we call a test oracle. A test oracle. That sounds a bit mystical. What is that? I know it sounds like something from a fantasy movie, but it's really just a standard of truth. It could be a specific requirement document, a user story, or even expected behavior based on common sense.\n\nOh, okay. So, it's the expected outcome. Exactly. So, if the software's reaction doesn't match that expected result from the test oracle, the tester logs a failure. Their process is all about detection. Got it. And the debugging process? So, once the tester submits that bug report, the developer takes over. That is where debugging begins. The developer will analyze the logs, maybe step through the code line by line and try to localize the defect. The defect being the actual mistake in the code.",
       "ru": "В этом много смысла. Итак, если посмотреть на повседневную реальность в команде разработчиков ПО, кто на самом деле выполняет эти задачи и как выглядит этот процесс? Конечно. Итак, эти виды деятельности относятся к совершенно разным этапам жизненного цикла программного обеспечения. Тестирование выполняется, естественно, тестировщиком, верно? И тестировщик делает это, оценивая систему на соответствие тому, что мы называем тестовым оракулом. Тестовый оракул. Звучит немного мистически. Что это такое? Я знаю, это звучит как что-то из фэнтези-фильма, но на самом деле это просто эталон истины. Это может быть конкретный документ с требованиями, пользовательская история или даже ожидаемое поведение, основанное на здравом смысле.\n\nО, понятно. Значит, это ожидаемый результат. Именно так. Итак, если реакция программы не совпадает с ожидаемым результатом от тестового оракула, тестировщик фиксирует сбой. Их процесс полностью завязан на обнаружении. Понятно. А процесс отладки? Итак, как только тестировщик отправляет отчет об ошибке, за дело берется разработчик. Именно здесь начинается отладка. Разработчик проанализирует логи, возможно, пройдет по коду строка за строкой и попытается локализовать дефект. Дефект — это и есть фактическая ошибка в коде."
     },
      {
-      "time": "",
+      "time": "03:05",
       "en": "Yes, exactly. The defect is the literal error in the logic. So the developer finds it and they fix it. So just to be absolutely clear for anyone listening because this is a really common trap for junior candidates. A lot of people misunderstand and think that testing means fixing bugs, but you're saying that's definitely not the case. Oh, definitely not. Testers detect defects. Developers debug and fix them. It's a very clear boundary. I love that. Okay. I want to make this super concrete. Can you walk me through a practical example from a real software situation just to see how this plays out in action?\n\nYeah, I'd love to. Let's imagine we are working on an e-commerce platform, right? And I am testing the main search function. Okay. I'm picturing the website right now. Great. So, my test oracle says that if I search for a product we definitely sell, it should show up. So, I type in running shoes and hit enter. But the screen just says no items found.",
       "ru": "Да, именно так. Дефект — это буквальная ошибка в логике. Итак, разработчик находит её и исправляет. Просто чтобы внести полную ясность для всех слушателей, потому что это очень распространенная ловушка для младших кандидатов. Многие люди ошибочно полагают, что тестирование означает исправление багов, но вы говорите, что это определенно не так. О, определенно нет. Тестировщики обнаруживают дефекты. Разработчики отлаживают и исправляют их. Это очень четкая граница. Мне это нравится. Хорошо. Я хочу сделать это максимально конкретным. Можете ли вы привести практический пример из реальной ситуации с ПО, просто чтобы увидеть, как это работает на практике?\n\nДа, с удовольствием. Давайте представим, что мы работаем над платформой электронной коммерции, верно? И я тестирую основную функцию поиска. Хорошо. Я прямо сейчас представляю себе этот сайт. Отлично. Итак, мой тестовый оракул говорит, что если я ищу товар, который мы точно продаем, он должен отобразиться. Итак, я ввожу «кроссовки для бега» и нажимаю Enter. Но на экране просто написано «товары не найдены»."
     },
 
     {
-      "time": "",
+      "time": "03:58",
       "en": "Well, that's definitely not what you want to see. Exactly. Identifying that the search didn't work, that is a failure. And finding that failure is the testing phase. I would then document exactly what I did, what I expected, and what actually happened.\n\nAnd then you hand that off to the developer, right? So the developer gets my report, they step in and start investigating the code. They might look at the database logic, specifically the SQL queries. And what are they looking for? They're hunting for the reason it failed. And let's say they realize there is a missing JOIN statement in the database query. The system just isn't connecting the product name to the inventory list.",
       "ru": "Что ж, это определенно не то, что вы хотите увидеть. Именно так. Выявление того, что поиск не сработал, — это сбой. И обнаружение этого сбоя — это фаза тестирования. Затем я задокументирую, что именно я сделал, что ожидал и что произошло на самом деле.\n\nИ затем вы передаете это разработчику, верно? Итак, разработчик получает мой отчет, он подключается и начинает исследовать код. Он может посмотреть логику базы данных, в частности SQL-запросы. И что они ищут? Они охотятся за причиной сбоя. И допустим, они понимают, что в запросе к базе данных отсутствует оператор JOIN. Система просто не связывает название товара со списком инвентаря."
     },
 
     {
-      "time": "",
+      "time": "04:35",
       "en": "Okay. So the missing JOIN is the problem. Yes, that missing JOIN statement is the actual defect. So, the developer writes the missing code, corrects the logic, and pushes the update. That entire process, finding the bad code and fixing it, that is the debugging phase.\n\nHere's where it gets really interesting to me. As the tester, you didn't just spot a problem and yell, “It's broken.” You handed it off with clear evidence. Exactly. You provide the road map. But let me push back a little on the teamwork aspect here. If testing and debugging are so radically different, do you as the tester just throw the bug report over the wall to the developer and forget about it? Like is your job totally done?",
       "ru": "Понятно. Значит, отсутствие JOIN — это и есть проблема. Да, этот отсутствующий оператор JOIN и есть фактический дефект. Итак, разработчик пишет недостающий код, исправляет логику и отправляет обновление. Весь этот процесс — поиск плохого кода и его исправление — это фаза отладки.\n\nВот тут мне становится по-настоящему интересно. Как тестировщик, вы не просто заметили проблему и закричали: «Оно сломано!». Вы передали её с четкими доказательствами. Именно. Вы предоставляете «дорожную карту». Но позвольте мне немного поспорить по поводу аспекта командной работы. Если тестирование и отладка настолько радикально отличаются, неужели вы, как тестировщик, просто перебрасываете отчет об ошибке через стену разработчику и забываете о нем? Типа, ваша работа полностью выполнена?"
     },
      {
-      "time": "",
+      "time": "05:13",
       "en": "Yeah. No. Absolutely not. That is a huge misconception. They are different activities, but they are deeply related. You really have to close the loop.\n\nClose the loop? What do you mean by that? Well, a tester's job isn't finished just because the developer pushed a fix because sometimes a fix doesn't actually work or it breaks something else. Oh, right. The classic fix one bug, create two more situation. Exactly. So, after the debugging is complete, the tester has to perform what's called confirmation testing or retesting.",
       "ru": "Да. Нет. Абсолютно нет. Это огромное заблуждение. Это разные виды деятельности, но они глубоко взаимосвязаны. Вам действительно нужно замкнуть цикл.\n\nЗамкнуть цикл? Что вы имеете в виду? Ну, работа тестировщика не заканчивается только потому, что разработчик выпустил исправление, потому что иногда исправление на самом деле не работает или ломает что-то другое. О, точно. Классическая ситуация: исправил один баг — создал еще два. Именно так. Поэтому после завершения отладки тестировщик должен провести то, что называется подтверждающим тестированием или ретестом."
     },
 
     {
-      "time": "",
+      "time": "05:44",
       "en": "So, you go back and do the exact same search for running shoes. Precisely. You verify that the defect is truly gone and the failure doesn't happen anymore. Only then is the bug actually resolved.\n\nThat makes total sense. It really highlights the value of the boundary between the two roles. It really does. And frankly, understanding this boundary makes you a much better tester because when you know exactly what a developer does during debugging, you write much better bug reports because you know what kind of clues they need to solve the mystery.",
       "ru": "Значит, вы возвращаетесь и делаете тот же самый поиск кроссовок для бега. Именно. Вы убеждаетесь, что дефект действительно устранен и сбой больше не повторяется. Только тогда баг считается окончательно решенным.\n\nВ этом есть полный смысл. Это действительно подчеркивает важность границы между этими двумя ролями. Это действительно так. И, честно говоря, понимание этой границы делает вас гораздо более эффективным тестировщиком, потому что, когда вы точно знаете, что делает разработчик во время отладки, вы пишете гораздо более качественные bug reports, так как понимаете, какие улики им нужны, чтобы разгадать эту тайну."
     },
 
     {
-      "time": "",
+      "time": "06:13",
       "en": "Yes, you include the logs, the exact reproduction steps, the environment details, and doing that directly helps the developer reduce their Mean Time To Repair or MTTR, right? Which saves the company time and money. Exactly. Both testing and debugging improve software quality, but they have completely different goals and they require really tight collaboration.\n\nAll right, that was a fantastic breakdown. So, to wrap up this interview, give me your best elevator pitch in one sentence. What is the fundamental difference between testing and debugging? Testing shows that a failure has occurred while debugging finds the root cause of that failure and fixes it.",
       "ru": "Да, вы прилагаете логи, точные шаги воспроизведения, детали окружения, и это напрямую помогает разработчику сократить Mean Time To Repair (MTTR), верно? Что экономит компании время и деньги. Именно так. И тестирование, и отладка повышают качество программного обеспечения, но у них совершенно разные цели, и они требуют очень тесного сотрудничества.\n\nЧто ж, это был фантастический разбор. Итак, чтобы завершить это интервью, дайте мне свою лучшую краткую презентацию в одном предложении. В чем фундаментальная разница между тестированием и отладкой? Тестирование показывает, что произошел сбой, в то время как отладка находит первопричину этого сбоя и исправляет её."
     },
 
     {
-      "time": "",
-      "en": "Boom. Okay, stepping out of character now. That was a flawless interview response. Thanks. I think keeping it to that simple contrast really helps people lock it in. It really does. And honestly, for you listening, if you can articulate that clearly in an interview, you're going to stand out immediately. It shows a level of professional maturity that a lot of beginners just don't have yet.\n\nAbsolutely. And that actually brings up a final thought I want to leave you with to mull over. If a tester deeply understands how a developer debugs, how might that make them a dramatically better tester? Understanding the developer's blind spots and problem-solving patterns might just tell you exactly where the most critical bugs are hiding before anyone else even thinks to look there. Something to think about as you prep for those interviews. Thanks for joining us on this deep dive and we will catch you on the next one.",
-      "ru": "Бум. Хорошо, теперь выхожу из образа. Это был безупречный ответ на собеседовании. Спасибо. Я думаю, что сохранение такого простого контраста действительно помогает людям закрепить это в памяти. Это правда. И честно говоря, для вас, слушатели: если вы сможете так четко сформулировать это на собеседовании, вы сразу же выделитесь. Это показывает уровень профессиональной зрелости, которого многим новичкам еще не хватает.\n\nБезусловно. И это подводит нас к последней мысли, которую я хочу оставить вам для размышления. Если тестировщик глубоко понимает, как разработчик проводит отладку, как это может сделать его значительно лучшим тестировщиком? Понимание «слепых зон» разработчиков и их моделей решения проблем может подсказать вам, где именно прячутся самые критические баги, еще до того, как кто-то другой додумается там поискать. Есть над чем подумать при подготовке к этим собеседованиям. Спасибо, что присоединились к нашему глубокому погружению, и до встречи в следующем выпуске."
-    }
+      "time": "06:52",
+      "en": "Boom. Okay, stepping out of character now. That was a flawless interview response. Thanks. I think keeping it to that simple contrast really helps people lock it in. It really does. And honestly, for you listening, if you can articulate that clearly in an interview, you're going to stand out immediately. It shows a level of professional maturity that a lot of beginners just don't have yet. For sure. It shows you understand where you fit in the bigger picture of the engineering team. Absolutely. And that actually brings up a final thought I want to leave you with to mull over. We just talked about how providing great logs and reproduction steps lowers a developer's meantime to repair,right? The empathy for the developers process. Exactly. But think about the reverse of that. If a tester deeply understand how a developer debugs, if they understand how a developer thinks when they're writing and fixing code, how might that make them a dramatically better tester? Oh, that is a great question. Right? Because even if you never write a single line of code yourself, understanding the developers blind spots and their problem solving patterns might just tell you exactly where the most critical bugs are hiding before anyone else even thinks to look there. Anticipating the mistakes. I love that. Something to think about as you prep for those interviews. Thanks for joining us on this deep dive and we will catch you on the next one ",
+      "ru": "Бум. Хорошо, теперь выхожу из образа. Это был безупречный ответ на собеседовании. Спасибо. Я думаю, что сохранение такого простого контраста действительно помогает людям закрепить это в памяти. Это правда. И честно говоря, для вас, слушатели: если вы сможете так четко сформулировать это на собеседовании, вы сразу же выделитесь. Это показывает уровень профессиональной зрелости, которого многим новичкам еще не хватает. Конечно. Это показывает, что вы понимаете свое место в общей картине инженерной команды. Безусловно. И это подводит нас к последней мысли, которую я хочу оставить вам для размышления. Мы только что говорили о том, как предоставление качественных логов и шагов воспроизведения сокращает среднее время восстановления для разработчика,верно? Эмпатия к процессу разработчика. Именно так. Но подумайте об обратном. Если тестировщик глубоко понимает, как разработчик проводит отладку, если он понимает, как думает разработчик, когда пишет и исправляет код, как это может сделать его значительно лучшим тестировщиком? О, это отличный вопрос. Правда? Потому что даже если вы сами никогда не напишете ни одной строки кода, понимание «слепых зон» разработчиков и их моделей решения проблем может подсказать вам, где именно прячутся самые критические баги, еще до того, как кто-то другой додумается там поискать. Предвидение ошибок. Мне это нравится.Есть над чем подумать при подготовке к этим собеседованиям. Спасибо, что присоединились к нашему глубокому погружению, и до встречи в следующем выпуске."}
   ],
 
   "short_answer": {
