@@ -194,7 +194,7 @@ async function loadCertificates() {
     try {
         const response = await fetch('certificates.json'); // Путь к новому файлу
         const certs = await response.json();
-        const container = document.getElementById('certificate-container'); // Исправь опечатку в HTML (sertificate -> certificate)
+        const container = document.getElementById('certificate-container'); 
 
         certs.forEach(cert => {
             const card = document.createElement('div');

@@ -71,10 +71,10 @@
     {
       "id": 5,
       "title": "Explain the principle: Testing shows the presence of defects, not their absence.",
-      "duration": "18:00",
+      "duration": "20:10",
       "audio": "audio/testing-fundamentals/lesson-05.mp3",
       "transcript_file": "transcripts/testing-fundamentals/lesson-05.json",
-      "status": "coming soon",
+      "status": "ready to listen",
       "keywords": [
         "Defects",
         "Testing Principle",
