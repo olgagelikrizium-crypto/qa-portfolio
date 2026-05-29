@@ -44,7 +44,7 @@
     },
     {
       "time": "00:31",
-      "en": "human nature to want that. Yeah. But when you step into the world of software development and quality assurance that uh that whole X-ray machine fundamentally changes the diagnostic landscape we're looking at today operates on well a completely different set of physical laws. It really does. The binary comfort of broken or perfect. It just vanishes entirely. Yeah. When you're evaluating complex systems, right? Because we are dealing with an environment where absolute certainty is for all practical purpose is just a mathematical myth.",
+      "en": "human nature to want that. Yeah. But when you step into the world of software development and quality assurance that uh that whole X-ray machine fundamentally changes the diagnostic landscape we're looking at today operates on well a completely different set of physical laws. It really does. The binary comfort of broken or perfect. It just vanishes entirely. Yeah. When you're evaluating complex systems, right? Because we are dealing with an environment where absolute certainty is for all practical purposes just a mathematical myth.",
       "ru": "Человеческой природе свойственно этого хотеть. Да. Но когда вы входите в мир разработки программного обеспечения и обеспечения качества, этот самый «рентгеновский аппарат» фундаментально меняется — диагностический ландшафт, который мы рассматриваем сегодня, работает на совершенно ином наборе физических законов. Это действительно так. Бинарный комфорт состояний «сломано» или «идеально» просто полностью исчезает. Да. Когда вы оцениваете сложные системы, верно? Потому что мы имеем дело со средой, где абсолютная уверенность во всех практических смыслах — это просто математический миф."
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "time": "10:17",
-      "en": "I mean, that's a nightmare scenario for a tester, right? The state spa the total number of possible interacting variables isn't just growing, it is multiplying exponentially with every single new condition. And here is the mechanism that creates the dormant bug. What if that user is executing that exact bizarre multi-destination transaction in Japanese yen at the exact millisecond position? The back-end database experiences a like a micro timeout while syncing with a third party payment gateway.",
+      "en": "I mean, that's a nightmare scenario for a tester, right? The state space the total number of possible interacting variables isn't just growing, it is multiplying exponentially with every single new condition. And here is the mechanism that creates the dormant bug. What if that user is executing that exact bizarre multi-destination transaction in Japanese yen at the exact millisecond position? The back-end database experiences a like a micro timeout while syncing with a third party payment gateway.",
       "ru": "Я имею в виду, что это кошмарный сценарий для тестировщика, верно? Пространство состояний — общее количество возможных взаимодействующих переменных — не просто растет, оно увеличивается в геометрической прогрессии с каждым новым условием. И вот механизм, порождающий спящий баг. Что если этот пользователь совершает ту самую странную транзакцию по нескольким городам в японских иенах в ту самую миллисекунду, когда в базе данных бэкенда происходит микро-тайм-аут во время синхронизации со сторонним платежным шлюзом?"
     },
     {

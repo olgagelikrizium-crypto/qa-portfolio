@@ -87,9 +87,10 @@
     {
       "id": 6,
       "title": "Why is exhaustive testing impossible?",
-      "duration": "18:00",
-      "audio": "audio/testing-fundamentals/q6.mp3",
-      "status": "coming soon",
+      "duration": "16:48",
+      "audio": "audio/testing-fundamentals/lesson-06.mp3",
+      "status": "ready to listen",
+      "transcript_file": "transcripts/testing-fundamentals/lesson-06.json",
       "keywords": [
         "Exhaustive Testing",
         "Combinations",
