@@ -1831,6 +1831,490 @@
     "comments": "Navigation failure blocking access to regional and localization adjustments.",
     "evidence": "../videos/Mob_33.mp4",
     "note": "No video available due to NDA"
+  },
+  
+  {
+    "id": "Web 211",
+    "title": "The [Amundi Italy BTP Government Bond 10Y UCITS ETF] link on the \"All Markets & Instruments\" page is redirected  to the page with the \"404 error\" text on it when CMA or SCB license, and  EN or AR language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "20.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB or CMA license (e.g.CMA)",
+      "Select EN or AR language (e.g.EN)",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the \"Markets\" section",
+      "Click the [All markets & Instrument] link",
+      "Click the [Amundi Italy BTP Government Bond 10Y UCITS ETF] link"
+    ],
+    "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
+    "expected": "The corresponding trading instrument page (e.g., \"Trade Amundi Italy BTP Government Bond 10Y UCITS ETF - BTP10 CFD\") is opened.",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_211.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 215",
+    "title": "The [Amundi Euro Government Bond 1-3Y UCITS ETF] link on the \"All Markets & Instruments\" page is redirected  to the page with the \"404 error\" text on it when CMA or SCB license, and  EN or AR language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "20.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB or CMA license (e.g.CMA)",
+      "Select EN or AR language (e.g.EN)",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the \"Markets\" section",
+      "Click the [All markets & Instrument] link",
+      "Click the [Amundi Euro Government Bond 1-3Y UCITS ETF] link"
+    ],
+    "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
+    "expected": "The corresponding trading instrument page (e.g., \"Trade Amundi Euro Government Bond 1-3Y UCITS ETF - EM13m CFD\") is opened.",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_215.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 216",
+    "title": "The [AMPLIFON] link on the \"All Markets & Instruments\" page is redirected  to the page with the \"404 error\" text on it when CMA or SCB license, and  EN or AR language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "20.05.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select SCB or CMA license (e.g.CMA)",
+      "Select EN or AR language (e.g.EN)",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the bottom of the \"Markets\" section",
+      "Click the [All markets & Instrument] link",
+      "Click the [AMPLIFON] link"
+    ],
+    "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
+    "expected": "The corresponding trading instrument page (e.g., \"Trade AMPLIFON - AMPI CFD\") is opened.",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_216.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 245",
+    "title": "The [dividends] link on the \"What is expected return?\" glossary page leads to the \"This site can’t be reached\" error page and opens in a new tab under the SCB license when any license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "02.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com.",
+      "Select any (e.g. FCA) license",
+      "Select EN language.",
+      "Click the [Search] button in the Header.",
+      "Type the \"expected return\" text into the search input field.",
+      "Select the [What is expected return?] item from the \"Glossary\" block in search results.",
+      "Scroll down the \"What is expected return?\" page to the [dividends] link in the text.",
+      "Click the [dividends] link."
+    ],
+    "actual": "The user is redirected to the SCB license (en-int), a \"This site can’t be reached\" error page is displayed, and the link opens in a new tab.",
+    "expected": "The corresponding \"Dividends definition\" page is opened under the FCA license in the same tab.",
+    "comments": "Started by @Zurawiny. Note: On the SCB license target page can be accessed via [All resources] in Footer.",
+    "evidence": "../videos/Web_245.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 246",
+    "title": "Broken images are displayed on the \"Fundamental analysis\" glossary page in the \"Forex fundamental analysis\" and \"Fundamental and technical analysis - pros and cons\" blocks when any license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "02.06.2026",
+    "type": "Non functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 148",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com.",
+      "Select any (e.g. FCA) license",
+      "Select EN language.",
+      "Click the [Search] button in the Header.",
+      "Type \"fundamental analysis\" text into the search input field.",
+      "Select the [What is fundamental analysis?] item from the \"Glossary\" block in search results.",
+      "Scroll down to the \"Fundamental and technical analysis - pros and cons\" block.",
+      "Observe the image.",
+      "Scroll down to the \"Forex fundamental analysis\" block.",
+      "Observe the image."
+    ],
+    "actual": "Broken image icons are displayed instead of images in both specified blocks",
+    "expected": "The corresponding images are correctly displayed in both blocks",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_246.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 249",
+    "title": "Interactive element [Login] (or [Get the app]) in the \"Sign up\" form is visually indistinguishable from plain text and has low color contrast when any license and language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "03.06.2026",
+    "type": "Non functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Device: POCO X5 Pro (Android 14)",
+      "Browser: Chrome 148"
+    ],
+    "steps": [
+      "Navigate to capital.com.",
+      "Select any (e.g. FCA) license",
+      "Select any (e.g.EN) language.",
+      "Click the [Open an account] button in the Header.",
+      "Observe the [Login] button (or [Get the app] link for landscape mode on a phone) at the top of the \"Sign up\" form.",
+      "(For Desktop) Hover over the 'Login' text."
+    ],
+    "actual": "The [Login] element is displayed as plain text without an underline or visible button borders on a dark background. The element has low color contrast (black-on-black styling), making it visually indistinguishable from static text. (For Desktop) A faint border and background appear only on hover, but they remain nearly invisible due to the dark-on-dark color scheme",
+    "expected": "The [Login] element is visually distinguished from static text as an interactive element (e.g., by an underline as per Glossary or a contrasting button background). Sufficient color contrast is provided to ensure the text is readable and recognized as a button/link against the dark background.",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_249.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 265",
+    "title": "The [Marketscreener] link leads to an \"Access Denied\" error page on the \"Siemens Energy stock forecast\" page when any license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "09.06.2026",
+    "type": "functional",
+    "severity": "Minor",
+    "priority": "Medium",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Condition: VPN: ON (Proton VPN)"
+    ],
+    "steps": [
+      "Navigate to capital.com.",
+      "Select any (e.g. FCA) license",
+      "Select EN language.",
+      "Click the [Search] button in the Header.",
+      "Type the \"siemens energy\" text into the search input field.",
+      "Select the [Siemens Energy stock forecast: Third-party price targets] item from the \"Market analisys\" block in search results.",
+      "Scroll down the \"Deutsche Bank Research (broker research)\"  or \"Jefferies (broker research)\" block",
+      "Click the [MarketScreener] link."
+    ],
+    "actual": "The page with the \"Access Denied\" message and a Reference number is displayed; the request is blocked by the target server's security system",
+    "expected": "The corresponding external news article on the marketscreener.com website is opened correctly in a new tab",
+    "comments": "Started by @Zurawiny. Note: the issue is directly related to the VPN status.",
+    "evidence": "../videos/Web_265.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 268",
+    "title": "The [the Nasdaq stock market] link leads to the \"This site can’t be reached\" error page in the \"How to invest in the Japan stock market\" article when any license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "10.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com.",
+      "Select any (e.g. FCA) license",
+      "Select EN language.",
+      "Click the [Search] button in the Header.",
+      "Type the \"japanese stock\" text into the search input field.",
+      "Select the [How to invest in Japanese stock CFDs-Japan 225 index] item from the \"Market analisys\" block in search results.",
+      "Scroll down to the \"Japan stock market overview\"  block",
+      "Click the [the Nasdaq stock market] link."
+    ],
+    "actual": "The \"This site can’t be reached\" error page is displayed; the link contains a syntax error in the code",
+    "expected": "The corresponding internal page about the Nasdaq stock market is opened correctly in the same tab.",
+    "comments": "Started by @Zurawiny. DevTools revealed invalid address https://v/.",
+    "evidence": "../videos/Web_268.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 269",
+    "title": "The [Bank of America Private Bank] link leads to a 404 error page in the \"Nasdaq 100 forecast\" article when any license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "10.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com.",
+      "Select any (e.g. FCA) license",
+      "Select EN language.",
+      "Click the [Search] button in the Header.",
+      "Type the \"US 100 forecast\" text into the search input field.",
+      "Select the [US 100 forecast: Third-[artu targets] item from the \"Market analisys\" block in search results.",
+      "Scroll down to the \"Bank of America (US equity and macro outlook)\"  block",
+      "Click the [Bank of America Private Bank] link."
+    ],
+    "actual": "The \"404 Not Found\" error page is displayed",
+    "expected": "The corresponding external or internal page with Bank of America analytics is opened correctly",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_269.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 273",
+    "title": "The [Visit] link on the \"Contact us\" page is redirected to the SCB license (/en-int/help) instead of the CMA license when the CMA license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "11.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select the CMA license",
+      "Select EN language",
+      "Hover over the [About] menu section",
+      "Click on the [Contact us] menu item",
+      "Click the [Visit] link on the \"Support centre\" tile in the \"Contact us\" block"
+    ],
+    "actual": "The corresponding internal page is opened  under the SCB license (URL contains /en-int/)",
+    "expected": "The corresponding internal page is opened correctly under the CMA license (URL contains /en-ae/)",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_273.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 274",
+    "title": "The [Go to Pricing] and [Go to Demo] linkы on the \"Bond and bond futures trading\" page are redirected to the SCB license (/en-int/) instead of the CMA license when the CMA license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "11.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select the CMA license",
+      "Select EN language",
+      "Hover over the [Markets] menu section",
+      "Click on the [Bonds] menu item",
+      "Scroll down to the \"Built into every account\" block",
+      "Click the [Go to pricing] link on the \"Clear costs, full visibility\" tile",
+      "Observe the result",
+      "Return to the previous page.",
+      "Click the [Go to demo] link on the \"All the tools, no capital required\" tile",
+      "Observe the result"
+    ],
+    "actual": "The corresponding internal pages are opened  under the SCB license (URL contains /en-int/)",
+    "expected": "The corresponding internal pages are opened correctly under the CMA license (URL contains /en-ae/)",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_274.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 277",
+    "title": "The [CHEEMS/USD], [Constellation to US Dollar], [Velo to US Dollar], [VeThor Token to US Dollar], [XinFin Network to US Dollar], [XYO to US Dollar] links are redirected to broken pages on the \"All Markets & Instruments\" page when ASIC, CYSEC or CMA license and any language are selected; or SCB license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "11.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to Capital.com",
+      "Select ASIC, CySEC, SCB or CMA license (e.g. CMA)",
+      "Select any language for ASIC, CySEC and CMA licenses and EN for SCB(e.g. EN)",
+      "Scroll down to the footer",
+      "Click the [Sitemap] link",
+      "Scroll down to the \"Markets\" section",
+      "Click  the [All Markets & Instruments] menu item",
+      "Scroll down to the \"Cryptocurrency\" section",
+      "Click the [CHEEMS/USD], [Constellation to US Dollar], [Velo to US Dollar], [VeThor Token to US Dollar], [XinFin Network to US Dollar], or [XYO to US Dollar] ( e.g. [CHEEMS/USD] ) link"
+    ],
+    "actual": "The \"404 Not Found\" error page is displayed",
+    "expected": "The corresponding trading instrument pages are opened  and display relevant content ",
+    "comments": "Started by @Zurawiny. Chrome DevTools returns a '200 OK' but page is visually empty.",
+    "evidence": "../videos/Web_277.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 279",
+    "title": "The  [share trading] link on the \"What is an issue?\" page is redirected to the SCB license (/en-int/)  when the FCA, CMA or CySEC license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "12.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select the FCA, CMA, CySEC license (eg. FCA)",
+      "Select EN language",
+      "Click the [Search]  button  in the Header",
+      "Type the \"issue definition\" text into the search input field",
+      "Select the item [What is an issue?] from the \"Glossary\" block in search results",
+      "Scroll down the page \"What is an issue?\" to the \"The issue of shares impacts investors\" block",
+      "Click the [share trading] link",
+      "Observe the URL and the license"
+    ],
+    "actual": "The user is redirected to the SCB license page (URL contains /en-int/)",
+    "expected": "The page \"What is share trading?\" is opened under the FCA license (URL contains /en-gb/)",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_279.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 285",
+    "title": "[slippage]  link on the \"Top 10 biggest oil companies in the world\" page are redirected to the SCB license (/en-int/) instead of the FCA license when the FCA license and EN language are selected",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "13.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select the FCA license",
+      "Select EN language",
+      "Click the [Search] button in the Header",
+      "Type \"biggest oil\" into the search field",
+      "Select the [Top 10 biggest oil companies in the world] article item from the search results",
+      "Scroll down to the \"Why oil stocks attract traders\" block",
+      "Click the [slippage] link"
+    ],
+    "actual": "The user is redirected to the SCB license pages (URL contains /en-int/)",
+    "expected": "The corresponding internal pages are opened under the FCA license (URL contains /en-gb/)",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_285.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 276",
+    "title": "The [VOW3] link in the \"Volkswagen forecast 2025-2030: Third-party price target\" page is redirected to the  page with the message \"DNS_PROBE_FINISHED_NXDOMAIN\" when the FCA license and EN language are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "13.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com",
+      "Select the FCA license",
+      "Select EN language.",
+      "Click the [Search] button in the Header",
+      "Type the \"Volkswagen forecast\" text into the search input field.",
+      "Select the [Volkswagen forecast 2025-2030: Third-party price target] article item from the search results.",
+      "Scroll down to the \"Volkswagen (VOW3) stock forecast: Analysts’ sentiments\" block",
+      "Click the [VOW3] link."
+    ],
+    "actual": "The link redirects to an invalid URL (https://https://capital.com/...), causing a DNS resolution failure and preventing the page from loading.",
+    "expected": "The \"Trade Volkswagen AG (Pfd) - VOW3 CFD\" page is opened and displays relevant content",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_276.mp4",
+    "note": "No video available due to NDA"
+  },
+  {
+    "id": "Web 292",
+    "title": "The [TradingView] link on the \"Copper price forecast: Third-party outlook\" page leads to a 404 error page when any  license and EN language; SCB and RU, DE or FR; CySEC and DE-AT languages are selected.",
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Financial Education Portal",
+    "date": "15.06.2026",
+    "type": "functional",
+    "severity": "Major",
+    "priority": "High",
+    "environment": [
+      "OS: Windows 11",
+      "Browser: Chrome 149",
+      "Device: Desktop"
+    ],
+    "steps": [
+      "Navigate to capital.com.",
+      "Select any license (e.g.CySEC)",
+      "Select EN language for any license, RU, DE or FR for SCB license, DE-AT for CySEC license (e.g.EN)",
+      "Click the [Search] button in the Header.",
+      "Type \"Copper\" into the search field.",
+      "Select the [Copper price forecast: Third-party outlook] article item from the search results.",
+      "Scroll down to the \"Copper price: Technical overview\" block",
+      "Click the [TradingView] link."
+    ],
+    "actual": "The \"404 Not Found\" error page is displayed on the TradingView website",
+    "expected": "The external TradingView technical analysis page for the corresponding instrument (Copper) is opened ",
+    "comments": "Started by @Zurawiny.",
+    "evidence": "../videos/Web_292.mp4",
+    "note": "No video available due to NDA"
   }
 
 
