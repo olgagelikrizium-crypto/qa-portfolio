@@ -1,0 +1,23 @@
+{
+  "category": "API and QA Testing",
+  "description": "REST Architecture and Principles: Foundational Philosophy",
+
+  "questions": [
+
+    {
+      "id": 7,
+      "title": "REST Architecture and Principles: Foundational Philosophy",
+      "duration": "40:00",
+      "audio": "audio/api-and-qa-testing/lesson-07.mp3",
+      "transcript_file": "transcripts/api-and-qa-testing/lesson-07.json",
+      "status": "ready to listen",
+      "keywords": [
+        "Representational State Transfer",
+        "Statelessness",
+        "Cacheability"
+      ],
+      "transcript": [],
+      "practice_questions": []
+    }
+  ]
+}
