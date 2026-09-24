@@ -7,7 +7,7 @@
 const SITE = {
   name: "Volha Shunko",
   role: "Manual QA Tester",
-  linkedin: "https://www.linkedin.com/in/olga-shunko-667101387/",
+  linkedin: "https://www.linkedin.com/in/volha-shunko-667101387/",
   github: "https://github.com/olgagelikrizium-crypto",
 };
 
