@@ -1,87 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tester and developer beginner Volha Shunko portfolio">
-    <meta property="og:title" content="QA Portfolio | Volha Shunko">
-    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
-    <meta property="og:image" content="images/hero/img_me_foto.png"> 
-    <title>Bug Reports | Examples</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug report — Volha Shunko, QA Tester</title>
+  <meta name="description" content="Detailed bug report: environment, steps to reproduce, actual and expected results, evidence.">
+  <meta property="og:title" content="Bug report — Volha Shunko">
+  <meta property="og:image" content="https://olgagelikrizium-crypto.github.io/qa-portfolio/images/hero/og-image.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316202e'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/site.js" defer></script>
+  <script src="../js/bugs.js" defer></script>
 </head>
+<body data-page="bugs" data-base="../">
 
-<body>
-
-<header class="header header-small">
-    <div class="header-content">
-        <h1>Bug Report</h1>
-        <p>Detailed issue description</p>
-    </div>
-</header>
-
-<nav class="nav">
-    <!-- 🔘 БУРГЕР -->
-    <button 
-    type="button" 
-    class="burger" 
-    onclick="toggleMenu()" 
-    aria-label="Open menu" 
-    aria-expanded="false" 
-    aria-controls="menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    </button>
-
-    <ul id="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="audio-catalog.html">QA Audio Catalog</a></li>
-        <li><a href="../achievements.html">Achievements</a></li>
-        <li><a href="../notes.html">QA Notes</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<main class="container">
-
-    <section class="section bug">
-
-    <h2 id="title" class="bug-title"></h2>
-    <p id="context" class="bug-context"></p>
-
-    <p id="loading">Loading bug data...</p>
-
-    <div id="meta" class="bug-meta"></div>
-
-    <div id="environment" class="bug-block"></div>
-    <div id="steps" class="bug-block"></div>
-    <div id="actual" class="bug-block"></div>
-    <div id="expected" class="bug-block"></div>
-    <div id="comments" class="bug-block"></div>
-    <div id="evidence" class="bug-block"></div>
-
-    <div class="bug-navigation">
-    <a href="#" id="prev-bug" class="btn-primary">← Previous Bug</a>
-    <button onclick="goBack()" class="btn-secondary">Back</button>
-    <a href="#" id="next-bug" class="btn-primary">Next Bug →</a>
-    </div>
-    </section>   
-
+<main id="main">
+  <div class="container" id="bug">
+    <p class="loading">Loading report…</p>
+  </div>
 </main>
-
-<!-- 📞 FOOTER -->
-<footer class="footer">
-    <p>© 2026 Volha Shunko</p>
-    <p>
-    Contact: 
-    <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
-    <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
-</footer>
-
-
 </body>
 </html>

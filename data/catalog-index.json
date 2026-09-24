@@ -3,18 +3,16 @@
     {
       "id": "testing-fundamentals",
       "title": "Testing Fundamentals",
-      "questions": 15,
+      "questions": 6,
       "description": "Testing principles, QA vs QC, test process, test oracle, defect clustering",
       "file": "data/testing-fundamentals.json"
     },
     {
-      
       "id": "api-and-qa-testing",
       "title": "API and QA Testing",
       "questions": 1,
       "description": "REST Architecture and Principles",
       "file": "data/api-and-qa-testing.json"
     }
-    
   ]
 }

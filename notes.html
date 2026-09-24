@@ -1,72 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="QA notes, learning materials and software testing study resources collected by Volha Shunko during QA training.">
-    <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/notes.html">
-    <meta property="og:title" content="QA Portfolio | Volha Shunko">
-    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
-    <meta property="og:image" content="images/hero/img_me_foto.png"> 
-    <title>QA Notes & Learning Materials | Volha Shunko</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tester Notes — Volha Shunko</title>
+  <meta name="description" content="Bug patterns from real testing cycles, checklists and lessons learned by QA tester Volha Shunko.">
+  <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/notes.html">
+  <meta property="og:title" content="Tester Notes — Volha Shunko">
+  <meta property="og:description" content="Bug patterns from real testing cycles, checklists and lessons learned by QA tester Volha Shunko.">
+  <meta property="og:image" content="https://olgagelikrizium-crypto.github.io/qa-portfolio/images/hero/og-image.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316202e'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/notes.js" defer></script>
 </head>
-
-<body>
-
-<!-- 🔝 HEADER -->
-<header class="header">
-    <div class="header-content">
-    <p class="hero-title">Volha Shunko</p>
-    <p>QA Tester | Web Testing | Bug Reporting</p>
-    <a href="portfolio.html" class="btn-primary">See My Testing Work</a>
+<body data-page="notes">
+<main id="main">
+  <section class="section" style="padding-bottom:24px">
+    <div class="container">
+      <span class="eyebrow">Tester Notes</span>
+      <h1>Notes from real testing</h1>
+      <p class="lede">My “golden mine”: bug patterns I found in real cycles that are worth re-checking on similar sites.
+        Plus the checklists I actually use and lessons from report reviews.</p>
     </div>
-    
-</header>
-
-<!-- 🧭 NAVIGATION -->
-<nav class="nav">
-
-    <!-- 🔘 БУРГЕР -->
-    <button 
-    type="button" 
-    class="burger" 
-    onclick="toggleMenu()" 
-    aria-label="Open menu" 
-    aria-expanded="false" 
-    aria-controls="menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    </button>
-
-    <!-- 📋 МЕНЮ -->
-    <ul id="menu">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="audio-catalog.html">QA Audio Catalog</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="notes.html"class="active">QA Notes</a></li>
-        <li><a href="contact.html" class="contact-btn">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- 📦 MAIN -->
-<main class="container">
-<h1>QA Notes & Learning Materials</h1>
-<p>This page is currently in progress. QA notes and insights will be added soon.</p>  
+  </section>
+  <section class="container">
+    <div class="chips" id="note-types" role="group" aria-label="Filter notes by type" style="margin-bottom:20px"></div>
+    <div class="grid grid-auto" id="notes-list"><p class="loading">Loading notes…</p></div>
+  </section>
 </main>
-
-<!-- 📞 FOOTER -->
-<footer class="footer">
-    <p>© 2026 Volha Shunko</p>
-    <p>
-    Contact: 
-    <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
-    <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
-</footer>
-
-
 </body>
 </html>

@@ -1,107 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Examples of QA projects, bug reports, exploratory testing and software testing practice completed by QA tester Volha Shunko.">
-    <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/portfolio.html">
-    <meta property="og:title" content="QA Portfolio | Volha Shunko">
-    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
-    <meta property="og:image" content="images/hero/img_me_foto.png"> 
-    <title>QA Projects & Bug Reports | Volha Shunko</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug Reports — Volha Shunko, QA Tester</title>
+  <meta name="description" content="Searchable collection of real bug reports: functional, localization, navigation, UI and AI-feature defects with steps to reproduce and video evidence.">
+  <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/portfolio.html">
+  <meta property="og:title" content="Bug Reports — Volha Shunko">
+  <meta property="og:description" content="Real bug reports with steps to reproduce, expected/actual results and video evidence.">
+  <meta property="og:image" content="https://olgagelikrizium-crypto.github.io/qa-portfolio/images/hero/og-image.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316202e'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/bugs.js" defer></script>
 </head>
+<body data-page="bugs">
 
-<body>
-
-<!-- 🔝 HEADER -->
-<header class="header header-small">
-    <div class="header-content">
-    <p class="hero-title">Volha Shunko</p>
-    <p>QA Tester | Web Testing | Bug Reporting</p>
+<main id="main">
+  <section class="section" style="padding-bottom:24px">
+    <div class="container">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Bug reports</h1>
+      <p class="lede">Real defects I found and reported. Each report has an environment, steps to reproduce,
+        actual and expected results, and a note on how widely the issue reproduces.</p>
+      <div class="notice" style="margin-top:18px">
+        <p><strong>Capital.com</strong> reports come from my QA internship and are shared with permission.
+          Other projects are anonymized and have no video because of NDA.
+          The report format follows each platform's rules, so it varies a little between projects.</p>
+      </div>
     </div>
-</header>
+  </section>
 
-<!-- 🧭 NAVIGATION -->
-<nav class="nav">
-
-    <!-- 🔘 БУРГЕР -->
-    <button 
-    type="button" 
-    class="burger" 
-    onclick="toggleMenu()" 
-    aria-label="Open menu" 
-    aria-expanded="false" 
-    aria-controls="menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    </button>
-
-    <!-- 📋 МЕНЮ -->
-    <ul id="menu">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="portfolio.html" class="active" >Portfolio</a></li>
-        <li><a href="audio-catalog.html">QA Audio Catalog</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="notes.html">QA Notes</a></li>
-        <li><a href="contact.html" class="contact-btn">Contact</a></li>
-    </ul>
-</nav>
-<!-- 📦 MAIN -->
-<main class="container">
-
-<!--What is this page about-->
-    <section class="section">
-    <h1>QA Projects & Bug Reporting</h1>
-    <p>Here are examples of bugs I found during manual testing</p>
-    <p class="disclaimer" >
-        <small>*Some project details, URLs, and media files are intentionally anonymized or omitted due to confidentiality agreements.</small>
-    </p>
-    <p class="disclaimer">
-     <small>**I adapt my bug reporting style to meet the specific requirements and standards of each platform or client. 
-As a result, the structure and formatting of reports may vary slightly while maintaining clarity and completeness.</small>
-    </p>
-    </section>
-
-<!-- Cards -->
-    <div class="filter-panel">
-
-    <select id="projectFilter" onchange="loadBugs()">
-        <option value="">All Projects</option>
-        <option value="Financial Education Portal">Financial Education Portal</option>
-        <option value="Design Tool">Design Tool</option>
-        <option value="E-commerce Platform">E-commerce Platform</option>
-    </select>
-
-    <select id="severityFilter" onchange="loadBugs()">
-        <option value="">All Severities</option>
-        <option value="Critical">Critical</option>
-        <option value="Major">Major</option>
-        <option value="Minor">Minor</option>
-        <option value="Trivial">Trivial</option>
-    </select>
-
-</div>
-            
-    <section class="section">
-        <div class="cards" id="cards-container">
+  <section class="container" aria-label="Filters and results">
+    <form class="toolbar" id="filters" role="search" onsubmit="return false">
+      <div class="toolbar-row">
+        <div class="field search">
+          <label for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="e.g. anchor, 404, Arabic, filter…">
         </div>
-        <p id="loading">Loading bugs...</p>
-    </section>
-   
+        <div class="field">
+          <label for="project">Project</label>
+          <select id="project" name="project"><option value="">All</option></select>
+        </div>
+        <div class="field">
+          <label for="severity">Severity</label>
+          <select id="severity" name="severity"><option value="">All</option></select>
+        </div>
+        <div class="field">
+          <label for="platform">Platform</label>
+          <select id="platform" name="platform"><option value="">All</option></select>
+        </div>
+        <div class="field">
+          <label for="sort">Sort</label>
+          <select id="sort" name="sort">
+            <option value="new">Newest first</option>
+            <option value="old">Oldest first</option>
+            <option value="sev">Severity</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <span class="sr-only" id="tags-label">Filter by area</span>
+        <div class="chips" id="tag-chips" role="group" aria-labelledby="tags-label"></div>
+      </div>
+    </form>
 
+    <div class="result-line">
+      <span id="count" aria-live="polite">Loading…</span>
+      <button type="button" class="btn-reset" id="reset" hidden>Reset filters</button>
+    </div>
 
+    <div class="grid grid-auto" id="bug-list"></div>
+  </section>
 </main>
-<!-- 📞 FOOTER -->
-<footer class="footer">
-    <p>© 2026 Volha Shunko</p>
-    <p>
-    Contact: 
-    <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
-    <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
-</footer>
-
 </body>
 </html>

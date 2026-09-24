@@ -1,107 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact QA tester Volha Shunko for collaboration, testing opportunities and professional communication.">
-    <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/contact.html">
-    <meta property="og:title" content="QA Portfolio | Volha Shunko">
-    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
-    <meta property="og:image" content="images/hero/img_me_foto.png"> 
-    <title>Contact QA Tester | Volha Shunko</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Volha Shunko, QA Tester</title>
+  <meta name="description" content="Contact QA tester Volha Shunko about junior QA roles, testing projects or collaboration.">
+  <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/contact.html">
+  <meta property="og:title" content="Contact — Volha Shunko, QA Tester">
+  <meta property="og:description" content="Contact QA tester Volha Shunko about junior QA roles, testing projects or collaboration.">
+  <meta property="og:image" content="https://olgagelikrizium-crypto.github.io/qa-portfolio/images/hero/og-image.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316202e'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js" defer></script>
 </head>
-
-<body>
-
-<!-- 🔝 HEADER -->
-<header class="header">
-    <div class="header-content">
-    <p class="hero-title">Volha Shunko</p>
-    <p>QA Tester | Web Testing | Bug Reporting</p>
-    <a href="portfolio.html" class="btn-primary">See My Testing Work</a>
+<body data-page="contact">
+<main id="main">
+  <section class="section">
+    <div class="container grid grid-2" style="gap:48px;align-items:start">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h1>Let's talk</h1>
+        <p class="lede">I'm looking for a junior manual QA role in Tricity (Gdańsk · Gdynia · Sopot) or remote,
+          and I'm open to freelance testing projects.</p>
+        <div class="grid" style="margin-top:24px">
+          <a class="card linked" href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+            <strong>LinkedIn</strong><br><span class="muted">Message me or connect</span>
+          </a>
+          <a class="card linked" href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+            <strong>GitHub</strong><br><span class="muted">Source code of this site</span>
+          </a>
+          <a class="btn btn-primary" href="cv/Volha_Shunko_QA_CV.pdf" download style="justify-self:start">Download CV (PDF)</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="font-size:1.3rem">Send a message</h2>
+        <form class="form" action="https://formspree.io/f/xojyeawn" method="POST">
+          <div>
+            <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div>
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="muted" style="font-size:.85rem;margin:0">Fields marked * are required. I usually reply within 1–2 days.</p>
+        </form>
+      </div>
     </div>
-    
-</header>
-
-<!-- 🧭 NAVIGATION -->
-<nav class="nav">
-
-    <!-- 🔘 БУРГЕР -->
-    <button 
-    type="button" 
-    class="burger" 
-    onclick="toggleMenu()" 
-    aria-label="Open menu" 
-    aria-expanded="false" 
-    aria-controls="menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    </button>
-
-    <!-- 📋 МЕНЮ -->
-    <ul id="menu">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="audio-catalog.html">QA Audio Catalog</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="notes.html">QA Notes</a></li>
-        <li><a href="contact.html" class="contact-btn active">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- 📦 MAIN -->
-<main class="container">
-    <!-- Секция с формой -->
-    <section class="section contact-centered">
-        <h1>Contact QA Tester Volha Shunko</h1>
-        <p class="contact-description">Feel free to contact me regarding QA testing opportunities, collaboration or professional inquiries. I am open to discussing new projects.</p>
-
-        <!-- Карточка формы теперь имеет ограниченную ширину и центрирована -->
-        <div class="card contact-form-card">
-            <form action="https://formspree.io/f/xojyeawn" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name <span aria-hidden="true" style="color: red;">*</span></label>
-                    <input type="text" id="name" name="name" required placeholder="Your Name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email <span aria-hidden="true" style="color: red;">*</span></label>
-                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message <span aria-hidden="true" style="color: red;">*</span></label>
-                    <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
-                </div>
-
-                <!-- Контейнер для кнопки, чтобы она была по центру -->
-                <div class="form-actions">
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Секция с соцсетями -->
-    <section class="section contact-centered">
-        <h2>Other ways to connect</h2>
-        <p>You can also find me on professional platforms:</p>
-        <div class="about-links center-links">
-            <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#">GitHub</a>
-        </div>
-    </section>
+  </section>
 </main>
-<!-- 📞 FOOTER -->
-<footer class="footer">
-    <p>© 2026 Volha Shunko</p>
-    <p>
-    Contact: 
-    <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
-    <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
-</footer>
 </body>
 </html>

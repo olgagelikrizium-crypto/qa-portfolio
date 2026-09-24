@@ -1,137 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="QA courses, certificates and professional learning achievements of QA tester Volha Shunko in software testing and web technologies.">
-    <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/achievements.html">
-    <meta property="og:title" content="QA Portfolio | Volha Shunko">
-    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
-    <meta property="og:image" content="images/hero/img_me_foto.png"> 
-    <title> QA Courses & Certificates | Volha Shunko</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning & Certificates — Volha Shunko</title>
+  <meta name="description" content="QA and web development courses, certificates and a bilingual QA audio library by Volha Shunko.">
+  <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/achievements.html">
+  <meta property="og:title" content="Learning & Certificates — Volha Shunko">
+  <meta property="og:description" content="QA and web development courses, certificates and a bilingual QA audio library by Volha Shunko.">
+  <meta property="og:image" content="https://olgagelikrizium-crypto.github.io/qa-portfolio/images/hero/og-image.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316202e'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/learning.js" defer></script>
 </head>
-
-<body>
-
-<!-- 🔝 HEADER -->
-<header class="header header-small">
-    <div class="header-content">
-    <p class="hero-title">Volha Shunko</p>
-    <p>QA Tester | Web Testing | Bug Reporting</p>
+<body data-page="learning">
+<main id="main">
+  <section class="section" style="padding-bottom:24px">
+    <div class="container">
+      <span class="eyebrow">Learning</span>
+      <h1>Courses &amp; certificates</h1>
+      <p class="lede">I moved into IT on purpose: first testing theory, then HTML, CSS and JavaScript, so I understand what I'm testing.
+        All courses were in English.</p>
     </div>
-</header>
+  </section>
 
-<!-- 🧭 NAVIGATION -->
-<nav class="nav">
+  <section class="container">
+    <div class="grid grid-3" id="certificates"><p class="loading">Loading…</p></div>
+  </section>
 
-    <!-- 🔘 БУРГЕР -->
-    <button 
-    type="button" 
-    class="burger" 
-    onclick="toggleMenu()" 
-    aria-label="Open menu" 
-    aria-expanded="false" 
-    aria-controls="menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    </button>
-
-    <!-- 📋 МЕНЮ -->
-    <ul id="menu">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="portfolio.html"  >Portfolio</a></li>
-        <li><a href="audio-catalog.html">QA Audio Catalog</a></li>
-        <li><a href="achievements.html" class="active">Achievements</a></li>
-        <li><a href="notes.html">QA Notes</a></li>
-        <li><a href="contact.html" class="contact-btn">Contact</a></li>
-    </ul>
-</nav>
-<!-- 📦 MAIN -->
-<main class="container">
-
-    <!-- Заголовок страницы -->
-    <section class="section">
-        <h1>QA Courses & Certificates</h1>
-        <p>This section showcases my continuous learning journey in software testing, including certifications, completed courses, and practical skill development.</p>
-    </section>
-
-    <!-- Сетка карточек -->
-    <section class="section">
-        <div class="cards" id="certificate-container">
-            
-            <!-- Карточка 1 -->
-            <div class="card certificate-card">
-                <div class="card-image">
-                    <img src="images/certificates/img_HTML_сertificate.png" alt="HTML Essentials Certificate" class="cert-preview">
-                </div>
-                <h3>HTML Essentials</h3>
-                <p class="cert-meta"><strong>Issued by:</strong> Cisco Networking Academy</p>
-                <p class="cert-meta"><strong>Date:</strong> October 2025</p>
-                <a href="achievements/html_essentials_cours.html" class="btn">More Details</a>
-            </div>
-
-            <!-- Карточка 2 -->
-            <div class="card certificate-card">
-                <div class="card-image">
-                    <img src="images/certificates/img_css_сertificate.png" alt="CSS Essentials Certificate" class="cert-preview">
-                </div>
-                <h3>CSS Essentials</h3>
-                <p class="cert-meta"><strong>Issued by:</strong> Cisco Networking Academy</p>
-                <p class="cert-meta"><strong>Date:</strong> December 2025</p>
-                <a href="achievements/CSS_essentials_cours.html" class="btn">More Details</a>
-            </div>
-
-            <!-- Карточка 3 -->
-            <div class="card certificate-card">
-                <div class="card-image">
-                    <img src="images/certificates/img_english_for_it_сertificate.png" alt="English for IT Certificate" class="cert-preview">
-                </div>
-                <h3>English for IT</h3>
-                <p class="cert-meta"><strong>Issued by:</strong> Cisco Networking Academy</p>
-                <p class="cert-meta"><strong>Date:</strong> September 2025</p>
-                <a href="achievements/English_for_IT_cours.html" class="btn">More Details</a>
-            </div>
-
-            <!-- Карточка 4 -->
-            <div class="card certificate-card">
-                <div class="card-image">
-                    <img src="images/certificates/Testing_EPAM_certificate.png" alt="Software testing introduction certificate" class="cert-preview">
-                </div>
-                <h3>Software Testing introduction</h3>
-                <p class="cert-meta"><strong>Issued by:</strong> EPAM campus</p>
-                <p class="cert-meta"><strong>Date:</strong> November 2025</p>
-                <a href="achievements/QA_basic.html" class="btn">More Details</a>
-            </div>
-
-            <!-- Карточка 5 -->
-            <div class="card certificate-card">
-                <div class="card-image">
-                    <img src="images/certificates/QA_intensive_Ksendzov_course.png" alt="Intensive Web Testing Program "class="cert-preview">
-                </div>
-                <h3>Intensive "Web Testing Program"</h3>
-                <p class="cert-meta"><strong>Issued by:</strong> Vadim Ksendzov</p>
-                <p class="cert-meta"><strong>Date:</strong> March 2026</p>
-                <a href="achievements/QA_intensive.html" class="btn">More Details</a>
-            </div>
-
-
-        </div>
-    </section>
-
+  <section class="section">
+    <div class="container grid grid-2">
+      <div class="card linked">
+        <span class="eyebrow">Self-made study tool</span>
+        <h3><a class="stretched" href="audio-catalog.html">QA Audio Library</a></h3>
+        <p class="muted">Long-form audio lessons on QA interview topics that I put together for myself,
+          with timestamps, key vocabulary and side-by-side English / Russian transcripts.</p>
+        <p class="muted" id="audio-count"></p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">In progress</span>
+        <h3>Learning now</h3>
+        <ul class="chips">
+          <li class="chip">JavaScript Essentials (Cisco)</li><li class="chip">API testing with Postman</li><li class="chip">SQL</li><li class="chip">Jira</li>
+          <li class="chip">Git &amp; GitHub</li><li class="chip">AI tools for QA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
-
-
-<!-- 📞 FOOTER -->
-<footer class="footer">
-    <p>© 2026 Volha Shunko</p>
-    <p>
-    Contact: 
-    <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
-    <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
-</footer>
-
 </body>
 </html>

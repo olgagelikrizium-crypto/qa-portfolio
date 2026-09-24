@@ -1,177 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of QA tester Volha Shunko featuring software testing projects, bug reports, test cases and manual QA practice examples.">
-    <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/index.html">
-    <meta property="og:title" content="QA Portfolio | Volha Shunko">
-    <meta property="og:description" content="Portfolio of a beginner QA Tester focusing on manual and web testing.">
-    <meta property="og:image" content="images/hero/img_me_foto.png"> 
-    <title>QA Tester Portfolio | Volha Shunko</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volha Shunko — Manual QA Tester Portfolio</title>
+  <meta name="description" content="Manual QA tester based in Gdańsk. Real bug reports from a production fintech website and crowdtesting cycles: functional, localization, cross-device and exploratory testing.">
+  <link rel="canonical" href="https://olgagelikrizium-crypto.github.io/qa-portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Volha Shunko — Manual QA Tester">
+  <meta property="og:description" content="Real bug reports, testing notes and experience of a manual QA tester based in Gdańsk, Poland.">
+  <meta property="og:image" content="https://olgagelikrizium-crypto.github.io/qa-portfolio/images/hero/og-image.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316202e'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/home.js" defer></script>
 </head>
+<body data-page="home">
 
-<body>
+<main id="main">
 
-<!-- 🔝 HEADER -->
-<header class="header">
-    <div class="header-content">
-    <p class="hero-title">Volha Shunko</p>
-    <p>QA Tester | Web Testing | Bug Reporting</p>
-    <a href="portfolio.html" class="btn-primary">See My Testing Work</a>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="status-pill">Open to Junior QA roles · Gdańsk / remote</span>
+        <h1>Volha Shunko</h1>
+        <p class="role">Manual QA Tester — web &amp; mobile</p>
+        <p class="lede">I look for the bugs real users run into: broken flows, wrong redirects,
+          half-translated pages. Then I write them up so a developer can reproduce them the first time.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="portfolio.html">View bug reports</a>
+          <a class="btn btn-ghost" href="cv/Volha_Shunko_QA_CV.pdf" download>Download CV (PDF)</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/hero/volha-shunko.jpg" alt="Portrait of Volha Shunko" width="520" height="520">
+        <span class="tag tag-1">Severity: <b>Major</b></span>
+        <span class="tag tag-2">Status: Reproducible ✓</span>
+      </div>
     </div>
-    
-</header>
+  </section>
 
-<!-- 🧭 NAVIGATION -->
-<nav class="nav">
+  <!-- ============ STATS (numbers from data/bugs.json) ============ -->
+  <section class="section" style="padding-top:0" aria-label="Key numbers">
+    <div class="container">
+      <div class="stats" id="stats">
+        <!-- uTest numbers: update by hand from platform.utest.com → Statistics -->
+        <div class="stat"><b>91</b><span>paid test cycles on uTest, 47 products</span></div>
+        <div class="stat"><b>Gold</b><span>uTest rating in Localization testing (90.9%)</span></div>
+        <div class="stat"><b>Silver</b><span>uTest rating in Functional testing (87.8%)</span></div>
+        <div class="stat"><b data-stat="total">—</b><span>bug reports documented in this portfolio</span></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- 🔘 БУРГЕР -->
-    <button 
-    type="button" 
-    class="burger" 
-     
-    aria-label="Open menu" 
-    aria-expanded="false" 
-    aria-controls="menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    </button>
-
-    <!-- 📋 МЕНЮ -->
-    <ul id="menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="audio-catalog.html">QA Audio Catalog</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="notes.html">QA Notes</a></li>
-        <li><a href="contact.html" class="contact-btn">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- 📦 MAIN -->
-<main class="container">
-
-    <!-- 👩‍💻 ABOUT ME -->
-    <section class="about">
-
-    <div class="about-container">
-
-        <!-- Фото -->
-        <div class="about-image">
-            <img src="images/hero/img_me_foto.png" alt="Volha Shunko" class="about-photo">
+  <!-- ============ WHAT I BRING ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">How I work</span>
+          <h2>What I bring to a team</h2>
         </div>
-
-        <!-- Текст -->
-
-        <div class="about-content">
-            <div class="about-text">
-            <h1>About Me</h1>
-            <p class="about-hook">I focus on <span> user experience</span>, finding issues that affect real users and describing them with clarity and precision.</p>
-
-            <p>I actively practice manual testing by analyzing business logic of real websites, identifying bugs, and writing structured bug reports.</p>
-            <p>I actively test web applications on platforms such as TestIO and uTest, working with real-world scenarios and reporting bugs in structured formats.</p>
-            <p>Currently, I am gaining hands-on experience by testing the Capital.com platform, focusing on usability, navigation, and real user flows.</p>
-            <p> I pay special attention to edge cases, usability issues, and real user behavior.</p>
-            
-            <p>I enjoy breaking down complex systems, understanding how they work, and finding ways to improve them.</p>
-            <p>I am currently gaining hands-on QA experience through an internship program at ITX, where I participate in testing activities on the Capital.com production website.</p>
-            <div class="about-links">
-                <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener" aria-label="LinkedIn (opens in a new window)">LinkedIn</a>
-                <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener" target="_blank" rel="noopener">GitHub</a>
-            </div>
-            </div>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+          <h3>Systematic coverage</h3>
+          <p>On multi-regional sites I check the whole matrix: licence × language × user role × device.
+            My reports say exactly where a bug reproduces and where it doesn't.</p>
         </div>
-        <div class="about-extra">
-            <h2>Currently developing:</h2>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h7M7.5 3v2M5 13c2-2 3.5-5 4-8M6 9c1 2 3 4 5 5"/><path d="m13 21 4-9 4 9M14.5 18h5"/></svg></div>
+          <h3>Localization testing</h3>
+          <p>I spot untranslated fragments, mixed labels, wrong sorting and locale leaks.
+            I'm a native speaker of Russian, Ukrainian and Belarusian and speak English (B1+). For other languages I use translation tools.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
+          <h3>A business eye</h3>
+          <p>I trained as an economist and ran my own business for years. I read a page the way a customer
+            and an owner would, so I notice broken trust signals, confusing sign-up flows and anything that costs conversions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED BUGS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Selected work</span>
+          <h2>Featured bug reports</h2>
+          <p>A few reports that show different kinds of testing: functional, boundary values, accessibility, localization and AI features.</p>
+        </div>
+        <a class="link-arrow" href="portfolio.html">All reports</a>
+      </div>
+      <div class="grid grid-3" id="featured"><p class="loading">Loading reports…</p></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="container grid grid-2" style="gap:48px">
+      <div>
+        <span class="eyebrow">Experience</span>
+        <h2>Where I test</h2>
+        <ol class="timeline">
+          <li>
+            <span class="when">2026 — present</span>
+            <h3>Crowdtester · uTest / Applause</h3>
+            <p class="muted">Paid test cycles for international brands (under NDA).</p>
             <ul>
-                <li>API testing (Postman)</li>
-                <li>Test case design</li>
-                <li>Exploratory testing</li>
-                <li>Basic automation knowledge</li>
+              <li><strong>91 test cycles · 47 products · 138 reported issues · 17 test cases</strong></li>
+              <li>Rating: <strong>Gold</strong> in Localization, <strong>Silver</strong> in Functional testing</li>
+              <li>Industries: hospitality, fintech &amp; crypto, banking, luxury and fashion retail, home improvement, e-commerce payments (Apple Pay), restaurant booking, ticketing</li>
+              <li>Web, iOS and Android: exploratory, functional, payment-flow and localization testing</li>
             </ul>
+            <details class="proof">
+              <summary>uTest profile snapshot (Sep 2026)</summary>
+              <a href="images/utest-profile-stats.png" target="_blank" rel="noopener"><img src="images/utest-profile-stats.png" alt="uTest profile statistics: Functional rating Silver, Localization rating Gold; 91 test cycles, 138 issues, 17 test cases, 47 products" loading="lazy"></a>
+            </details>
+          </li>
+          <li>
+            <span class="when">Mar 2026 — present</span>
+            <h3>QA Engineer Trainee · ITX (Capital.com)</h3>
+            <p class="muted">Testing the Capital.com production website.</p>
+            <ul>
+              <li>Smoke, ad-hoc, retesting and localization testing across 6 regulatory licences (FCA, CySEC, ASIC, SCA, SCB, CMA)</li>
+              <li>~100 approved bug reports; bug review, retesting and checklist maintenance</li>
+              <li>Desktop and mobile (Android) cross-browser checks</li>
+            </ul>
+          </li>
+          <li>
+            <span class="when">Mar — Apr 2026</span>
+            <h3>Tester · Test IO</h3>
+            <ul>
+              <li>E-commerce search and filters, AI-powered generators in a web design tool</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
 
-            
-        </div>
-    </div>
-    
-    </section>
-
-    <!-- 🚀 QUICK NAVIGATION -->
-    <section class="section">
-        <h2>Explore</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Portfolio</h3>
-                <p>My testing projects, bug reports, and practice work</p>
-                <a href="portfolio.html">View →</a>
-            </div>
-
-            <div class="card">
-                <h3>Achievements</h3>
-                <p>Certificates, courses, and learning progress</p>
-                <a href="achievements.html">View →</a>
-            </div>
-
-            <div class="card">
-                <h3>QA Notes</h3>
-                <p>Useful insights, mistakes, and lessons learned</p>
-                <a href="notes.html">View →</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 🧪 SKILLS -->
-    <section class="section">
+      <div>
+        <span class="eyebrow">Toolbox</span>
         <h2>Skills</h2>
-
-        <ul>
-            <li>Manual Testing (Web and Mobile) </li>
-            <li>Bug Reporting (Clear and Structured Reports)</li>
-            <li>Test Case & Checklist Creation</li>
-            <li>Exploratory Testing</li>
-            <li>Basic HTML & CSS</li>
-            <li>Basic JavaScript</li>
-            <li>Screaming Frog (SEO Crawling and Website Issue Analysis)</li>
+        <h3>Testing</h3>
+        <ul class="chips" style="margin-bottom:18px">
+          <li class="chip">Exploratory testing</li><li class="chip">Functional testing</li>
+          <li class="chip">Localization testing</li><li class="chip">Smoke &amp; retesting</li>
+          <li class="chip">Cross-browser / cross-device</li><li class="chip">Usability &amp; basic accessibility</li>
+          <li class="chip">Checklists &amp; test cases</li><li class="chip">Boundary values &amp; equivalence classes</li>
+          <li class="chip">Bug reporting &amp; review</li>
         </ul>
-    </section>
+        <h3>Tools &amp; tech</h3>
+        <ul class="chips" style="margin-bottom:18px">
+          <li class="chip">Chrome DevTools</li><li class="chip">Postman (basic)</li><li class="chip">VS Code</li><li class="chip">uTest / Test IO platforms</li>
+          <li class="chip">Screen recording &amp; logs</li><li class="chip">Screaming Frog</li>
+          <li class="chip">HTML &amp; CSS</li><li class="chip">JavaScript basics</li><li class="chip">GitHub Pages</li>
+        </ul>
+        <h3>Learning now</h3>
+        <ul class="chips" style="margin-bottom:18px">
+          <li class="chip">API testing</li><li class="chip">SQL</li><li class="chip">Jira</li><li class="chip">JavaScript Essentials (Cisco)</li>
+          <li class="chip">Git</li><li class="chip">AI tools for QA</li>
+        </ul>
+        <h3>Languages</h3>
+        <dl class="kv">
+          <dt>Russian</dt><dd>native</dd>
+          <dt>Ukrainian, Belarusian</dt><dd>fluent</dd>
+          <dt>English</dt><dd>B1+ (work language for reports)</dd>
+          <dt>Polish</dt><dd>A1+ (learning)</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
 
-
-    <!-- 🔍 PREVIEW -->
-    <section class="section">
-        <h2>Practical Experience:</h2>
-
-<ul> 
-        <li>QA internship practice within ITX company (Testing of the Capital.com production website) </li>
-        <li>Smoke Testing, Ad Hoc Testing, Retesting, and Localization Testing</li>
-        <li>Bug Reporting, Bug Review, and Defect Investigation</li>
-        <li>Checklist Creation and Maintenance</li>
-        <li>Web, Mobile, Cross-Browser, and Cross-Platform Testing</li>
-        <li>Usability and Exploratory Testing</li>
-        <li>Analysis of user flows, navigation, and business logic</li>
-        <li>Translation of project documentation and bug reports</li>
-        <li>Real-world testing cycles on Test IO and uTest platforms</li>
-    
-</ul>
-    </section>
+  <!-- ============ MORE ============ -->
+  <section class="section">
+    <div class="container grid grid-2">
+      <div class="card linked">
+        <span class="eyebrow">Tester Notes</span>
+        <h3><a class="stretched" href="notes.html">Bug patterns worth re-checking</a></h3>
+        <p class="muted">My “golden mine”: bug patterns from real cycles that tend to show up again on similar sites. Also checklists and lessons learned.</p>
+      </div>
+      <div class="card linked">
+        <span class="eyebrow">Learning</span>
+        <h3><a class="stretched" href="achievements.html">Courses, certificates &amp; audio library</a></h3>
+        <p class="muted">Formal training plus my own bilingual audio library for QA interview practice.</p>
+      </div>
+    </div>
+  </section>
 
 </main>
-
-<!-- 📞 FOOTER -->
-<footer class="footer">
-    <p>© 2026 Volha Shunko</p>
-    <p>
-    Contact: 
-    <a href="https://www.linkedin.com/in/olga-shunko-667101387/" target="_blank" rel="noopener">LinkedIn</a> |
-    <a href="https://github.com/olgagelikrizium-crypto" target="_blank" rel="noopener">GitHub</a>
-</footer>
-
-
 </body>
 </html>

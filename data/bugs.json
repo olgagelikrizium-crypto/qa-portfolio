@@ -1,14 +1,21 @@
-
- [
-   {
+[
+  {
     "id": "TestIO_e-commerce1",
     "title": "Search for 'men' displays women's items in results",
-    "context": "E-commerce platform with product search functionality",
     "project": "E-commerce Platform",
+    "source": "Test IO",
     "date": "29.03.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Search & filters"
+    ],
+    "featured": false,
+    "context": "E-commerce platform with product search functionality",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -25,201 +32,247 @@
     "expected": "Search results should include only men's items.",
     "comments": "The same issue appears on different pages.",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   },
-
-
-   {
-    "title": "Link [learn about strategies] incorrectly redirects to \"Market Analysis\" page in FAQ accordion on \"Trading essentials\" page",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
-    "date": "10.03.2026",
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
     "id": "Web 52",
+    "title": "Link [learn about strategies] incorrectly redirects to \"Market Analysis\" page in FAQ accordion on \"Trading essentials\" page",
+    "project": "Capital.com",
+    "source": "ITX internship",
+    "date": "10.03.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
       "Device: Desktop"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select license ASIC",
-     "Select language EN",
-     "Hover over the menu item [Learn]",
-     "Click on menu item [Trading essentials]",
-     "Scroll down to Block \"FAQs\"",
-     "Click on Accordion item \"How to start trading for beginners\"",
-     "Click on Link [learn about strategies]"
+      "Navigate to capital.com",
+      "Select license ASIC",
+      "Select language EN",
+      "Hover over the menu item [Learn]",
+      "Click on menu item [Trading essentials]",
+      "Scroll down to Block \"FAQs\"",
+      "Click on Accordion item \"How to start trading for beginners\"",
+      "Click on Link [learn about strategies]"
     ],
     "actual": "The link [learn about strategies] is redirected to the page \"Market Analysis\"",
     "expected": "The link [learn about strategies] is redirected to the page \"Trading strategies\"",
     "comments": "Repeated issue when ASIC, FCA, SCA, SCB or CYSEC license and EN, AR, DE, ES, FR, RU,ZH(Traditional), ZH(Simplified), PL, HU, IT, or NL language are selected.",
-    "evidence": "../videos/Irrelevant_content_FAQ.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Irrelevant_content_FAQ.mp4"
   },
-
-
   {
     "id": "M 50",
     "title": "Anchor link [Learn more about us] doesn't redirect to the block \"Learn more about us\" in the block \"Contents\" on the page \"Client funds\"",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "13.03.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11, Android 14",
       "Browser: Chrome",
       "Device: Desktop, POCO X5 Pro 5G"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select license FCA",
-     "Select language EN",
-     "Hover over the menu item [About]",
-     "Click the menu item [Client funds] in menu title [About us]",
-     "Scroll down to Block \"Content\"",
-     "Click the anchor link [Learn more about us]"
-     
+      "Navigate to capital.com",
+      "Select license FCA",
+      "Select language EN",
+      "Hover over the menu item [About]",
+      "Click the menu item [Client funds] in menu title [About us]",
+      "Scroll down to Block \"Content\"",
+      "Click the anchor link [Learn more about us]"
     ],
     "actual": "Anchor link [Learn more about us] doesn't redirect to the block \"Learn more about us\"",
     "expected": "Anchor link [Learn more about us] redirects to the block \"Learn more about us\"",
-    "comments": "Issue is reproducible when all users rolls are selected - authorized, unauthorized, unregistered, and only when FCA licence and EN language are selected ",
-    "evidence": "../videos/BugM50_contents_link (2).mp4",
-    "note": "No video available due to NDA"
+    "comments": "Issue is reproducible when all user roles are selected - authorized, unauthorized, unregistered, and only when FCA licence and EN language are selected",
+    "evidence": "videos/BugM50_contents_link (2).mp4"
   },
-
-
-  { "id": "Web 94",
+  {
+    "id": "Web 94",
     "title": "The \"Contents\" block is missing on the \"Client funds\" page under specific license and language combinations",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "13.03.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11, Android 14",
       "Browser: Chrome",
       "Device: Desktop, POCO X5 Pro 5G"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select license SCA",
-     "Select language EN",
-     "Hover over the menu item [About]",
-     "Click the menu item [Client funds] in menu title [About us]",
-     "Pay attention to the right side of the page"
+      "Navigate to capital.com",
+      "Select license SCA",
+      "Select language EN",
+      "Hover over the menu item [About]",
+      "Click the menu item [Client funds] in menu title [About us]",
+      "Pay attention to the right side of the page"
     ],
     "actual": "The block \"Contents\" is not displayed on the page",
     "expected": "The \"Contents\" block is displayed on the right side of the page, providing navigation links",
-    "comments": "Issue is reproducible when all users rolls are selected - authorized, unauthorized, unregistered and when SCA, ASIC  license and any language are selected, or CySEC license and any language (except  EN and ES languages) are selected ",
-    "evidence": "../videos/Bug_block_contents_is_absent.mp4",
-    "note": "No video available due to NDA"
+    "comments": "Issue is reproducible when all user roles are selected - authorized, unauthorized, unregistered and when SCA, ASIC license and any language are selected, or CySEC license and any language (except EN and ES languages) are selected",
+    "evidence": "videos/Bug_block_contents_is_absent.mp4"
   },
-
-
-  { "id": "Web 110",
+  {
+    "id": "Web 110",
     "title": "The anchor link [FAQs] is not redirected to the block \"FAQs\" on the page \"Trading essentials\"",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "15.03.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
       "Device: Desktop"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select license SCB",
-     "Select language EN",
-     "Hover over the menu section [Learn]",
-     "Click the menu item [Trading Essentials] in menu title [For trading beginners]",
-     "Click the anchor link [FAQs] in block \"Contents\""
+      "Navigate to capital.com",
+      "Select license SCB",
+      "Select language EN",
+      "Hover over the menu section [Learn]",
+      "Click the menu item [Trading Essentials] in menu title [For trading beginners]",
+      "Click the anchor link [FAQs] in block \"Contents\""
     ],
     "actual": "The anchor link [FAQs] is not redirected to the block \"FAQs\"(it redirects to block \"Risks and benefits of trading\" instead)",
-    "expected": "The anchor link [FAQs]  is redirected to the block \"FAQs\"",
-    "comments": "Issue is reproducible when all users rolls are selected - authorized, unauthorized, unregistered and also when SCB, ASIC, FCA, or SCA license and any language are selected  ",
-    "evidence": "../videos/anchor_link_FAQs.mp4",
-    "note": "No video available due to NDA"
+    "expected": "The anchor link [FAQs] is redirected to the block \"FAQs\"",
+    "comments": "Issue is reproducible when all user roles are selected - authorized, unauthorized, unregistered and also when SCB, ASIC, FCA, or SCA license and any language are selected",
+    "evidence": "videos/anchor_link_FAQs.mp4"
   },
-
-
-  { "id": "Loc 33",
-    "title": "Typo \"Lea\" in cryptocurrency trading link on \"Kryptowaluty\" page (PL/CYSEC) ",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+  {
+    "id": "Loc 33",
+    "title": "Typo \"Lea\" in cryptocurrency trading link on \"Kryptowaluty\" page (PL/CYSEC)",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "15.03.2026",
-    "type": "Content",
+    "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Localization",
+      "Navigation & links",
+      "Content"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11, Android 14",
       "Browser: Chrome",
       "Device: Desktop, POCO X5 Pro 5G"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select CYSEC license",
-     "Select language PL",
-     "Hover over the menu section [Rynki](Markets)",
-     "Click the menu item [Kryptowaluty](Cryptocurrencies) in menu title [Nasze rynki](Our markets)",
-     "Scroll down to the block \"Dlaczego warto handlować kryptowalutami z Capital.com?\"(Why trade cryptocurrencies with Capital.com ?)"
+      "Navigate to capital.com",
+      "Select CYSEC license",
+      "Select language PL",
+      "Hover over the menu section [Rynki](Markets)",
+      "Click the menu item [Kryptowaluty](Cryptocurrencies) in menu title [Nasze rynki](Our markets)",
+      "Scroll down to the block \"Dlaczego warto handlować kryptowalutami z Capital.com?\"(Why trade cryptocurrencies with Capital.com ?)"
     ],
-    "actual": "The link  [LeaDowiedz się więcej o handlu kryptowalutami] is displayed",
+    "actual": "The link [LeaDowiedz się więcej o handlu kryptowalutami] is displayed",
     "expected": "The link [Dowiedz się więcej o handlu kryptowalutami] is displayed",
     "comments": "Reproducible across all user roles (authorized/unauthorized/unregistered) but specific to CYSEC/PL context",
-    "evidence": "../videos/incorrect_link_name.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/incorrect_link_name.mp4"
   },
-
-
-  { "id": "Loc 60",
+  {
+    "id": "Loc 60",
     "title": "Link [forex trading] is not translated on \"Niezbędnik handlu\" page (PL/CYSEC)",
-    "Severity": "Trivial",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "23.03.2026",
-    "type": "Content",
+    "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Localization",
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11, Android 14",
       "Browser: Chrome",
       "Device: Desktop, POCO X5 Pro 5G"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select CYSEC license",
-     "Select language PL",
-     "Hover over menu section [Ucz się] (Learn)",
-     "Click the menu item [Niezbędnik handlu] (Trading essentials)",
-     "Scroll down to the list item number 3 in the block \"Rynki finansowe dla nowych traderów\" (Financial markets for new traders)",
-     "Pay attention to the link [forex trading]"
+      "Navigate to capital.com",
+      "Select CYSEC license",
+      "Select language PL",
+      "Hover over menu section [Ucz się] (Learn)",
+      "Click the menu item [Niezbędnik handlu] (Trading essentials)",
+      "Scroll down to the list item number 3 in the block \"Rynki finansowe dla nowych traderów\" (Financial markets for new traders)",
+      "Pay attention to the link [forex trading]"
     ],
     "actual": "The link [forex trading] is not translated into PL language",
     "expected": "The link text is translated into Polish (e.g., [handel forex])",
     "comments": "Reproducible across all user roles (authorized/unauthorized/unregistered) but specific to CYSEC/PL context",
-    "evidence": "../videos/link_is_not_translated.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/link_is_not_translated.mp4"
   },
-
-
- {
+  {
     "id": "TestIO_e-commerce2",
     "title": "Identical price filter (Min 50, Max 50) returns no results in Search",
-    "context": "E-commerce platform with product search functionality",
     "project": "E-commerce Platform",
+    "source": "Test IO",
     "date": "23.03.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "UI / Visual",
+      "Search & filters"
+    ],
+    "featured": true,
+    "context": "E-commerce platform with product search functionality",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -236,16 +289,24 @@
     "expected": "The search results should display all products that match the exact price entered in the filter range ($50.00). Identical Min and Max values should be treated as a valid filter for a specific price point.",
     "comments": "The same issue appears when equal Min and Max price are selected.",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   }, 
-
-
-   {"id": "TestIO_design_tool_1",
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
+    "id": "TestIO_design_tool_1",
     "title": "AI Audio Generator ignores the duration constraint specified in the prompt within the Elements tab",
-    "context": "Web-based design tool for creating graphics, presentations, and social media content,  also using AI",
-    "project": "Design Tool",
+    "project": "AI Design Tool",
+    "source": "Test IO",
+    "type": "Non-functional",
     "severity": "Major",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "AI features"
+    ],
+    "featured": false,
+    "context": "Web-based design tool for creating graphics, presentations, and social media content, also using AI",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -263,18 +324,25 @@
     "expected": "The generated sound effect should strictly adhere to the duration specified in the prompt (e.g., it should be exactly 3 seconds long as requested)",
     "comments": "Consistently observed with different prompts: 2s, 5s, and 10s constraints all result in incorrect output duration.",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   }, 
-
-
-   {"id": "TestIO_design_tool_2",
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
+    "id": "TestIO_design_tool_2",
     "title": "AI Generator ignores requested page count (20) after style regeneration",
-    "context": "Web-based design tool for creating graphics, presentations, and social media content,  also using AI",
-    "project": "Design Tool",
+    "project": "AI Design Tool",
+    "source": "Test IO",
     "date": "07.04.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "AI features"
+    ],
+    "featured": false,
+    "context": "Web-based design tool for creating graphics, presentations, and social media content, also using AI",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -292,20 +360,28 @@
     ],
     "actual": "After regenerating the presentation with a different style, the AI ignores the explicit \"20-page\" instruction from the prompt and produces a template with significantly fewer pages (e.g., only 14 pages instead of 20).",
     "expected": "The generated presentation is strictly adhere to the instructional constraints (page count) provided in the prompt, maintaining the requested 20 pages even after style regeneration.",
-    "comments": "An issue appears only when regenerating with style changing. The AI consistently fails to maintain the original page count constraint only during the style-switch regeneration flow ",
+    "comments": "An issue appears only when regenerating with style changing. The AI consistently fails to maintain the original page count constraint only during the style-switch regeneration flow",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   }, 
-
-
-   {"id": "TestIO_design_tool_3",
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
+    "id": "TestIO_design_tool_3",
     "title": "AI Email Generator merges multiple requested small buttons into a single text element instead of separate interactive objects",
-    "context": "Web-based design tool for creating graphics, presentations, and social media content,  also using AI",
-    "project": "Design Tool",
+    "project": "AI Design Tool",
+    "source": "Test IO",
     "date": "08.04.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "AI features"
+    ],
+    "featured": false,
+    "context": "Web-based design tool for creating graphics, presentations, and social media content, also using AI",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -322,18 +398,27 @@
     "expected": "The AI strictly follows the prompt instructions and generates three distinct, interactive button elements with defined labels. Each button (including the two smaller ones) is a separate, editable object with its own text label as requested, and no additional buttons are created on the page.",
     "comments": "Such behavior is observed with different prompted buttons' number (e.g.3, 4, 5)",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   },
-
-
-   {"id": "TestIO_design_tool_4",
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
+    "id": "TestIO_design_tool_4",
     "title": "AI Form Generator produces text placeholders instead of button objects and inserts irrelevant paragraph text into button labels",
-    "context": "Web-based design tool for creating graphics, presentations, and social media content,  also using AI",
-    "project": "Design Tool",
+    "project": "AI Design Tool",
+    "source": "Test IO",
     "date": "08.04.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "UI / Visual",
+      "AI features"
+    ],
+    "featured": false,
+    "context": "Web-based design tool for creating graphics, presentations, and social media content, also using AI",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -350,18 +435,26 @@
     "expected": "The AI generated an interactive, editable button object labeled \"Send Feedback\" with a coffee cup icon as specified in the prompt. No text placeholders or irrelevant long paragraphs is presented within the button elements",
     "comments": "Such behavior is observed with different prompted icons' designs",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   },
-
-
-   {"id": "TestIO_design_tool_5",
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
+    "id": "TestIO_design_tool_5",
     "title": "AI Generator incorrectly triggers search instead of content generation when prompts contain double quotes",
-    "context": "Web-based design tool for creating graphics, presentations, and social media content,  also using AI",
-    "project": "Design Tool",
+    "project": "AI Design Tool",
+    "source": "Test IO",
     "date": "08.04.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "AI features",
+      "Search & filters"
+    ],
+    "featured": true,
+    "context": "Web-based design tool for creating graphics, presentations, and social media content, also using AI",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -379,18 +472,25 @@
     "expected": "The AI correctly parses the prompt regardless of the presence of double quotes and generates the requested elements based on the \"Generate\" button command",
     "comments": "Such behavior is observed with different prompts",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   },
-
-
-   {"id": "TestIO_design_tool_6",
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
+    "id": "TestIO_design_tool_6",
     "title": "AI 3D Model Generator ignores \"transparent\" attribute and fails to render clear internal objects",
-    "context": "Web-based design tool for creating graphics, presentations, and social media content,  also using AI",
-    "project": "Design Tool",
+    "project": "AI Design Tool",
+    "source": "Test IO",
     "date": "08.04.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "AI features"
+    ],
+    "featured": false,
+    "context": "Web-based design tool for creating graphics, presentations, and social media content, also using AI",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome",
@@ -408,46 +508,65 @@
     "expected": "The AI is strictly adhering to all attributes provided in the prompt, generating a clearly transparent 3D cube that contains a well-defined, distinct red sphere inside it",
     "comments": "Such behavior is observed three times one by one",
     "evidence": null,
-    "note": "Due to confidentiality and NDA restrictions, original video evidence cannot be shared."
-   },
-   {
+    "note": "Video evidence is not shared due to NDA."
+  },
+  {
     "id": "Web 175",
-    "title": "Incorrect redirection to SCB license via the [5,500]+ global CFD markets] link on the \"AUD/CAD trading guide\" page ",
-    "context": "Online trading platform (CFD and Forex) with educational content and market guides",
+    "title": "Incorrect redirection to SCB license via the [5,500]+ global CFD markets] link on the \"AUD/CAD trading guide\" page",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "14.05.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and market guides",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
       "Device: Desktop (Intel Core i5-10300H, 12GB RAM)"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select FCA license",
-     "Select EN language",
-     "Scroll down to the Footer",
-     "Click on the [Forex course] link",
-     "Scroll down to the \"Forex trading for intermediate traders\" block",
-     "Click on the [How to trade AUD/CAD] link",
-     "Scroll down to the \"How to trade AUD to Canadian dollar\"block",
-     "Observe the [5,500]+ global CFD markets] link"
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Scroll down to the Footer",
+      "Click on the [Forex course] link",
+      "Scroll down to the \"Forex trading for intermediate traders\" block",
+      "Click on the [How to trade AUD/CAD] link",
+      "Scroll down to the \"How to trade AUD to Canadian dollar\"block",
+      "Observe the [5,500]+ global CFD markets] link"
     ],
     "actual": "The link redirects to the SCB license page (en-int) instead of FCA (en-gb). Additionally, an unexpected ']' character is displayed in the link text, and the page opens in a new tab.",
     "expected": "The link redirects to the corresponding page under the FCA license (en-gb) in the same tab, with no extra characters in the text.",
     "comments": "The visual defect (extra ']' character) is reproducible across all licenses when the EN language is selected. Furthermore, at step 7, the [How to trade AUD/CAD] link opens in a new tab, which violates the internal linking standards of the project.",
-    "evidence": "../videos/Web_175.mp4",
-    "note": "No video available due to NDA"
-},
-{
+    "evidence": "videos/Web_175.mp4"
+  },
+  {
     "id": "Web 101",
     "title": "The block title is not translated into Arabic on the 'Shares' instrument page",
-    "context": "Online trading platform with localized content for SCA license",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "24.04.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Localization"
+    ],
+    "featured": false,
+    "context": "Online trading platform with localized content for SCA license",
     "environment": [
       "OS: Windows 11, Android 14",
       "Browser: Chrome 147",
@@ -463,19 +582,28 @@
       "Scroll down to the 'Latest Shares articles' block"
     ],
     "actual": "The block title is not translated into AR and remains in English",
-    "expected": "The block title is correctly translated into the selected Arabic language [3]",
+    "expected": "The block title is correctly translated into the selected Arabic language",
     "comments": "Reproducible for all trading instruments under the SCA license in AR localization",
-    "evidence": "../videos/Web_101.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_101.mp4"
   },
   {
     "id": "Web 174",
     "title": "The [US Wall Street 30] link on the 'US 500' page is redirected to the ASIC license page instead of the FCA license",
-    "context": "Online trading platform with multi-license educational content and market guides",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "14.05.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform with multi-license educational content and market guides",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -495,47 +623,65 @@
     "actual": "The page is opened under the ASIC license (URL contains 'en-au') instead of the expected FCA license ('en-gb')",
     "expected": "The corresponding page is opened under the FCA license (URL contains 'en-gb')",
     "comments": "The bug is also reproduced for other links in the same block, such as [get support], [in-depth educational support], or [go to analysis]",
-    "evidence": "../videos/Web_174.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_174.mp4"
   },
   {
     "id": "Web 95 (Loc)",
     "title": "An extra dollar sign '$' is displayed on the instrument page when the SCA license and AR language are selected",
-    "context": "Online trading platform (instrument tooltips and modals)",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "24.04.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Localization",
+      "UI / Visual"
+    ],
+    "featured": false,
+    "context": "Online trading platform (instrument tooltips and modals)",
     "environment": [
       "OS: Windows 11, Android 14",
       "Browser: Chrome 147",
       "Device: Desktop, POCO X5 Pro 5G"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select SCA license",
-     "Select AR language",
-     "Hover over the [األسواق] (Markets) menu section",
-     "Click the [األسھم] (Shares) menu item",
-     "Scroll down to the instrument table",
-     "Click any instrument (e.g., TSLA)",
-     "Hover over the tooltip 'رسوم التبییت على مركز البیع' (Short position overnight fee) or 'رسوم التبییت على مركز الشراء' (Long position overnight fee)",
-     "Observe the modal window"
+      "Navigate to capital.com",
+      "Select SCA license",
+      "Select AR language",
+      "Hover over the [األسواق] (Markets) menu section",
+      "Click the [األسھم] (Shares) menu item",
+      "Scroll down to the instrument table",
+      "Click any instrument (e.g., TSLA)",
+      "Hover over the tooltip 'رسوم التبییت على مركز البیع' (Short position overnight fee) or 'رسوم التبییت على مركز الشراء' (Long position overnight fee)",
+      "Observe the modal window"
     ],
     "actual": "The extra dollar sign '$' is displayed in the modal window",
     "expected": "The extra dollar sign '$' is not displayed in the modal window",
-    "comments": "This issue is also reproducible when [الفوركس] (Forex), [المؤشرات] (Indices), [السلع] (Commodities), or [العمالت المشفرة] (Cryptocurrencies) menu items are selected [1, 2].",
-    "evidence": "../videos/Web_95.mp4",
-    "note": "No video available due to NDA"
-},
-{
+    "comments": "This issue is also reproducible when [الفوركس] (Forex), [المؤشرات] (Indices), [السلع] (Commodities), or [العمالت المشفرة] (Cryptocurrencies) menu items are selected.",
+    "evidence": "videos/Web_95.mp4"
+  },
+  {
     "id": "Web 106",
     "title": "The [About] menu is not scrolled to the bottom and lower items are not displayed in the Header when FCA license and EN language are selected",
-    "context": "Header navigation menu and submenus",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "24.04.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "UI / Visual"
+    ],
+    "featured": false,
+    "context": "Header navigation menu and submenus",
     "environment": [
       "Monitor: 15.6 inch",
       "Resolution: 1920x1080",
@@ -552,17 +698,25 @@
     "actual": "The menu is not scrolled to the bottom, and the lower menu items (e.g., 'Contact us') are not displayed and cannot be clicked.",
     "expected": "The menu is fully scrollable to the bottom, and all items are visible and accessible.",
     "comments": "The issue is reproduced on specific screen sizes (15.6 inch) at 100% zoom. Decreasing the zoom makes items visible, but it violates usability standards.",
-    "evidence": "../videos/Web_106.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_106.mp4"
   },
   {
     "id": "Web 107 (Loc)",
     "title": "Words starting with the letter 'R' are displayed in the 'S' section on the Glossary page when CYSEC license and HU language are selected",
-    "context": "Educational content - Financial Glossary",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "27.04.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization"
+    ],
+    "featured": false,
+    "context": "Educational content - Financial Glossary",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -580,17 +734,27 @@
     "actual": "Words starting with the letter 'R' are displayed at the end of the 'S' section",
     "expected": "Words starting with the letter 'R' are correctly placed in the 'R' section",
     "comments": "Reproducible specifically for the Hungarian localization under CYSEC license.",
-    "evidence": "../videos/Web_107(loc).mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_107(loc).mp4"
   },
   {
     "id": "Web 108",
     "title": "A different screen with the [Search markets] button is momentarily displayed after clicking [Sell] or [Buy] on a trade instrument page",
-    "context": "Trading instrument interaction and page transitions",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "27.04.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "UI / Visual",
+      "Search & filters"
+    ],
+    "featured": false,
+    "context": "Trading instrument interaction and page transitions",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 147",
@@ -609,17 +773,26 @@
     "actual": "A screen with the [Search markets] button and 'Add markets to Charts' text is momentarily displayed (flickers) during the transition.",
     "expected": "The transition to the trading platform occurs smoothly without displaying intermediate irrelevant screens.",
     "comments": "The issue is visible at 00:20 in the attached evidence. It appears to be a rendering glitch of the trading UI components.",
-    "evidence": "../videos/Web_108.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_108.mp4"
   },
   {
     "id": "Web 109",
     "title": "Anchor links do not lead to the corresponding blocks on the first click on the 'Cryptos vs stocks' page",
-    "context": "Internal page navigation via 'Contents' block",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "28.04.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "UI / Visual"
+    ],
+    "featured": false,
+    "context": "Internal page navigation via 'Contents' block",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -635,44 +808,61 @@
     "actual": "The page is scrolled to an incorrect block (e.g., 'Liquidity') instead of the target section on the first click.",
     "expected": "The page scrolls correctly to the corresponding block on the first and every subsequent click.",
     "comments": "The bug is reproduced only on the first click after the page is loaded. On subsequent clicks, links work as expected. Reproduced across all licenses except FCA.",
-    "evidence": "../videos/Web_109.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_109.mp4"
   },
   {
     "id": "Web 105",
     "title": "The button [Open an account] on the banner 'Award-winning platform for UK traders' on the Main page is redirected to the Main page in a new tab when FCA license and EN language are selected",
-    "context": "Online trading platform Main page marketing banners",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "27.04.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": true,
+    "context": "Online trading platform Main page marketing banners",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
       "Device: Desktop"
     ],
     "steps": [
-     "Navigate to capital.com",
-     "Select FCA license",
-     "Select EN language",
-     "Click the [Professional] tab",
-     "Scroll down to the bottom of the banner 'Award-winning platform for UK traders'",
-     "Click the [Open an account] button"
+      "Navigate to capital.com",
+      "Select FCA license",
+      "Select EN language",
+      "Click the [Professional] tab",
+      "Scroll down to the bottom of the banner 'Award-winning platform for UK traders'",
+      "Click the [Open an account] button"
     ],
     "actual": "The same page is opened in a new tab (loop redirect) instead of opening the Sign Up form.",
     "expected": "The Sign Up form is opened in the same tab.",
     "comments": "The issue is reproducible for both Unregistered and Authorized users. During the review, a missing step in the STR was identified and corrected, and the title was adjusted to meet the 'What? Where? When?' standard.",
-    "evidence": "../videos/Web_105.mp4",
-    "note": "No video available due to NDA"
-},
-{
+    "evidence": "videos/Web_105.mp4"
+  },
+  {
     "id": "Web 111",
     "title": "The [FAQs] item in the 'Contents' block is cut off and the block cannot be scrolled to the end on the 'Largest Stock Exchanges' page",
-    "context": "Internal page navigation and sitemap content",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "28.04.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "UI / Visual"
+    ],
+    "featured": false,
+    "context": "Internal page navigation and sitemap content",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -690,18 +880,26 @@
     ],
     "actual": "The [FAQs] item is cut off and the 'Contents' block cannot be scrolled to the bottom to access all links.",
     "expected": "The 'Contents' block is fully scrollable, and all items, including [FAQs], are visible.",
-    "comments": "Issue reproduced specifically on the 'Largest Stock Exchanges' guide page under FCA license [1].",
-    "evidence": "../videos/Web_111.mp4",
-    "note": "No video available due to NDA"
+    "comments": "Issue reproduced specifically on the 'Largest Stock Exchanges' guide page under FCA license.",
+    "evidence": "videos/Web_111.mp4"
   },
   {
     "id": "Web 144",
     "title": "Inconsistent number of continents displayed in the 'Our office locations' and 'Find out more about who we are' blocks on the 'About us' page",
-    "context": "Company information and office locations across licenses",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "07.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "Company information and office locations across licenses",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 147",
@@ -716,19 +914,27 @@
       "Scroll down to the 'Find out more about who we are' block and observe the number of continents"
     ],
     "actual": "A different number of continents is displayed in two different blocks on the same page.",
-    "expected": "The number of continents where offices are located is unified and consistent across all blocks [2].",
+    "expected": "The number of continents where offices are located is unified and consistent across all blocks.",
     "comments": "This is a content inconsistency issue that affects brand credibility.",
-    "evidence": "../videos/Web_144.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_144.mp4"
   },
   {
     "id": "Web 146",
     "title": "Inconsistent information about the number of continents displayed in the 'Where we work' block on the 'Careers' page",
-    "context": "Global career opportunities and office location data",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "07.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "Global career opportunities and office location data",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -741,20 +947,28 @@
       "Navigate to the 'Careers' page",
       "Observe the 'Where we work' block"
     ],
-    "actual": "The block displays 'offices across Europe, Asia and Australia' (3 continents), which is inconsistent with other sections stating 4 continents [3].",
-    "expected": "Unified information about four continents is displayed in the 'Where we work' block [4].",
+    "actual": "The block displays 'offices across Europe, Asia and Australia' (3 continents), which is inconsistent with other sections stating 4 continents.",
+    "expected": "Unified information about four continents is displayed in the 'Where we work' block.",
     "comments": "Reproducible across SCA (EN/AR), CYSEC (EN/PL/EL), and ASIC (EN) licenses.",
-    "evidence": "../videos/Web_146.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_146.mp4"
   },
   {
     "id": "Web 151",
     "title": "The reference indicator '¹' is missing from the Main page text when the FCA license and EN language are selected",
-    "context": "Main page content and legal footnotes",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "11.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "Main page content and legal footnotes",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -767,20 +981,28 @@
       "Observe the main text on the Homepage",
       "Compare the text with the footnote explanation shown above the footer"
     ],
-    "actual": "The reference indicator '¹' is missing from the main text, although the footnote explanation is present at the bottom [5].",
+    "actual": "The reference indicator '¹' is missing from the main text, although the footnote explanation is present at the bottom.",
     "expected": "The reference indicator '¹' is displayed as a superscript in the text corresponding to its footnote.",
-    "comments": "The footnote refers to tax treatment, which is critical for the FCA license [5].",
-    "evidence": "../videos/Web_151.mp4",
-    "note": "No video available due to NDA"
+    "comments": "The footnote refers to tax treatment, which is critical for the FCA license.",
+    "evidence": "videos/Web_151.mp4"
   },
   {
     "id": "Web 112 (Loc)",
     "title": "The content of the 'Different ways to trade or invest in gold' graphic and gold trading blocks is displayed in English instead of Arabic on the 'What is Gold Trading?' page when SCA or SCB license and AR language are selected",
-    "context": "Educational content - Market guides (Gold trading)",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "28.04.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization"
+    ],
+    "featured": false,
+    "context": "Educational content - Market guides (Gold trading)",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -796,20 +1018,28 @@
       "Click on the [ما هو مفهوم التداول على الذهب] (What is gold trading) link",
       "Observe the 'Different ways to trade or invest in gold' graphic and the 'GOLD TRADING - SPOT VS FUTURES' block"
     ],
-    "actual": "The content of the mentioned graphic and blocks is displayed in English instead of Arabic [1, 2].",
-    "expected": "All content on the page, including graphics and informational blocks, is correctly translated into Arabic [2].",
-    "comments": "The issue is reproduced under both SCA and SCB licenses when the AR language is selected [2].",
-    "evidence": "../videos/Web_112.mp4",
-    "note": "No video available due to NDA"
+    "actual": "The content of the mentioned graphic and blocks is displayed in English instead of Arabic.",
+    "expected": "All content on the page, including graphics and informational blocks, is correctly translated into Arabic.",
+    "comments": "The issue is reproduced under both SCA and SCB licenses when the AR language is selected.",
+    "evidence": "videos/Web_112.mp4"
   },
   {
     "id": "Web 113 (Loc)",
     "title": "The 'Homepage' item is displayed in English instead of German in the list on the 'Sitemap' page when CYSEC or SCB license and DE language are selected",
-    "context": "Site navigation - Sitemap page localization",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "28.04.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization"
+    ],
+    "featured": false,
+    "context": "Site navigation - Sitemap page localization",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 147",
@@ -823,20 +1053,28 @@
       "Click on the [Sitemap] link",
       "Pay attention to the page content list"
     ],
-    "actual": "The 'Homepage' item is displayed in English, while the breadcrumb menu on the same page correctly shows 'Startseite' [3, 4].",
-    "expected": "The 'Startseite' (Homepage) item is displayed in German [4].",
-    "comments": "This is an inconsistency in translation, as the breadcrumb version of the link is correctly localized [4].",
-    "evidence": "../videos/Web_113.mp4",
-    "note": "No video available due to NDA"
+    "actual": "The 'Homepage' item is displayed in English, while the breadcrumb menu on the same page correctly shows 'Startseite'.",
+    "expected": "The 'Startseite' (Homepage) item is displayed in German.",
+    "comments": "This is an inconsistency in translation, as the breadcrumb version of the link is correctly localized.",
+    "evidence": "videos/Web_113.mp4"
   },
   {
     "id": "Web 116",
     "title": "The [All platforms] menu item is missing in the [Trading] menu section when EN language and FCA license are selected",
-    "context": "Header navigation menu - Trading section",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "29.04.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "Header navigation menu - Trading section",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -849,20 +1087,28 @@
       "Hover over the [Trading] menu section in the Header",
       "Observe the items under the 'Trading platforms' title"
     ],
-    "actual": "The [All platforms] menu item is missing from the drop-down menu [5, 6].",
-    "expected": "The [All platforms] menu item is displayed in the list [6].",
-    "comments": "The missing item affects the ability of FCA users to view the complete list of available trading solutions [5].",
-    "evidence": "../videos/Web_116.mp4",
-    "note": "No video available due to NDA"
+    "actual": "The [All platforms] menu item is missing from the drop-down menu.",
+    "expected": "The [All platforms] menu item is displayed in the list.",
+    "comments": "The missing item affects the ability of FCA users to view the complete list of available trading solutions.",
+    "evidence": "videos/Web_116.mp4"
   },
   {
     "id": "Web 117 (Loc)",
     "title": "Partial English translation in the 'Trading platforms' and 'Trading tools' menu titles when CYSEC license and EL language are selected",
-    "context": "Header drop-down menu localization",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "29.04.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization"
+    ],
+    "featured": false,
+    "context": "Header drop-down menu localization",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -875,20 +1121,28 @@
       "Hover over the [Συναλλαγές] (Trading) menu section",
       "Observe the menu titles in the drop-down"
     ],
-    "actual": "The titles 'Πλατφόρμες trading' (Trading platforms) and 'Εργαλεία trading' (Trading tools) are partly displayed in English [6, 7].",
-    "expected": "All menu titles in the drop-down menu are fully translated into Greek [7].",
-    "comments": "The word 'trading' remains in English within Greek menu titles [7].",
-    "evidence": "../videos/Web_117.mp4",
-    "note": "No video available due to NDA"
+    "actual": "The titles 'Πλατφόρμες trading' (Trading platforms) and 'Εργαλεία trading' (Trading tools) are partly displayed in English.",
+    "expected": "All menu titles in the drop-down menu are fully translated into Greek.",
+    "comments": "The word 'trading' remains in English within Greek menu titles.",
+    "evidence": "videos/Web_117.mp4"
   },
   {
     "id": "Web 129 (Loc)",
     "title": "The '(RU-RU)' indicator is displayed in the title of the 'Sitemap' page and breadcrumbs when RO language and CySEC license are selected",
-    "context": "Sitemap page metadata and breadcrumb localization",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "05.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization"
+    ],
+    "featured": true,
+    "context": "Sitemap page metadata and breadcrumb localization",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 147",
@@ -902,20 +1156,31 @@
       "Click on the [Harta site-ului] (Sitemap) link",
       "Observe the page title and breadcrumb menu"
     ],
-    "actual": "An incorrect '(RU-RU)' language indicator is displayed in the page title and breadcrumbs [8].",
-    "expected": "The page title and breadcrumbs are displayed correctly without external language indicators [8].",
-    "comments": "This issue points to a technical metadata error where the Russian locale tag is leaked into the Romanian page [8].",
-    "evidence": "../videos/Web_129.mp4",
-    "note": "No video available due to NDA"
+    "actual": "An incorrect '(RU-RU)' language indicator is displayed in the page title and breadcrumbs.",
+    "expected": "The page title and breadcrumbs are displayed correctly without external language indicators.",
+    "comments": "This issue points to a technical metadata error where the Russian locale tag is leaked into the Romanian page.",
+    "evidence": "videos/Web_129.mp4"
   },
   {
     "id": "Web 138 (Loc)",
     "title": "Inconsistent naming of [Sign up] buttons in Header and Banner when AR language and SCA license are selected",
-    "context": "Main page Call-to-Action (CTA) consistency",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "06.05.2026",
     "type": "Non-functional",
     "severity": "Minor",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Localization",
+      "Navigation & links",
+      "Content"
+    ],
+    "featured": false,
+    "context": "Main page Call-to-Action (CTA) consistency",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -928,20 +1193,31 @@
       "Observe the [Sign up] button in the Header",
       "Observe the [Sign up] button on the Main banner"
     ],
-    "actual": "The Header button is named [قم بالاشتراك], while the Banner button is named [قم بالتسجيل] [9].",
-    "expected": "The labels for both buttons use a unified Arabic translation for 'Sign up' [9].",
-    "comments": "The inconsistent naming across two primary CTA buttons on the same page can confuse users [9, 10].",
-    "evidence": "../videos/Web_138.mp4",
-    "note": "No video available due to NDA"
+    "actual": "The Header button is named [قم بالاشتراك], while the Banner button is named [قم بالتسجيل].",
+    "expected": "The labels for both buttons use a unified Arabic translation for 'Sign up'.",
+    "comments": "The inconsistent naming across two primary CTA buttons on the same page can confuse users.",
+    "evidence": "videos/Web_138.mp4"
   },
   {
     "id": "Web 139",
     "title": "Inconsistent capitalization of [Sign up] button labels on the Main page when EN language and various licenses are selected",
-    "context": "UI/UX consistency - button label styling",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "06.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Navigation & links",
+      "UI / Visual",
+      "Content"
+    ],
+    "featured": false,
+    "context": "UI/UX consistency - button label styling",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -953,20 +1229,29 @@
       "Select EN language",
       "Compare the [Sign Up] button in the header with the [Sign up] button in the banner"
     ],
-    "actual": "Inconsistent capitalization: [Sign Up] in the header vs. [Sign up] in the banner [10, 11].",
-    "expected": "Unified capitalization is used for all 'Sign up' button labels on the page [11].",
-    "comments": "Reproducible across all English versions of the site regardless of the selected license [10, 11].",
-    "evidence": "../videos/Web_139.mp4",
-    "note": "No video available due to NDA"
+    "actual": "Inconsistent capitalization: [Sign Up] in the header vs. [Sign up] in the banner.",
+    "expected": "Unified capitalization is used for all 'Sign up' button labels on the page.",
+    "comments": "Reproducible across all English versions of the site regardless of the selected license.",
+    "evidence": "videos/Web_139.mp4"
   },
   {
     "id": "Web 141",
     "title": "Broken image icon is displayed near the chatbot messages in the 'Pop-up chat Capital.com' window when any license and language are selected",
-    "context": "Support chat UI - chatbot message rendering",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "06.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "UI / Visual"
+    ],
+    "featured": false,
+    "context": "Support chat UI - chatbot message rendering",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -978,20 +1263,28 @@
       "Click the [Support] button to open the chat window",
       "Observe the messages sent by the 'Capital.com Bot'"
     ],
-    "actual": "A broken image icon is displayed next to the automated messages sent by the bot [12, 13].",
-    "expected": "Chatbot messages are displayed correctly with the intended bot avatar or without broken icons [13].",
-    "comments": "This is a universal visual defect affecting the user support experience across all regions [12, 13].",
-    "evidence": "../videos/Web_141.mp4",
-    "note": "No video available due to NDA"
+    "actual": "A broken image icon is displayed next to the automated messages sent by the bot.",
+    "expected": "Chatbot messages are displayed correctly with the intended bot avatar or without broken icons.",
+    "comments": "This is a universal visual defect affecting the user support experience across all regions.",
+    "evidence": "videos/Web_141.mp4"
   },
   {
     "id": "Web 149",
     "title": "Incorrect 'SCA' license name is displayed on the 'Client funds' page when CYSEC or ASIC license is selected",
-    "context": "Legal information - license name accuracy",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "08.05.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "Legal information - license name accuracy",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1005,20 +1298,28 @@
       "Click the [Client funds] menu item",
       "Scroll to the fourth bullet point"
     ],
-    "actual": "The text displays 'Securities and Commodities Authority in the United Arab Emirates (SCA)' [14, 15].",
-    "expected": "The correct legal entity name for the region (e.g., CMA or the corresponding regulator) is displayed [15].",
-    "comments": "This content leak shows SCA (UAE) regulatory information on pages meant for CySEC or ASIC licenses [14, 15].",
-    "evidence": "../videos/Web_149.mp4",
-    "note": "No video available due to NDA"
+    "actual": "The text displays 'Securities and Commodities Authority in the United Arab Emirates (SCA)'.",
+    "expected": "The correct legal entity name for the region (e.g., CMA or the corresponding regulator) is displayed.",
+    "comments": "This content leak shows SCA (UAE) regulatory information on pages meant for CySEC or ASIC licenses.",
+    "evidence": "videos/Web_149.mp4"
   },
   {
     "id": "Web 150 (Loc)",
     "title": "Job positions are not translated into Italian in the quotes section on the 'Carriere' (Careers) page",
-    "context": "Careers page content localization - employee quotes",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "08.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization"
+    ],
+    "featured": false,
+    "context": "Careers page content localization - employee quotes",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1032,20 +1333,30 @@
       "Click the [Carriere] (Careers) menu item",
       "Scroll down to the 'Ascolta cosa dicono i nostri dipendenti' (Hear it from our people) block"
     ],
-    "actual": "Job titles (e.g., 'Responsabile Back Office', 'Senior Incident Manager') remain in English within the Italian quotes [15-17].",
-    "expected": "All employee titles and descriptions are correctly translated into Italian [16, 17].",
-    "comments": "Quotes by Blagoy Dafkov and Kacper Miszczak contain untranslated professional titles [16].",
-    "evidence": "../videos/Web_150.mp4",
-    "note": "No video available due to NDA"
+    "actual": "Job titles (e.g., 'Responsabile Back Office', 'Senior Incident Manager') remain in English within the Italian quotes.",
+    "expected": "All employee titles and descriptions are correctly translated into Italian.",
+    "comments": "Employee quotes in this block contain untranslated professional titles.",
+    "evidence": "videos/Web_150.mp4"
   },
   {
     "id": "Web 153",
     "title": "The [Research report] anchor link is not scrolled to the 'Research report' block in the 'Contents' block on the 'Investor Relations' page",
-    "context": "Internal page navigation via anchor links",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "08.05.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "UI / Visual",
+      "Search & filters"
+    ],
+    "featured": false,
+    "context": "Internal page navigation via anchor links",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1063,17 +1374,25 @@
     "actual": "The page is not scrolled to the corresponding block if clicked for the first time after page load.",
     "expected": "The page scrolls correctly to the 'Research report' block on the first and every subsequent click.",
     "comments": "Issue is always reproducible if clicked first from the list. Similar to Web 530/548 (2025).",
-    "evidence": "../videos/Web_153.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_153.mp4"
   },
   {
     "id": "Web 154",
     "title": "Inconsistent naming of the 'Payments and withdrawals' page across navigation, breadcrumbs, and page banner",
-    "context": "UI/UX consistency - page naming",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "08.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "UI/UX consistency - page naming",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1090,17 +1409,26 @@
     "actual": "The banner title is displayed as 'Deposits and withdrawals', which differs from the navigation name.",
     "expected": "The page name is consistent across navigation, breadcrumbs, and the page banner.",
     "comments": "Naming mismatch between navigation menu and the actual page content.",
-    "evidence": "../videos/Web_154.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_154.mp4"
   },
   {
     "id": "Web 157 (Loc)",
     "title": "The [Learn to trade] link in the Sitemap is not translated into Hungarian",
-    "context": "Sitemap page localization for CySEC license",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "09.05.2026",
     "type": "Non-functional",
     "severity": "Minor",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization",
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Sitemap page localization for CySEC license",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1117,17 +1445,26 @@
     "actual": "The link [Learn to trade] remains in English while other elements are translated.",
     "expected": "All links on the Sitemap page are correctly translated into Hungarian.",
     "comments": "Localization leak on the sitemap page specifically for the Hungarian locale.",
-    "evidence": "../videos/Web_157.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_157.mp4"
   },
   {
     "id": "Web 159 (Loc)",
     "title": "The [próbafiók] (demo account) link on the 'Kockázatkezelés' page is redirected to the Sign-up form in English",
-    "context": "Functional localization - redirection to English form",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "10.05.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization",
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Functional localization - redirection to English form",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1143,17 +1480,26 @@
     "actual": "The link opens the Sign-up form in English instead of Hungarian.",
     "expected": "The link opens the localized Hungarian Sign-up form.",
     "comments": "Incorrect localization path for the registration form trigger.",
-    "evidence": "../videos/Web_159.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_159.mp4"
   },
   {
     "id": "Web 162",
     "title": "The reference indicator '¹' is missing from the Main page text under FCA license",
-    "context": "Legal compliance - missing footnote indicators",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "11.05.2026",
     "type": "Non-functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "UI / Visual",
+      "Content"
+    ],
+    "featured": false,
+    "context": "Legal compliance - missing footnote indicators",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1169,17 +1515,25 @@
     "actual": "The superscript '¹' is missing from the main text body.",
     "expected": "The reference indicator '¹' is displayed as a superscript corresponding to the legal footnote.",
     "comments": "The footnote exists at the bottom, but the reference in the text is absent.",
-    "evidence": "../videos/Web_162.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_162.mp4"
   },
   {
     "id": "Web 165",
     "title": "The [Daniela Hathorn] and [Kyle Rodda] links are incorrectly redirected to the 'Technical Analysis' page",
-    "context": "Functional - incorrect redirection on 'Market analysis' page",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "12.05.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Functional - incorrect redirection on 'Market analysis' page",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1196,17 +1550,26 @@
     "actual": "The links redirect to the 'Technical Analysis' section instead of the authors' personal article pages.",
     "expected": "The links lead to the specific analyst's profile or list of articles.",
     "comments": "Broken author attribution logic in the 'Our market analysts' block.",
-    "evidence": "../videos/Web_165.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_165.mp4"
   },
   {
     "id": "Web 166",
     "title": "The [https://capital.com/] link in legal documents leads to the SCB license main page instead of the selected license",
-    "context": "Legal documentation - cross-license redirection",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "12.05.2026",
     "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Legal documentation - cross-license redirection",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 147",
@@ -1223,17 +1586,26 @@
     "actual": "The link leads to the SCB license main page (en-int).",
     "expected": "The link leads to the main page of the selected license (e.g., FCA en-gb).",
     "comments": "Reproducible for FCA and ASIC licenses. Legal documents contain hardcoded SCB links.",
-    "evidence": "../videos/Web_166.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_166.mp4"
   },
- {
+  {
     "id": "Web 173",
     "title": "The [get support], [in-depth educational support], [go to analysis] links in the 'What to expect with your CFD account' block on the 'CFD trading' page are redirected to the ASIC license page instead of the FCA license when the FCA license and EN language are selected",
-    "context": "Online trading platform educational content and license redirection",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "14.05.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform educational content and license redirection",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1251,17 +1623,26 @@
     "actual": "The pages are opened under the ASIC license (URL contains 'en-au') instead of the FCA license ('en-gb').",
     "expected": "The corresponding pages are opened under the current FCA license (URL contains 'en-gb').",
     "comments": "The bug is also reproduced for the [In-depth educational support] link and the [Go to analysis] link in the same block.",
-    "evidence": "../videos/Web_173.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_173.mp4"
   },
   {
     "id": "Web 176",
     "title": "The [forex CFD] and the [interest rate] links lead to the SCB license in the 'Factors influencing the GBP/CAD' block on the 'Your guide to trading the GBP/CAD Forex pair' page when FCA or CYSEC license and EN language are selected",
-    "context": "Market guide navigation and regional license redirection",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "15.05.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Market guide navigation and regional license redirection",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1281,17 +1662,26 @@
     "actual": "Redirection occurs to the SCB license page. Additionally, at step 7, the [How to trade GBP/CAD] link opens the page in a new tab.",
     "expected": "The page opens under the current license (FCA/CYSEC) in the same tab.",
     "comments": "The behavior violates project standards: internal links must open in the same tab, and redirects must respect the selected license.",
-    "evidence": "../videos/Web_176.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_176.mp4"
   },
   {
     "id": "Web 177",
     "title": "The [120+forex CFDs] link lead to the SCB license in the 'Why is the GBP/JPY an important market?' block on the 'Your guide to trading the GBP/JPY pair' page when FCA license and EN language are selected",
-    "context": "Educational market guides and license consistency",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "16.05.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Educational market guides and license consistency",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1311,17 +1701,26 @@
     "actual": "The page opens under the SCB license instead of FCA. Also, at step 7, the [How to trade GBP/JPY] link opens in a new tab.",
     "expected": "The page opens under the FCA license (en-gb) in the same tab.",
     "comments": "Incorrect regional redirection and UX violation (new tab for internal link).",
-    "evidence": "../videos/Web_177.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_177.mp4"
   },
   {
     "id": "Web 178",
     "title": "The [pip] link lead to the SCB license in the 'FAQ' block on the 'Your guide to trading the GBP/JPY pair' page when FCA license and EN language are selected",
-    "context": "FAQ accordion navigation and regional redirection",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "16.05.2026",
     "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "FAQ accordion navigation and regional redirection",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1342,17 +1741,26 @@
     "actual": "The link leads to the SCB license page. Furthermore, at step 7, the [How to trade GBP/JPY] link opens in a new tab.",
     "expected": "The [pip] link leads to the corresponding page under the FCA license in the same tab.",
     "comments": "Systemic license leak in the FAQ section of the market guides.",
-    "evidence": "../videos/Web_178.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_178.mp4"
   },
   {
     "id": "Web 179",
     "title": "The [forex CFD] link lead to the SCB license in the 'Factors influencing the GBP/AUD' block on the 'Your guide to trading the GBP/AUD Forex pair' page when FCA license and EN language are selected",
-    "context": "Functional redirection error in advanced market guides",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "16.05.2026",
     "type": "Non-functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Functional redirection error in advanced market guides",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1372,17 +1780,26 @@
     "actual": "Redirection occurs to the SCB license page instead of FCA. At step 7, the [How to trade GBP/AUD] link also opens in a new tab.",
     "expected": "The link leads to the corresponding page under the FCA license in the same tab.",
     "comments": "The redirection issues are consistent across several currency pair guide pages in the Forex course section.",
-    "evidence": "../videos/Web_179.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_179.mp4"
   },
-    {
+  {
     "id": "Web 185",
     "title": "The [initial public offering (IPO)] link on the 'Trade Netflix Inc - NFLX CFD' block is redirected to the ASIC license page and in a new tab instead of the FCA license when the FCA license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "18.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1403,17 +1820,26 @@
     "actual": "The page is opened under the ASIC license and in a new tab.",
     "expected": "The page is opened under the FCA license in the same tab.",
     "comments": "Internal link logic violation: should remain within the current jurisdiction and open in the current tab.",
-    "evidence": "../videos/Web_185.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_185.mp4"
   },
   {
     "id": "Web 192",
     "title": "The [balance sheet] link on the 'What are capital goods?' page is redirected to the SCB license instead of the FCA license when the FCA license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "18.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1432,17 +1858,26 @@
     "actual": "The page is opened under the SCB license (URL contains en-int) in the new tab.",
     "expected": "The 'What is a balance sheet?' page for the FCA license is opened (URL contains en-gb) in the same tab.",
     "comments": "Redirection error leads user away from regional license compliance.",
-    "evidence": "../videos/Web_192.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_192.mp4"
   },
   {
     "id": "Web 195",
     "title": "The [brokerages] link on the 'What is capital?' page is redirected to the SCB license instead of the FCA license when the FCA license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "18.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1461,17 +1896,26 @@
     "actual": "The page is opened under the SCB license (URL contains en-int).",
     "expected": "The corresponding page is opened under the FCA license (URL contains en-gb).",
     "comments": "License leakage in educational glossary articles.",
-    "evidence": "../videos/Web_195.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_195.mp4"
   },
   {
     "id": "Web 196",
     "title": "The [long-legged doji] link on the 'Doji candlestick pattern: What it is & how it works' page is redirected to the CYSEC license instead of the FCA license when the FCA license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "18.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1490,17 +1934,25 @@
     "actual": "The page is opened under the CYSEC license (URL contains en-eu).",
     "expected": "The corresponding page is opened under the FCA license (URL contains en-gb).",
     "comments": "Incorrect cross-linking between jurisdictional subdomains.",
-    "evidence": "../videos/Web_196.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_196.mp4"
   },
   {
     "id": "Web 200",
     "title": "The [Aevex Corp.] link on the 'All markets & Instrument' page is redirected to a 404 error page when any license is selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "19.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1517,17 +1969,25 @@
     "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
     "expected": "The corresponding trading instrument page (e.g., 'Trade Aevex Corp CFD') is opened.",
     "comments": "The issue appears to be caused by an additional '-1' suffix in the URL.",
-    "evidence": "../videos/Web_200.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_200.mp4"
   },
   {
     "id": "Web 203",
     "title": "The [A2A SPA] link on the 'All Markets & Instruments' page is redirected to a page with the '404 error' text when CMA or SCB license and EN or AR language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "19.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1546,17 +2006,25 @@
     "actual": "The 404 error page is opened instead of the instrument page.",
     "expected": "The corresponding trading instrument page (e.g., 'Trade A2A SPA - A2A CFD') is opened.",
     "comments": "Broken link on the consolidated markets list.",
-    "evidence": "../videos/Web_203.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_203.mp4"
   },
   {
     "id": "Web 204",
     "title": "The [Aeva Technologies, Inc] link on the 'All Markets & Instruments' page is redirected to a 404 error page when CMA, ASIC or SCB license and EN or AR language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "19.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1575,17 +2043,25 @@
     "actual": "A 404 error page is opened; the link redirects to a broken path.",
     "expected": "The corresponding trading instrument page (e.g., 'Trade Aeva Technologies, Inc. - AEVA CFD') is opened.",
     "comments": "Systemic broken link issue affecting multiple instruments on the All Markets page.",
-    "evidence": "../videos/Web_204.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_204.mp4"
   },
   {
     "id": "Web 205",
     "title": "The [AB Dynamics pic] link on the 'All Markets & Instruments' page leads to a 404 error page when CMA, ASIC or SCB license and EN or AR language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "19.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1604,17 +2080,27 @@
     "actual": "The 404 error page is opened.",
     "expected": "The corresponding trading instrument page (e.g., 'Trade AB Dynamics plc - ABDP CFD') is opened.",
     "comments": "Verified link failure on the instrument directory page.",
-    "evidence": "../videos/Web_205.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_205.mp4"
   },
   {
     "id": "Web 206",
     "title": "The 'All Markets & Instruments' page is displayed empty after clicking the [All Markets & Instruments] link on the Sitemap page when SCB license and DE, ES, FR, RO, ZN languages are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "19.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization",
+      "Navigation & links",
+      "Content"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1632,17 +2118,26 @@
     "actual": "The page is opened, but it is completely empty; no instrument links or categories are present.",
     "expected": "The 'All Markets & Instruments' page is opened and displays the full list of available trading instruments.",
     "comments": "High visibility localization bug blocking access to all markets for specific regions.",
-    "evidence": "../videos/Web_206.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Loc_206.mp4"
   },
   {
     "id": "Web 183",
     "title": "The [ Trading’s New Horizon: How Access, Innovation and Ambition Are Fuelling MENA’s E-Trading Boom] link on the 'MENA Emerges as a Global E-Trading Capital led by UAE’s Half-Trillion-Plus Trading Volumes' page is redirected to the CMA license page instead of the FCA license when the FCA license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "18.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1661,17 +2156,25 @@
     "actual": "The page is opened on the CMA license page instead of FCA.",
     "expected": "The page is opened on the corresponding article under the FCA license.",
     "comments": "Cross-license redirection error in news/analysis section.",
-    "evidence": "../videos/Web_183.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_183.mp4"
   },
   {
     "id": "Web 188",
     "title": "The 'Trade Netflix Inc - NFLX CFD' block contains no text (only the title is displayed) on the 'Trade Netflix Inc - NFLX CFD' page when the CMA license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "18.05.2026",
-    "type": "non-functional",
+    "type": "Non-functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Content"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1691,17 +2194,25 @@
     "actual": "The 'Trade Netflix Inc - NFLX CFD' block contains no text; only the title is displayed.",
     "expected": "Information about the trading instrument and descriptive text are displayed in the block.",
     "comments": "Major content display issue for a key trading instrument.",
-    "evidence": "../videos/Web_188.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_188.mp4"
   },
   {
     "id": "Web 199",
     "title": "Broken images are displayed in the 'What do you need to know about return on equity?' block and in the 'DuPont Model' block on the 'What is return on equity (ROE)?' page when any license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "18.05.2026",
-    "type": "non-functional",
+    "type": "Non-functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "UI / Visual"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1720,17 +2231,27 @@
     "actual": "Broken image icons are displayed in both the 'What do you need to know about return on equity?' and 'DuPont Model' blocks.",
     "expected": "The corresponding images are displayed correctly in both blocks.",
     "comments": "Visual defect affecting educational content across all licenses.",
-    "evidence": "../videos/Web_199.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_199.mp4"
   },
   {
     "id": "Web 207",
     "title": "The [نقدم لك المزيد من الأدوات لتداول ناجح] (We offer you more tools for successful trading) link is redirected to the SCB license instead of the CMA license on the 'تداول السندات' (Bond trading) page when the SCA license and AR language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "19.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Localization",
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11 Pro",
       "Browser: Chrome 148",
@@ -1748,17 +2269,25 @@
     "actual": "The link redirects the user to the SCB license version of the site.",
     "expected": "The link leads to the corresponding page under the current CMA (SCA) license.",
     "comments": "Another instance of 'license leakage' on the Arabic localization of the SCA jurisdiction.",
-    "evidence": "../videos/Web_207.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Loc_207.mp4"
   },
   {
     "id": "Mob 19",
-    "title": "The [Sell] button is redirected to 'Instrument info' page when taped first time when ASIC license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "title": "The [Sell] button is redirected to 'Instrument info' page when tapped first time when ASIC license and EN language are selected",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "21.04.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Trivial",
     "priority": "Low",
+    "platforms": [
+      "Mobile"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "Device: Xiaomi POCO X5 Pro 5G",
       "OS: Android 14",
@@ -1777,17 +2306,25 @@
     "actual": "The Sign Up form with the options [Continue with Apple/Google/Email] is not opened; the user is redirected to the instrument info page.",
     "expected": "The Sign Up form is opened with the registration options.",
     "comments": "The bug is reproduced only on the first click on the [Sell] button after user authorization. On subsequent clicks, the button works as expected.",
-    "evidence": "../videos/Mob_19.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Mob_19.mp4"
   },
   {
     "id": "Mob 32",
-    "title": "The sign Up form is not opened after clicking on any [Log In] button (e.g. [Sign Up] button) when any license and language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "title": "The Sign Up form is not opened after clicking on any [Log In] button (e.g. [Sign Up] button) when any license and language are selected",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "10.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Mobile"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": true,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "Device: Xiaomi POCO X5 Pro 5G",
       "OS: Android 14",
@@ -1801,17 +2338,25 @@
     "actual": "The main page is simply refreshed or remains open; the form is not displayed.",
     "expected": "The corresponding Sign Up or Log In form is opened.",
     "comments": "Critical functional block preventing user entry and registration.",
-    "evidence": "../videos/Mob_32.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Mob_32.mp4"
   },
   {
     "id": "Mob 33",
     "title": "The 'Regional settings' modal window is not opened after tapping the [Regional settings] button in the [Burger menu] when the CySEC license and any language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "10.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Mobile"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "Device: Xiaomi POCO X5 Pro 5G",
       "OS: Android 14",
@@ -1829,19 +2374,25 @@
     "actual": "The main page is opened instead of the modal window.",
     "expected": "The 'Regional settings' modal window is opened for country and language selection.",
     "comments": "Navigation failure blocking access to regional and localization adjustments.",
-    "evidence": "../videos/Mob_33.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Mob_33.mp4"
   },
-  
   {
     "id": "Web 211",
-    "title": "The [Amundi Italy BTP Government Bond 10Y UCITS ETF] link on the \"All Markets & Instruments\" page is redirected  to the page with the \"404 error\" text on it when CMA or SCB license, and  EN or AR language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "The [Amundi Italy BTP Government Bond 10Y UCITS ETF] link on the \"All Markets & Instruments\" page is redirected to the page with the \"404 error\" text on it when CMA or SCB license, and EN or AR language are selected.",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "20.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1860,18 +2411,25 @@
     "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
     "expected": "The corresponding trading instrument page (e.g., \"Trade Amundi Italy BTP Government Bond 10Y UCITS ETF - BTP10 CFD\") is opened.",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_211.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_211.mp4"
   },
   {
     "id": "Web 215",
-    "title": "The [Amundi Euro Government Bond 1-3Y UCITS ETF] link on the \"All Markets & Instruments\" page is redirected  to the page with the \"404 error\" text on it when CMA or SCB license, and  EN or AR language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "The [Amundi Euro Government Bond 1-3Y UCITS ETF] link on the \"All Markets & Instruments\" page is redirected to the page with the \"404 error\" text on it when CMA or SCB license, and EN or AR language are selected.",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "20.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1890,18 +2448,25 @@
     "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
     "expected": "The corresponding trading instrument page (e.g., \"Trade Amundi Euro Government Bond 1-3Y UCITS ETF - EM13m CFD\") is opened.",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_215.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_215.mp4"
   },
   {
     "id": "Web 216",
-    "title": "The [AMPLIFON] link on the \"All Markets & Instruments\" page is redirected  to the page with the \"404 error\" text on it when CMA or SCB license, and  EN or AR language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "The [AMPLIFON] link on the \"All Markets & Instruments\" page is redirected to the page with the \"404 error\" text on it when CMA or SCB license, and EN or AR language are selected.",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "20.05.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1920,18 +2485,26 @@
     "actual": "The 404 error page is opened; the URL redirects to a broken page where the error text is displayed.",
     "expected": "The corresponding trading instrument page (e.g., \"Trade AMPLIFON - AMPI CFD\") is opened.",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_216.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_216.mp4"
   },
   {
     "id": "Web 245",
     "title": "The [dividends] link on the \"What is expected return?\" glossary page leads to the \"This site can’t be reached\" error page and opens in a new tab under the SCB license when any license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "02.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1950,18 +2523,25 @@
     "actual": "The user is redirected to the SCB license (en-int), a \"This site can’t be reached\" error page is displayed, and the link opens in a new tab.",
     "expected": "The corresponding \"Dividends definition\" page is opened under the FCA license in the same tab.",
     "comments": "Started by @Zurawiny. Note: On the SCB license target page can be accessed via [All resources] in Footer.",
-    "evidence": "../videos/Web_245.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_245.mp4"
   },
   {
     "id": "Web 246",
     "title": "Broken images are displayed on the \"Fundamental analysis\" glossary page in the \"Forex fundamental analysis\" and \"Fundamental and technical analysis - pros and cons\" blocks when any license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "02.06.2026",
-    "type": "Non functional",
+    "type": "Non-functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "UI / Visual"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 148",
@@ -1982,18 +2562,27 @@
     "actual": "Broken image icons are displayed instead of images in both specified blocks",
     "expected": "The corresponding images are correctly displayed in both blocks",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_246.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_246.mp4"
   },
   {
     "id": "Web 249",
     "title": "Interactive element [Login] (or [Get the app]) in the \"Sign up\" form is visually indistinguishable from plain text and has low color contrast when any license and language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "03.06.2026",
-    "type": "Non functional",
+    "type": "Non-functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop",
+      "Mobile"
+    ],
+    "tags": [
+      "Navigation & links",
+      "UI / Visual"
+    ],
+    "featured": true,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Device: POCO X5 Pro (Android 14)",
@@ -2009,19 +2598,26 @@
     ],
     "actual": "The [Login] element is displayed as plain text without an underline or visible button borders on a dark background. The element has low color contrast (black-on-black styling), making it visually indistinguishable from static text. (For Desktop) A faint border and background appear only on hover, but they remain nearly invisible due to the dark-on-dark color scheme",
     "expected": "The [Login] element is visually distinguished from static text as an interactive element (e.g., by an underline as per Glossary or a contrasting button background). Sufficient color contrast is provided to ensure the text is readable and recognized as a button/link against the dark background.",
-    "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_249.mp4",
-    "note": "No video available due to NDA"
+    "comments": "Accessibility issue: the interactive element does not meet basic contrast expectations and is not recognizable as clickable.",
+    "evidence": "videos/Web_249.mp4"
   },
   {
     "id": "Web 265",
     "title": "The [Marketscreener] link leads to an \"Access Denied\" error page on the \"Siemens Energy stock forecast\" page when any license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "09.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Minor",
     "priority": "Medium",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2040,18 +2636,25 @@
     "actual": "The page with the \"Access Denied\" message and a Reference number is displayed; the request is blocked by the target server's security system",
     "expected": "The corresponding external news article on the marketscreener.com website is opened correctly in a new tab",
     "comments": "Started by @Zurawiny. Note: the issue is directly related to the VPN status.",
-    "evidence": "../videos/Web_265.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_265.mp4"
   },
   {
     "id": "Web 268",
     "title": "The [the Nasdaq stock market] link leads to the \"This site can’t be reached\" error page in the \"How to invest in the Japan stock market\" article when any license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "10.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2070,18 +2673,25 @@
     "actual": "The \"This site can’t be reached\" error page is displayed; the link contains a syntax error in the code",
     "expected": "The corresponding internal page about the Nasdaq stock market is opened correctly in the same tab.",
     "comments": "Started by @Zurawiny. DevTools revealed invalid address https://v/.",
-    "evidence": "../videos/Web_268.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_268.mp4"
   },
   {
     "id": "Web 269",
     "title": "The [Bank of America Private Bank] link leads to a 404 error page in the \"Nasdaq 100 forecast\" article when any license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "10.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2100,18 +2710,26 @@
     "actual": "The \"404 Not Found\" error page is displayed",
     "expected": "The corresponding external or internal page with Bank of America analytics is opened correctly",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_269.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_269.mp4"
   },
   {
     "id": "Web 273",
     "title": "The [Visit] link on the \"Contact us\" page is redirected to the SCB license (/en-int/help) instead of the CMA license when the CMA license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "11.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2125,21 +2743,29 @@
       "Click on the [Contact us] menu item",
       "Click the [Visit] link on the \"Support centre\" tile in the \"Contact us\" block"
     ],
-    "actual": "The corresponding internal page is opened  under the SCB license (URL contains /en-int/)",
+    "actual": "The corresponding internal page is opened under the SCB license (URL contains /en-int/)",
     "expected": "The corresponding internal page is opened correctly under the CMA license (URL contains /en-ae/)",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_273.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_273.mp4"
   },
   {
     "id": "Web 274",
-    "title": "The [Go to Pricing] and [Go to Demo] linkы on the \"Bond and bond futures trading\" page are redirected to the SCB license (/en-int/) instead of the CMA license when the CMA license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "The [Go to Pricing] and [Go to Demo] links on the \"Bond and bond futures trading\" page are redirected to the SCB license (/en-int/) instead of the CMA license when the CMA license and EN language are selected.",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "11.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2158,21 +2784,28 @@
       "Click the [Go to demo] link on the \"All the tools, no capital required\" tile",
       "Observe the result"
     ],
-    "actual": "The corresponding internal pages are opened  under the SCB license (URL contains /en-int/)",
+    "actual": "The corresponding internal pages are opened under the SCB license (URL contains /en-int/)",
     "expected": "The corresponding internal pages are opened correctly under the CMA license (URL contains /en-ae/)",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_274.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_274.mp4"
   },
   {
     "id": "Web 277",
     "title": "The [CHEEMS/USD], [Constellation to US Dollar], [Velo to US Dollar], [VeThor Token to US Dollar], [XinFin Network to US Dollar], [XYO to US Dollar] links are redirected to broken pages on the \"All Markets & Instruments\" page when ASIC, CYSEC or CMA license and any language are selected; or SCB license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "11.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2190,20 +2823,28 @@
       "Click the [CHEEMS/USD], [Constellation to US Dollar], [Velo to US Dollar], [VeThor Token to US Dollar], [XinFin Network to US Dollar], or [XYO to US Dollar] ( e.g. [CHEEMS/USD] ) link"
     ],
     "actual": "The \"404 Not Found\" error page is displayed",
-    "expected": "The corresponding trading instrument pages are opened  and display relevant content ",
+    "expected": "The corresponding trading instrument pages are opened and display relevant content",
     "comments": "Started by @Zurawiny. Chrome DevTools returns a '200 OK' but page is visually empty.",
-    "evidence": "../videos/Web_277.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_277.mp4"
   },
   {
     "id": "Web 279",
-    "title": "The  [share trading] link on the \"What is an issue?\" page is redirected to the SCB license (/en-int/)  when the FCA, CMA or CySEC license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "The [share trading] link on the \"What is an issue?\" page is redirected to the SCB license (/en-int/) when the FCA, CMA or CySEC license and EN language are selected.",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "12.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2223,18 +2864,26 @@
     "actual": "The user is redirected to the SCB license page (URL contains /en-int/)",
     "expected": "The page \"What is share trading?\" is opened under the FCA license (URL contains /en-gb/)",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_279.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_279.mp4"
   },
   {
     "id": "Web 285",
-    "title": "[slippage]  link on the \"Top 10 biggest oil companies in the world\" page are redirected to the SCB license (/en-int/) instead of the FCA license when the FCA license and EN language are selected",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "[slippage] link on the \"Top 10 biggest oil companies in the world\" page are redirected to the SCB license (/en-int/) instead of the FCA license when the FCA license and EN language are selected",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "13.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links",
+      "Cross-license routing"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2253,18 +2902,25 @@
     "actual": "The user is redirected to the SCB license pages (URL contains /en-int/)",
     "expected": "The corresponding internal pages are opened under the FCA license (URL contains /en-gb/)",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_285.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_285.mp4"
   },
   {
     "id": "Web 276",
-    "title": "The [VOW3] link in the \"Volkswagen forecast 2025-2030: Third-party price target\" page is redirected to the  page with the message \"DNS_PROBE_FINISHED_NXDOMAIN\" when the FCA license and EN language are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "The [VOW3] link in the \"Volkswagen forecast 2025-2030: Third-party price target\" page is redirected to the page with the message \"DNS_PROBE_FINISHED_NXDOMAIN\" when the FCA license and EN language are selected.",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "13.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2283,18 +2939,25 @@
     "actual": "The link redirects to an invalid URL (https://https://capital.com/...), causing a DNS resolution failure and preventing the page from loading.",
     "expected": "The \"Trade Volkswagen AG (Pfd) - VOW3 CFD\" page is opened and displays relevant content",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_276.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_276.mp4"
   },
   {
     "id": "Web 292",
-    "title": "The [TradingView] link on the \"Copper price forecast: Third-party outlook\" page leads to a 404 error page when any  license and EN language; SCB and RU, DE or FR; CySEC and DE-AT languages are selected.",
-    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
-    "project": "Financial Education Portal",
+    "title": "The [TradingView] link on the \"Copper price forecast: Third-party outlook\" page leads to a 404 error page when any license and EN language; SCB and RU, DE or FR; CySEC and DE-AT languages are selected.",
+    "project": "Capital.com",
+    "source": "ITX internship",
     "date": "15.06.2026",
-    "type": "functional",
+    "type": "Functional",
     "severity": "Major",
     "priority": "High",
+    "platforms": [
+      "Desktop"
+    ],
+    "tags": [
+      "Navigation & links"
+    ],
+    "featured": false,
+    "context": "Online trading platform (CFD and Forex) with educational content and FAQ sections",
     "environment": [
       "OS: Windows 11",
       "Browser: Chrome 149",
@@ -2311,18 +2974,8 @@
       "Click the [TradingView] link."
     ],
     "actual": "The \"404 Not Found\" error page is displayed on the TradingView website",
-    "expected": "The external TradingView technical analysis page for the corresponding instrument (Copper) is opened ",
+    "expected": "The external TradingView technical analysis page for the corresponding instrument (Copper) is opened",
     "comments": "Started by @Zurawiny.",
-    "evidence": "../videos/Web_292.mp4",
-    "note": "No video available due to NDA"
+    "evidence": "videos/Web_292.mp4"
   }
-
-
-
-
-
-  
-
-
- ] 
- 
+]

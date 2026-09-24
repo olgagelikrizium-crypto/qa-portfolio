@@ -1,0 +1,272 @@
+[
+  {
+    "id": "cross-license-links",
+    "type": "golden",
+    "title": "Links that silently switch the region or licence",
+    "summary": "On multi-regional sites, links in articles often point to a different region's version of the page. Nothing looks broken, but the user ends up on the wrong legal version of the site.",
+    "date": "2026-09",
+    "tags": [
+      "Navigation & links",
+      "Multi-regional sites"
+    ],
+    "related_bugs": [
+      "Web 174",
+      "Web 175",
+      "Web 273",
+      "Web 279"
+    ],
+    "sections": [
+      {
+        "h": "Where it shows up",
+        "p": "Sites with several regional versions separated in the URL, such as /en-gb/, /en-au/ or /en-int/. On regulated sites (finance, gambling, pharma) this is not just cosmetic: the user sees terms and products that don't apply to their region."
+      },
+      {
+        "h": "How I check it",
+        "list": [
+          "Choose one region/licence and one language.",
+          "Open long content pages: guides, glossary, blog articles, FAQ.",
+          "Hover each inline link and look at the URL in the status bar: does the region segment match the one I chose?",
+          "Pay extra attention to footers, CTA buttons (\"Go to Pricing\", \"Open demo\") and links inside FAQ accordions.",
+          "Repeat for 2–3 other regions: hard-coded links usually point to the \"default\" region."
+        ]
+      },
+      {
+        "h": "How to report it",
+        "p": "In the title, name the link, the page, the expected region and the actual one. In the comments, list every other region and language combination that reproduces the issue. That is what makes the report useful to the developer."
+      }
+    ]
+  },
+  {
+    "id": "anchor-first-click",
+    "type": "golden",
+    "title": "Anchor links that fail only on the first click",
+    "summary": "A \"Contents\" link scrolls to the wrong section right after the page loads, then works normally. Easy to miss if you click twice.",
+    "date": "2026-09",
+    "tags": [
+      "Navigation & links",
+      "Timing"
+    ],
+    "related_bugs": [
+      "Web 109",
+      "Web 153",
+      "Web 110"
+    ],
+    "sections": [
+      {
+        "h": "Why it probably happens",
+        "p": "Most likely, images and blocks are still loading when the scroll position is calculated, so the target section moves. By the second click the layout is stable. This is my hypothesis; the developers confirm the root cause."
+      },
+      {
+        "h": "How I check it",
+        "list": [
+          "Reload the page and wait until it looks fully loaded.",
+          "Click one anchor link only once, and note where the page lands.",
+          "Reload again before testing the next link. Don't test all links in one session.",
+          "Try with a throttled network (DevTools → Network → Slow 4G): the effect becomes more visible."
+        ]
+      },
+      {
+        "h": "Reporting tip",
+        "p": "Write \"on the first click after page load\" in the title. Without it, a developer who clicks twice will close the bug as \"cannot reproduce\"."
+      }
+    ]
+  },
+  {
+    "id": "dependent-territories",
+    "type": "golden",
+    "title": "Dependent territories break phone and postcode validation",
+    "summary": "Forms that validate phone numbers or postcodes by country often reject valid addresses in Crown Dependencies or overseas regions.",
+    "date": "2026-09",
+    "tags": [
+      "Forms & validation",
+      "Checkout"
+    ],
+    "related_bugs": [],
+    "sections": [
+      {
+        "h": "The idea",
+        "p": "Some territories have their own country codes or postcode formats, or share a dialling code with another territory. Validation rules written for the \"main\" country often reject them, or accept completely wrong data."
+      },
+      {
+        "h": "Territories worth trying",
+        "list": [
+          "UK Crown Dependencies: Guernsey (GG), Jersey (JE), Isle of Man (IM). They have UK-style postcodes but separate country entries.",
+          "French overseas regions: Réunion and Mayotte share the +262 dialling code.",
+          "Other overseas territories that appear in the site's country list. Compare the country list with the phone-code list."
+        ]
+      },
+      {
+        "h": "How I check it",
+        "list": [
+          "Select the territory as the country, then enter a real-format phone number and postcode.",
+          "Check that valid data is accepted and invalid data is rejected, with a clear error message.",
+          "Check that the phone-code selector and the country selector agree with each other.",
+          "Go all the way through the flow: sometimes the form accepts the data but the confirmation page shows it wrong."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fake-file-extension",
+    "type": "golden",
+    "title": "Uploading a file with a renamed extension",
+    "summary": "Upload fields often check only the file name, not the actual content. A renamed file tells you how the upload really validates.",
+    "date": "2026-09",
+    "tags": [
+      "File upload",
+      "Validation"
+    ],
+    "related_bugs": [],
+    "sections": [
+      {
+        "h": "How I check it",
+        "list": [
+          "Take a .txt or .docx file and rename it to .pdf or .jpg.",
+          "Upload it to a field that accepts only documents or images.",
+          "Expected: the file is rejected with a clear message, or the site handles it safely.",
+          "Also watch what happens next: a preview that never loads, a broken thumbnail, or a server error on submit are all worth reporting."
+        ]
+      },
+      {
+        "h": "Good places to try",
+        "p": "Identity verification (KYC), profile photos, support attachments, CV uploads."
+      }
+    ]
+  },
+  {
+    "id": "min-equals-max",
+    "type": "golden",
+    "title": "Range filters where Min = Max",
+    "summary": "A classic boundary value: setting both ends of a price or size range to the same number often returns nothing.",
+    "date": "2026-09",
+    "tags": [
+      "Search & filters",
+      "Boundary values"
+    ],
+    "related_bugs": [
+      "TestIO_e-commerce2"
+    ],
+    "sections": [
+      {
+        "h": "How I check it",
+        "list": [
+          "Before filtering, find a product with a round price (for example 50.00).",
+          "Set Min = 50 and Max = 50, then apply the filter.",
+          "Expected: that product is shown. A common bug is a strict comparison (> and < instead of ≥ and ≤).",
+          "Then try Min > Max, empty fields, decimals, and a value with a currency symbol pasted in."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-generator-constraints",
+    "type": "golden",
+    "title": "AI generators ignoring exact constraints",
+    "summary": "AI features usually follow the general idea of a prompt, but lose exact numbers, counts and formatting.",
+    "date": "2026-09",
+    "tags": [
+      "AI features"
+    ],
+    "related_bugs": [
+      "TestIO_design_tool_1",
+      "TestIO_design_tool_2",
+      "TestIO_design_tool_5"
+    ],
+    "sections": [
+      {
+        "h": "What I test",
+        "list": [
+          "Exact numbers: \"3-second sound\", \"20 pages\", \"three buttons\". Measure or count the result.",
+          "Regenerate with a different style: is the constraint still respected?",
+          "Special characters in the prompt: quotes, brackets, emojis. In one tool, double quotes switched it from \"generate\" to \"search\".",
+          "Structure: do requested buttons, fields and icons become real, editable elements, or just text?"
+        ]
+      },
+      {
+        "h": "Reporting tip",
+        "p": "Write the exact prompt in the steps and repeat the test with 2–3 different values. \"Consistently observed with 2s, 5s and 10s\" is much stronger than one attempt."
+      }
+    ]
+  },
+  {
+    "id": "localization-quick-check",
+    "type": "checklist",
+    "title": "Localization quick-check for one page",
+    "summary": "The list I go through when a page is opened in a new language. Most points don't require speaking the language.",
+    "date": "2026-09",
+    "tags": [
+      "Localization"
+    ],
+    "related_bugs": [
+      "Web 113 (Loc)",
+      "Web 129 (Loc)",
+      "Web 107 (Loc)",
+      "Web 138 (Loc)"
+    ],
+    "sections": [
+      {
+        "h": "Text",
+        "check": [
+          "No English fragments left in menus, buttons, image captions, graphics or tooltips",
+          "The same action has the same label everywhere (header button = banner button)",
+          "Job titles, quotes and names in \"about us\" blocks are translated consistently",
+          "No leftover technical tags or locale codes in titles or breadcrumbs (e.g. \"(RU-RU)\")"
+        ]
+      },
+      {
+        "h": "Formatting",
+        "check": [
+          "Alphabetical lists (glossary, sitemap) are sorted by the local alphabet",
+          "Currency symbols appear once and in the right position",
+          "Numbers, dates and decimal separators follow local rules",
+          "Right-to-left languages (Arabic): layout mirrored, icons and punctuation in the right place",
+          "Long words don't overflow buttons or get cut off"
+        ]
+      },
+      {
+        "h": "Links",
+        "check": [
+          "Links lead to the same language version, not to English",
+          "Sign-up and demo forms open in the selected language",
+          "The breadcrumb and the page list use the same translated name"
+        ]
+      },
+      {
+        "h": "Without knowing the language",
+        "p": "I compare the page with the English version side by side and use a translation tool to check suspicious strings. When I'm not sure, I say so in the report and describe the mismatch instead of claiming the translation is wrong."
+      }
+    ]
+  },
+  {
+    "id": "bug-title-formula",
+    "type": "lesson",
+    "title": "Writing bug titles: What? Where? When?",
+    "summary": "During a review, one of my reports got a missing step added and its title rewritten to the \"What? Where? When?\" standard. Since then every title I write answers those three questions.",
+    "date": "2026-09",
+    "tags": [
+      "Bug reporting"
+    ],
+    "related_bugs": [
+      "Web 105"
+    ],
+    "sections": [
+      {
+        "h": "The formula",
+        "list": [
+          "What is wrong: \"The [Open an account] button opens the Main page in a new tab\"",
+          "Where: \"on the 'Award-winning platform' banner on the Main page\"",
+          "When / under which conditions: \"when the FCA licence and EN language are selected\""
+        ]
+      },
+      {
+        "h": "What I learned",
+        "list": [
+          "The title should be understandable without opening the report.",
+          "Name UI elements exactly as they appear, in [square brackets].",
+          "Conditions belong in the title only if they narrow the problem down. If it happens everywhere, say \"for any licence and language\".",
+          "Re-run the steps from a fresh browser before submitting: a missing step is the most common reason for rejection."
+        ]
+      }
+    ]
+  }
+]

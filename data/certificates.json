@@ -1,0 +1,85 @@
+[
+  {
+    "id": "web-testing-intensive",
+    "title": "Intensive “Web Testing Program”",
+    "issuer": "Vadim Ksendzov · Sandbox",
+    "date": "March 2026",
+    "duration": "3 weeks",
+    "image": "images/certificates/web-testing-intensive.png",
+    "summary": "Practical manual testing of real web applications, with structured bug reporting.",
+    "topics": [
+      "Manual testing of core user flows and business logic",
+      "Structured bug reports: steps to reproduce, expected and actual results",
+      "Exploratory and functional testing techniques, edge cases",
+      "Chrome DevTools: inspecting elements and network requests",
+      "SQL basics: simple queries to retrieve and check data",
+      "UI, layout and responsiveness checks",
+      "Test scenarios, test cases and requirements analysis"
+    ]
+  },
+  {
+    "id": "epam-software-testing",
+    "title": "Software Testing Introduction",
+    "issuer": "EPAM Campus",
+    "date": "November 2025",
+    "duration": "100 hours · passed with 92%",
+    "image": "images/certificates/epam-software-testing.png",
+    "summary": "A self-paced course covering the foundations of functional testing.",
+    "topics": [
+      "Introduction to software functional testing",
+      "Test planning",
+      "Requirements testing",
+      "Test cases and test scenarios",
+      "Defect reporting",
+      "Test result reporting",
+      "Test automation basics"
+    ]
+  },
+  {
+    "id": "html-essentials",
+    "title": "HTML Essentials",
+    "issuer": "Cisco Networking Academy · OpenEDG JS Institute",
+    "date": "October 2025",
+    "duration": "30 hours",
+    "image": "images/certificates/html-essentials.png",
+    "summary": "Prepares for the WDE™ and WDA™ web developer certifications.",
+    "topics": [
+      "HTML structure, text formatting and data organisation",
+      "Visual and interactive elements",
+      "Optimised and accessible web content",
+      "HTML beyond the basics"
+    ]
+  },
+  {
+    "id": "css-essentials",
+    "title": "CSS Essentials",
+    "issuer": "Cisco Networking Academy · OpenEDG JS Institute",
+    "date": "December 2025",
+    "duration": "30 hours",
+    "image": "images/certificates/css-essentials.png",
+    "summary": "Prepares for the WDA™ – Certified Associate Web Developer exam.",
+    "topics": [
+      "Selectors, properties and the box model",
+      "Floats, media queries, Flexbox and CSS Grid",
+      "Transitions and animations",
+      "Bootstrap, Sass and Less",
+      "Accessibility"
+    ]
+  },
+  {
+    "id": "english-for-it",
+    "title": "English for IT 1",
+    "issuer": "Cisco Networking Academy",
+    "date": "September 2025",
+    "duration": "50 hours",
+    "image": "images/certificates/english-for-it.png",
+    "summary": "English in real IT work situations: product, support, engineering and security.",
+    "topics": [
+      "Product management: identifying problems",
+      "Following technical instructions",
+      "Analysing factual information",
+      "Customer support: examining key information",
+      "Taking part in technical discussions"
+    ]
+  }
+]
